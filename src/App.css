@@ -1,0 +1,76 @@
+.MainPage{
+    height: 100vh;
+}
+
+.MainPage-BodyContainer{
+    display: flex;
+    width: 1334px;
+    hieght: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.MainPage-BodyContainer-Left{
+    width: 850px;
+    height: 351px;
+}
+
+.MainPage-BodyContainer-Left > h1{
+    width: 850px;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 78px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 32px;
+
+}
+
+.MainPage-BodyContainer-Left > h2{
+    width: 522px;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 59px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 80px;
+}
+
+.MainPage-BodyContainer-Left-ButtonsContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.MainPage-BodyContainer-Left-ButtonsContainer > button {
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    transition: all 200ms ease-in-out;
+}
+
+.MainPage-BodyContainer-Left-ButtonsContainer > button:hover {
+    color: #fff; 
+    border-radius: 50px;
+    background-color: var(--oxford-blue);
+}
+
+.MainPage-BodyContainer-Right{
+    width: 500px;
+    height: 500px;
+}
+
+.MainPage-FooterContainer{
+    display: flex;
+}
