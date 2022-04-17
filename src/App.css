@@ -1,21 +1,23 @@
 .MainPage{
     height: 100vh;
+    display: flex;
 }
 
 .MainPage-BodyContainer{
     display: flex;
+    position: relative;
     width: 1334px;
-    hieght: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 500px;
+    margin: auto;
 }
 
 .MainPage-BodyContainer-Left{
     width: 850px;
     height: 351px;
+    margin-top: auto;
 }
 
-.MainPage-BodyContainer-Left > h1{
+.MainPage-BodyContainer-Left > h1 {
     width: 850px;
     font-family: Montserrat;
     font-size: 64px;
@@ -25,15 +27,17 @@
     letter-spacing: 0em;
     text-align: left;
     margin-bottom: 32px;
+}
 
+.MainPage-BodyContainer-Left > h1 > span {
+    color: var(--red);
 }
 
 .MainPage-BodyContainer-Left > h2{
     width: 522px;
     font-family: Montserrat;
     font-size: 48px;
-    font-style: normal;
-    font-weight: 300;
+    font-weight: 700;
     line-height: 59px;
     letter-spacing: 0em;
     text-align: left;
@@ -41,7 +45,7 @@
 }
 
 .MainPage-BodyContainer-Left-ButtonsContainer {
-    width: 100%;
+    width: 756px;
     display: flex;
     justify-content: space-between;
 }
@@ -73,4 +77,10 @@
 
 .MainPage-FooterContainer{
     display: flex;
+}
+
+.MainPage-Blob{
+    position: absolute;
+    z-index: -9999;
+    right: 0;
 }
