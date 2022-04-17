@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import MainPage from "./assets/mainpage_img.svg";
 import Blob from "./assets/blob.svg";
@@ -5,6 +6,15 @@ import klogo from "./assets/klogo.svg";
 import discord from "./assets/discord.svg";
 import insta from "./assets/insta.svg";
 import "./App.css";
+=======
+import React from 'react'
+import './App.css'
+import MainPageImg from './assets/images/mainpage_img.svg'
+import Blob from './assets/images/blob.svg'
+import Logo from'./assets/images/k_logo.svg'
+import Ig from'./assets/images/ig.svg'
+import Dc from'./assets/images/dc.svg'
+>>>>>>> d706f55 (The footer)
 
 const App: React.FC = () => {
   return (
@@ -30,6 +40,7 @@ const App: React.FC = () => {
           <img src={MainPage} />
         </div>
       </div>
+<<<<<<< HEAD
       <div className="MainPage-FooterContainer">
         <img className="MainPage-klogo" src={klogo} />
 
@@ -40,6 +51,16 @@ const App: React.FC = () => {
       </div>
 
       <img className="MainPage-Blob" src={Blob} />
+=======
+      <div className='MainPage-FooterContainer'>
+          <img id='logo' src={Logo}></img>
+          <img id='dc' src={Dc}></img>
+          <img id='ig' src={Ig}></img>
+      </div>
+      
+      <img className="MainPage-Blob" src={Blob}></img>
+
+>>>>>>> d706f55 (The footer)
     </div>
   );
 };
