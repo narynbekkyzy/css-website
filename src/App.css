@@ -1,12 +1,13 @@
 .MainPage {
     height: 100vh;
+   display: flex;
     
 }
 
 .MainPage-BodyContainer {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+   
     width: 1334px;
     height: 500px;
 
@@ -15,7 +16,8 @@
 .MainPage-BodyContainer-Left {
    width: 850px;
    height: 351px;
-   
+   margin-top: auto;
+
 
     
 }
@@ -41,6 +43,10 @@ margin-bottom: 32px;
 
 }
 
+.MainPage-BodyContainer-Left > h1 > span {
+    color: var(--red);
+}
+
 .MainPage-BodyContainer-Left > p{
 width: 522px;
 font-family: Montserrat;
@@ -55,7 +61,7 @@ margin-bottom: 80px;
 }
 
 .MainPage-BodyContainer-Left-ButtonsContainer {
-    width: 100%;
+    width: 756px;
     display: flex;
     justify-content: space-between;
 
@@ -85,9 +91,16 @@ cursor: pointer;
 .MainPage-BodyContainer-Right {
    width: 500px;
    height: 500px;
+   
 }
 
 .MainPage-FooterContainer {
     display: flex;
 
+}
+
+.MainPage-Blob {
+    position: absolute;
+    z-index: -2;
+    right: 0;
 }

@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&family=Montserrat:wght@700&display=swap');
 
 :root{
   --oxford-blue: #263238;
+  --red: #c00
 }
 
 * {
