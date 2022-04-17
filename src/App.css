@@ -1,6 +1,7 @@
 .MainPage {
     height: 100vh;
    display: flex;
+   flex-direction: column;
     
 }
 
@@ -96,8 +97,30 @@ cursor: pointer;
 
 .MainPage-FooterContainer {
     display: flex;
+    width: 1334px;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
 
 }
+
+.MainPage-klogo {
+    height: 100px;
+    width: 170px;
+   
+
+}
+
+.MainPage-discord {
+    height: 50px;
+    width: 50px;
+}
+
+.MainPage-insta {
+    height: 50px;
+    width: 50px;
+}
+
 
 .MainPage-Blob {
     position: absolute;
