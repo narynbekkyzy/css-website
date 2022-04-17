@@ -1,6 +1,7 @@
 .MainPage{
     height: 100vh;
     display: flex;
+    flex-direction: column;
 }
 
 .MainPage-BodyContainer{
@@ -86,6 +87,26 @@
 
 .MainPage-FooterContainer{
     display: flex;
+    width: 1334px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.MainPage-FooterContainer > :nth-child(1){
+    height: 47px;
+    width: 185px;
+    left: 197px;
+    top: 944px;
+    border-radius: 0px;
+
+}
+
+.MainPage-FooterContainer > :nth-child(2){
+    margin-left: auto;
+}
+
+.MainPage-FooterContainer > :nth-child(3){
+    margin-left: 20px;
 }
 
 .MainPage-Blob{
@@ -93,3 +114,4 @@
     z-index: -999;
     right: 0;
 }
+

@@ -2,6 +2,9 @@ import React from 'react'
 import './App.css'
 import MainPageImg from './assets/images/mainpage_img.svg'
 import Blob from './assets/images/blob.svg'
+import Logo from'./assets/images/k_logo.svg'
+import Ig from'./assets/images/ig.svg'
+import Dc from'./assets/images/dc.svg'
 
 const App: React.FC = () => {
   return (
@@ -32,10 +35,13 @@ const App: React.FC = () => {
         </div>
       </div>
       <div className='MainPage-FooterContainer'>
-
+          <img id='logo' src={Logo}></img>
+          <img id='dc' src={Dc}></img>
+          <img id='ig' src={Ig}></img>
       </div>
       
       <img className="MainPage-Blob" src={Blob}></img>
+
     </div>
   )
 }
