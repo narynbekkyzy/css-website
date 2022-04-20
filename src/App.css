@@ -1,13 +1,8 @@
 .MainPage {
     height: 100vh;
-<<<<<<< HEAD
    display: flex;
    flex-direction: column;
     
-=======
-    display: flex;
-    flex-direction: column;
->>>>>>> d706f55 (The footer)
 }
 
 .MainPage-BodyContainer {
@@ -121,34 +116,9 @@ cursor: pointer;
     width: 50px;
 }
 
-<<<<<<< HEAD
 .MainPage-insta {
     height: 50px;
     width: 50px;
-=======
-.MainPage-FooterContainer{
-    display: flex;
-    width: 1334px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.MainPage-FooterContainer > :nth-child(1){
-    height: 47px;
-    width: 185px;
-    left: 197px;
-    top: 944px;
-    border-radius: 0px;
-
-}
-
-.MainPage-FooterContainer > :nth-child(2){
-    margin-left: auto;
-}
-
-.MainPage-FooterContainer > :nth-child(3){
-    margin-left: 20px;
->>>>>>> d706f55 (The footer)
 }
 
 
@@ -157,4 +127,3 @@ cursor: pointer;
     z-index: -2;
     right: 0;
 }
-
