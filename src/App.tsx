@@ -27,14 +27,20 @@ const App: React.FC = () => {
             <button>&nbsp;Projects&nbsp;</button>
             <button>&nbsp;Opportunities&nbsp;</button>
           </div>
+          <div  id="Mobile-Footer" className='MainPage-FooterContainer'>
+              <img id='logo' src={Logo}></img>
+              <img id='dc' src={Dc}></img>
+              <img id='ig' src={Ig}></img>
+          </div>
         </div>
 
         <div className='MainPage-BodyContainer-Right'>
             <img src={MainPageImg}>
             </img>
         </div>
+        
       </div>
-      <div className='MainPage-FooterContainer'>
+      <div id="Desktop-Footer" className='MainPage-FooterContainer'>
           <img id='logo' src={Logo}></img>
           <img id='dc' src={Dc}></img>
           <img id='ig' src={Ig}></img>

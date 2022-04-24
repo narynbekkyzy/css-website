@@ -6,6 +6,7 @@
 
 .MainPage-BodyContainer{
     display: flex;
+    flex-direction: row;
     position: relative;
     width: 1334px;
     height: 500px;
@@ -90,6 +91,7 @@
     width: 1334px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 124px;
 }
 
 .MainPage-FooterContainer > :nth-child(1){
@@ -115,3 +117,35 @@
     right: 0;
 }
 
+#Mobile-Footer{
+    visibility: hidden;
+    width: 0;
+}
+
+#Desktop-Footer{
+    visibility: visible;
+}
+
+@media screen and (max-width: 1370px) {
+
+
+    .MainPage-BodyContainer{
+        width: fit-content;
+        flex-direction: column-reverse;
+    }
+
+    .MainPage-FooterContainer{
+        width: 100%;
+    }
+
+    #Mobile-Footer{
+        visibility: visible;
+        width: 100%;
+    }
+
+    #Desktop-Footer{
+        visibility: hidden;
+        width: 0%;
+    }
+    
+}
