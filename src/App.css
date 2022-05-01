@@ -29,7 +29,11 @@
     margin-bottom: 32px;
 }
 
-.MainPage-BodyContainer-Left > h1 > span {
+.MainPage-BodyContainer-Left > h1 > h1 {
+    display: inline-block;
+}
+
+.MainPage-BodyContainer-Left > h1 > h1 > span {
     color: var(--red);
 }
 
@@ -83,4 +87,70 @@
     position: absolute;
     z-index: -9999;
     right: 0;
+<<<<<<< Updated upstream
+=======
+}
+
+#Mobile-Footer{
+    visibility: hidden;
+    width: 0%;
+}
+
+#Desktop-Footer{
+    visibility: visible;
+}
+
+@media screen and (max-width: 1370px) {
+    .MainPage-BodyContainer{
+        width: fit-content;
+        flex-direction: column-reverse;
+    }
+
+    .MainPage-FooterContainer{
+        width: 100%;
+    }
+
+    #Mobile-Footer{
+        visibility: visible;
+        width: 100%;
+    }
+
+    #Desktop-Footer{
+        visibility: hidden;
+        width: 0%;
+    }
+
+    .MainPage-BodyContainer-Left > h1 {
+        font-family: Montserrat;
+        font-size: 56px;
+        font-weight: 400;
+        line-height: 68px;
+        letter-spacing: 0em;
+        text-align: left;
+        height: 170px;
+        width: 297px;
+        left: 36px;
+        top: 327px;
+        border-radius: undefinedpx;
+
+    }
+
+    .MainPage-BodyContainer-Left > h2 {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: left;
+        height: 58px;
+        width: 261px;
+        left: 37px;
+        top: 533px;
+        border-radius: undefinedpx;
+    }
+
+    .MainPage-BodyContainer-Left > h1 > h1 {
+        display: block;
+    }
+>>>>>>> Stashed changes
 }
