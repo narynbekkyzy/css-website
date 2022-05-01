@@ -12,9 +12,9 @@ const App: React.FC = () => {
       <div className='MainPage-BodyContainer'>
         <div className='MainPage-BodyContainer-Left'>
           <h1>
-            <span>C</span>omputer&nbsp;
-            <span>S</span>cience&nbsp;
-            <span>S</span>ociety
+            <h1><span>C</span>omputer&nbsp;</h1>
+            <h1><span>S</span>cience&nbsp;</h1>
+            <h1><span>S</span>ociety</h1>
           </h1>
           <h2>
             It’s time to code 

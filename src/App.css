@@ -35,9 +35,20 @@
     letter-spacing: 0em;
     text-align: left;
     margin-bottom: 32px;
+
+    display: inline !important;
 }
 
-.MainPage-BodyContainer-Left > h1 > span {
+.MainPage-BodyContainer-Left > h1 > h1{
+    display: inline;
+}
+
+
+.MainPage-BodyContainer-Left > h1 {
+    display: inline;
+}
+
+.MainPage-BodyContainer-Left > h1 > h1 >  span {
     color: var(--red);
 }
 
@@ -146,6 +157,37 @@
     #Desktop-Footer{
         visibility: hidden;
         width: 0%;
+    }
+
+
+    .MainPage-BodyContainer-Left > h1 {
+        font-family: Montserrat;
+        font-size: 56px;
+        font-weight: 400;
+        line-height: 68px;
+        letter-spacing: 0em;
+        width: 380px;    
+        word-break: break-all;
+
+    }
+
+    .MainPage-BodyContainer-Left > h1 > h1{
+        display: block;
+    }
+    
+
+    .MainPage-BodyContainer-Left > h2 {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: left;
+        height: 58px;
+        width: 261px;
+        left: 37px;
+        top: 533px;
+
     }
     
 }
