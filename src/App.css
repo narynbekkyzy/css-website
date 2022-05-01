@@ -37,6 +37,7 @@
     margin-bottom: 32px;
 
     display: inline !important;
+    
 }
 
 .MainPage-BodyContainer-Left > h1 > h1{
@@ -128,35 +129,36 @@
     right: 0;
 }
 
-#Mobile-Footer{
-    visibility: hidden;
-    width: 0;
-}
-
-#Desktop-Footer{
-    visibility: visible;
-}
 
 @media screen and (max-width: 1370px) {
 
+    .MainPage-BodyContainer-Left-ButtonsContainer{
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .MainPage-BodyContainer-Left > h2 {
+        margin-bottom: 40px;
+    }
+
+    .MainPage-BodyContainer-Right > img{
+        width: 300px;
+        height: 300px;
+    }
+
 
     .MainPage-BodyContainer{
-        width: fit-content;
-        flex-direction: column-reverse;
+        width: 428px;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 47px;
+        padding-right: 80px;
     }
 
     .MainPage-FooterContainer{
         width: 100%;
-    }
-
-    #Mobile-Footer{
-        visibility: visible;
-        width: 100%;
-    }
-
-    #Desktop-Footer{
-        visibility: hidden;
-        width: 0%;
     }
 
 
