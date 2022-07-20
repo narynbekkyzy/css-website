@@ -72,12 +72,13 @@ code {
 }
 /* card elements */
 .card__title,
-.card-details {
+.card-detail {
   font-size: 3.2rem;
   font-weight: 700;
   margin: 0;
+  text-transform: capitalize;
 }
-.card-container__title {
+.card-title__container {
   width: 100%;
 }
 .card-info {
@@ -88,10 +89,8 @@ code {
 }
 .card-info__container {
   width: 100%;
-  border: 1px solid green;
 }
-.card-details__container {
-  border: 1px solid green;
+.card-details {
   display: flex;
   max-width: 50%;
 }
@@ -117,4 +116,13 @@ code {
 .card-bottom {
   background-color: var(--green);
   height: 25px;
+}
+.card-details__container {
+  display: flex;
+  justify-content: space-between;
+}
+.card-details__container,
+.card-info__container,
+.card-title__container {
+  margin: 0 0 0 8px;
 }

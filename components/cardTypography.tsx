@@ -13,6 +13,6 @@
 </div>;
 
 // card details
-<div className="card-details__container">
-  <h3 className="card-details">April 16</h3>
+<div className="card-details">
+  <h3 className="card-detail">April 16</h3>
 </div>;
