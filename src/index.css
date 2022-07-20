@@ -114,3 +114,7 @@ code {
 .card-image__hero {
   width: 100%;
 }
+.card-bottom {
+  background-color: var(--green);
+  height: 25px;
+}
