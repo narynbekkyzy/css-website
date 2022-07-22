@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={'images/logos/circleLogo.png'} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Ronan has joined the team!! 👽
         </p>
         <h1 className='Montserrat'>Montserrat Font</h1>
         <h1 className='Inter'>Inter Font</h1>
