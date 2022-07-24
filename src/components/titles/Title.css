@@ -1,0 +1,31 @@
+.Title-Default > h1 {
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--red);
+    margin: 0;
+    padding: 0;
+}
+
+.Title-Default > h2 {
+    font-family: Aurebesh;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--white);
+    margin: 0;
+    padding: 0;
+}
+
+.Title-PrimaryRightBlack > h1{
+}
+
+.Title-PrimaryRightBlack  > h2 {
+    text-align: right;
+}
+

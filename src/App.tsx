@@ -1,11 +1,15 @@
 import React from 'react';
 import './App.css';
 
+import { Title } from './components/titles/Title';
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={'images/logos/circleLogo.png'} className="App-logo" alt="logo" />
+        <Title title={'This is a new title'} style="PrimaryRightBlack"/>
+        <Title title={'This is another title'} style="PrimaryLeftBlack" />
         <p>
           Ronan has joined the team!! 👽
         </p>
