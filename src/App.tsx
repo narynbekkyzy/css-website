@@ -8,8 +8,6 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={'images/logos/circleLogo.png'} className="App-logo" alt="logo" />
-        <Title title={'This is a new title'} style="PrimaryRightBlack"/>
-        <Title title={'This is another title'} style="PrimaryLeftBlack" />
         <p>
           Ronan has joined the team!! 👽
         </p>

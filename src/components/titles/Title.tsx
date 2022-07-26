@@ -2,18 +2,34 @@
 import './Title.css';
 
 interface TitleProps {
-    title: string;
-    style: string;
+    name: string;
+    style?: string;
 }
 
 export function Title(props: TitleProps): JSX.Element{
 
     return (
-        <div className={ "Title-Default Title-" + props.style}>
-            <h2>{props.title}</h2>
-            <h1>{props.title}</h1>
+        <div className={ props.name + "-Default " + props.name + "-" + props.style}>  
+
+            {props.name == "Primary" &&
+            <>
+                <h2>What we build</h2>
+                <h1>What we build</h1>
+            </>}
+
+            {props.name == "Footer" &&
+            <>
+                <h2>COMPUTER SCIENCE SOCIETY</h2>
+                <h1>2022 COMPUTER SCIENCE SOCIETY</h1>
+            </>}
+
+            {props.name == "Main" &&
+            <>
+                <h2>COMPUTER SCIENCE SOCIETY</h2>
+                <h1><span>C</span>omputer <span>S</span>cience <span>S</span>ociety</h1>
+            </>}
         </div>
     );
-
 }
+
 
