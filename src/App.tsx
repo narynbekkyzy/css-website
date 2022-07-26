@@ -11,6 +11,13 @@ function App() {
         <p>
           Ronan has joined the team!! 👽
         </p>
+        <button>Default</button>
+        <button className='default-white'>Default-White</button>
+        <button className='header'>Header</button>
+        <button className='footer'>Footer</button>
+        <button className='FL-black'>FL-black</button>
+        <button className='FL-white'>FL-white</button>
+        <input placeholder='Search...' type='text' className='searchbox'></input>
         <h1 className='Montserrat'>Montserrat Font</h1>
         <h1 className='Inter'>Inter Font</h1>
         <h1 className='Aurebesh'>Aurebesh Font</h1>
