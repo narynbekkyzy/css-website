@@ -2,11 +2,21 @@ import React from 'react';
 import './App.css';
 
 import { Title } from './components/titles/Title';
+import data from './components/json/test.json'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Title 
+          name={'Primary'} 
+          style={"RightWhite"} 
+          text={data.title}
+        />  
+        <Title 
+          name={'Main'} 
+          text={""}
+        />
         <img src={'images/logos/circleLogo.png'} className="App-logo" alt="logo" />
         <p>
           Ronan has joined the team!! 👽
