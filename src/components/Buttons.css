@@ -68,6 +68,7 @@ button.footer {
     font-weight: 700;
     background-color: transparent;
     border: none;
+    padding-right: 0px;
 }
 
     button.footer:hover {

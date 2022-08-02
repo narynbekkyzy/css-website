@@ -71,7 +71,8 @@
 }
 
 .Footer-White > h1 {
-    color: var(--white)
+    color: var(--white);
+    text-align: left;
 }
 
 .Footer-White > h2 {
@@ -79,7 +80,8 @@
 }
 
 .Footer-Black > h1 {
-    color: var(--black)
+    color: var(--black);
+    text-align: left;
 }
 
 .Footer-Black > h2 {

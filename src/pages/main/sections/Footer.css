@@ -1,0 +1,83 @@
+.Footer{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: var(--black);
+}
+
+.Footer-Container{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.Footer-First {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Footer-First-Left > * > img {
+    width: 200px;
+    height: 200px;
+}
+
+.Footer-First-Left > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.Footer-First-Left > div > p {
+    color: var(--white);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 700px;
+}
+
+.Footer-First-Left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.Footer-First-Right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 11px;
+}
+
+.Footer-Second{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Footer-Second-SocialMedia{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+#k_logo {
+    height: 40px;
+    width: auto;
+}
+
+.Footer-SocialMediaLogos{
+    height: 40px;
+    width: auto;
+}
