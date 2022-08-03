@@ -25,7 +25,7 @@ export function Footer(): JSX.Element {
                         </Link>
                         <div>
                             <Title 
-                                text={'Computer Science Soceity'} 
+                                text={'Computer Science Society'} 
                                 name={'Footer'} style={"White"}
                             />
                             <p>
