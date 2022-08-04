@@ -1,23 +1,60 @@
-import React from "react";
-import { Card } from "./components/card/eventsCard";
-import "./App.css";
+import React from 'react';
+import './App.css';
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import { Title } from './components/titles/Title';
+import { MainPage } from './pages/main/Main'
+import data from './components/json/test.json'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img
-          src={"images/logos/circleLogo.png"}
-          className="App-logo"
-          alt="logo"
+      <Router>
+        <Routes>
+          {/* Go to main page by accessing http://localhost:3000/main */}
+        <Route 
+            path="/main" 
+            element={<MainPage/>}
         />
+
+        <Route 
+            path="/"
+            element={OldStuff()}
+        />
+        </Routes>
+      </Router>
+    </div>
+  );
+}
+
+
+function OldStuff(){
+  return(
+    <header className="App-header">
+        <Title 
+          name={'Primary'} 
+          style={"RightWhite"} 
+          text={data.title}
+        />  
+        <Title 
+          name={'Main'} 
+          text={""}
+        />
+        <img src={'images/logos/circleLogo.png'} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Ronan has joined the team!! 👽
         </p>
-        <h1 className="Montserrat">Montserrat Font</h1>
-        <h1 className="Inter">Inter Font</h1>
-        <h1 className="Aurebesh">Aurebesh Font</h1>
-        <h1 className="Aurebesh-English">Aurebesh-English Font</h1>
+        <button>Default</button>
+        <button className='default-white'>Default-White</button>
+        <button className='header'>Header</button>
+        <button className='footer'>Footer</button>
+        <button className='FL-black'>FL-black</button>
+        <button className='FL-white'>FL-white</button>
+        <input placeholder='Search...' type='text' className='searchbox'></input>
+        <h1 className='Montserrat'>Montserrat Font</h1>
+        <h1 className='Inter'>Inter Font</h1>
+        <h1 className='Aurebesh'>Aurebesh Font</h1>
+        <h1 className='Aurebesh-English'>Aurebesh-English Font</h1>
         <br></br>
         <a
           className="App-link"
@@ -27,16 +64,9 @@ function App() {
         >
           Learn React
         </a>
-        <Card
-          image={"images/TeslaPoster.png"}
-          title={"My world just broke"}
-          description={"React Rocks!"}
-          date={"today!"}
-          location={"1308 W. Lovell"}
-        ></Card>
       </header>
-    </div>
-  );
+  )
 }
+
 
 export default App;
