@@ -1,0 +1,131 @@
+.Primary-Default > h1 {
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--red);
+    margin: 0;
+    padding: 0;
+}
+
+.Primary-Default > h2 {
+    font-family: Aurebesh;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--black);
+    margin: 0;
+    padding: 0; 
+}
+
+.Primary-RightBlack  > h2 {
+    text-align: right;
+}
+
+.Primary-MiddleBlack  > h2 {
+    text-align: center;
+}
+
+.Primary-LeftWhite > h2 {
+    text-align: left;
+    color: var(--white);
+}
+
+.Primary-RightWhite > h2 {
+    text-align: right;
+    color: var(--white);
+}
+
+.Primary-MiddleWhite > h2 {
+    text-align: center;
+    color: var(--white);
+}
+
+.Footer-Default > h1 {
+    font-family: Aurebesh-English;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--red);
+    padding: 0;
+    margin: 0;
+
+}
+
+.Footer-Default> h2 {
+    font-family: Aurebesh;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--black);
+    padding: 0;
+    margin: 0;
+}
+
+.Footer-White > h1 {
+    color: var(--white);
+    text-align: left;
+}
+
+.Footer-White > h2 {
+    color: var(--white)
+}
+
+.Footer-Black > h1 {
+    color: var(--black);
+    text-align: left;
+}
+
+.Footer-Black > h2 {
+    color: var(--black)
+}
+
+.Main-Default > h1 {
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--black);
+    padding: 0;
+    margin: 0;
+}
+
+.Main-Default > h1 > span {
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--red);
+}
+
+.Main-Default > h2 {
+    font-family: Aurebesh;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--black);
+    padding: 0;
+    margin: 0;
+}
+
+.Main-White > h1 {
+    color: var(--white)
+}
+
+.Main-White > h2 {
+    color: var(--white)
+}

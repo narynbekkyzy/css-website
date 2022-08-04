@@ -35,6 +35,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+p {
+  margin: 0px;
+  padding: 0px;
+}
 /* THE FOLLOWING IS JUST SOME EXAMPLES ON HOW TO USE FONTS */
 /* feel free to change, delete it all */
 .Aurebesh {
