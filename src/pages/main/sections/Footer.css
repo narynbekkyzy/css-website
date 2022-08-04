@@ -5,7 +5,7 @@
 }
 
 .Footer-Container{
-    max-width: 1200px;
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -39,7 +39,7 @@
     line-height: 32px;
     letter-spacing: 0em;
     text-align: left;
-    width: 700px;
+    max-width: 700px;
 }
 
 .Footer-First-Left{
@@ -80,4 +80,44 @@
 .Footer-SocialMediaLogos{
     height: 40px;
     width: auto;
+}
+
+@media screen and (max-width: 1600px) {
+    .Footer-Container{
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .Footer-Container{
+        max-width: 1200px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+}
+
+@media screen and (max-width: 1150px) {
+
+    .Footer-Container{
+        max-width: 100%;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .Footer-First-Right{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Footer-First-Left > * > img {
+        width: 90%;
+        height: auto;
+    }    
+
+    .Footer-First-Left{
+        flex-direction: column;
+    }
+
 }
