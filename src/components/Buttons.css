@@ -19,6 +19,7 @@
 button.header {
         background-color: var(--white);
         border: 1px solid transparent;
+        white-space: nowrap;
     }
     button:hover {
         color: var(--white);
