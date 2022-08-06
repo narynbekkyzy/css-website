@@ -4,18 +4,17 @@ import './textContainer.css'
 import { Title } from '../titles/Title'
 
 interface TextContainer {
-    title?: React.ReactNode;
     titleName?: string;
     titleText?: string;
     desc?: string;
-    color?: string;
+    white?: boolean;
     direction?: string;
     buttons?: Array<React.ReactNode>;
 }
 
 export function TextContainer(props: TextContainer): JSX.Element {
     let dir = (props.direction ? 'right' : 'left');
-    let col = (props.color ? 'white' : 'black');
+    let col = (props.white ? 'white' : 'black');
     let btns = (props.buttons ? props.buttons.map(function (btn) { return btn }) : 0);
     let title = <Title
         name={(props.titleName ? 'Primary' : "Main")}
