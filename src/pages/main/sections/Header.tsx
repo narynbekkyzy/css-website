@@ -9,7 +9,7 @@ export function Header(): JSX.Element  {
                 <Link to="/">
                     <img 
                         alt='Computer Science Society Logo'
-                        src={data.circle_logo}
+                        src={data.Logo}
                         id="Logo">
                     </img>
                 </Link>

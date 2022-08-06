@@ -34,9 +34,9 @@ button.default-white {
 }
 
 button.default-white:hover {
-    color: var(--black);
-    background-color: var(--white);
-    border: 1px solid var(--white);
+  color: var(--white);
+  background-color: var(--black);
+  border: 1px solid var(--black);
 }
 
 button.FL-black {
