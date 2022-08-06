@@ -1,0 +1,33 @@
+.rightblack {
+    text-align: right;
+    color: var(--black);
+}
+
+.rightwhite {
+    text-align: right;
+    color: var(--white);
+}
+
+.leftblack {
+    text-align: left;
+    color: var(--black);
+}
+
+.leftwhite {
+    text-align: left;
+    color: var(--white);
+}
+
+.btnsleft {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: start;
+}
+
+.btnsright {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: end;
+}
