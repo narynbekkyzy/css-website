@@ -1,50 +1,72 @@
-import React from 'react'
-import './App.css'
-import MainPageImg from './assets/images/mainpage_img.svg'
-import Blob from './assets/images/blob.svg'
-import Logo from'./assets/images/k_logo.svg'
-import Ig from'./assets/images/ig.svg'
-import Dc from'./assets/images/dc.svg'
+import React from 'react';
+import './App.css';
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import { Title } from './components/titles/Title';
+import { MainPage } from './pages/main/Main'
+import data from './components/json/test.json'
 
-const App: React.FC = () => {
+
+function App() {
   return (
-    <div className='MainPage'>
-      <div className='MainPage-BodyContainer'>
-        <div className='MainPage-BodyContainer-Left'>
-          <h1>
-            <h1><span>C</span>omputer&nbsp;</h1>
-            <h1><span>S</span>cience&nbsp;</h1>
-            <h1><span>S</span>ociety</h1>
-          </h1>
-          <h2>
-            It’s time to code 
-            to change the world.
-          </h2>
-          <div className='MainPage-BodyContainer-Left-ButtonsContainer'>
-            <button>&nbsp;Mission&nbsp;</button>
-            <button>&nbsp;Team&nbsp;</button>
-            <button>&nbsp;Events&nbsp;</button>
-            <button>&nbsp;Projects&nbsp;</button>
-            <button>&nbsp;Opportunities&nbsp;</button>
-          </div>
-        </div>
+    <div className="App">
+      <Router>
+        <Routes>
+          {/* Go to main page by accessing http://localhost:3000/main */}
+        <Route 
+            path="/main" 
+            element={<MainPage/>}
+        />
 
-        <div className='MainPage-BodyContainer-Right'>
-            <img src={MainPageImg}>
-            </img>
-        </div>
-        
-      </div>
-      <div className='MainPage-FooterContainer'>
-          <img id='logo' src={Logo}></img>
-          <img id='dc' src={Dc}></img>
-          <img id='ig' src={Ig}></img>
-      </div>
-      
-      <img className="MainPage-Blob" src={Blob}></img>
-
+        <Route 
+            path="/"
+            element={OldStuff()}
+        />
+        </Routes>
+      </Router>
     </div>
+  );
+}
+
+
+function OldStuff(){
+  return(
+    <header className="App-header">
+        <Title 
+          name={'Primary'} 
+          style={"RightWhite"} 
+          text={data.title}
+        />  
+        <Title 
+          name={'Main'} 
+          text={""}
+        />
+        <img src={'images/logos/circleLogo.png'} className="App-logo" alt="logo" />
+        <p>
+          Ronan has joined the team!! 👽
+        </p>
+        <button>Default</button>
+        <button className='default-white'>Default-White</button>
+        <button className='header'>Header</button>
+        <button className='footer'>Footer</button>
+        <button className='FL-black'>FL-black</button>
+        <button className='FL-white'>FL-white</button>
+        <input placeholder='Search...' type='text' className='searchbox'></input>
+        <h1 className='Montserrat'>Montserrat Font</h1>
+        <h1 className='Inter'>Inter Font</h1>
+        <h1 className='Aurebesh'>Aurebesh Font</h1>
+        <h1 className='Aurebesh-English'>Aurebesh-English Font</h1>
+        <br></br>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
   )
 }
 
-export default App
+
+export default App;

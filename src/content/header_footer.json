@@ -1,0 +1,65 @@
+{
+  "pages": [
+    {
+      "name": "About Us",
+      "link": "/about"
+    },
+    {
+      "name": "Team",
+      "link": "/team"
+    },
+    {
+      "name": "Projects",
+      "link": "/projects"
+    },
+    {
+      "name": "Events",
+      "link": "/events"
+    },
+    {
+      "name": "Opportunities",
+      "link": "/opportunities"
+    }
+  ],
+  "css_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. ",
+  "circle_logo": "images/logos/circleLogo.png",
+  "k_logo": "images/logos/k_logo.png",
+  "social_media": [
+    {
+      "name": "Discord",
+      "link": "https://discord.gg/vbx2tzJJs2",
+      "img": "images/logos/discord_logo.svg"
+    },
+    {
+      "name": "Instagram",
+      "link": "https://www.instagram.com/kzoocss/",
+      "img": "images/logos/instagram_logo.svg"
+    }
+  ],
+  "eventCategories": [
+    {
+      "image": "images/TeslaPoster.png",
+      "title": " What is React",
+      "description": "IDK",
+      "date": "today",
+      "location": "brain",
+      "type": "coding"
+    },
+    {
+      "image": "images/TeslaPoster.png",
+      "title": "Why is react",
+      "description": "CUZ",
+      "date": "tomorrow",
+      "location": "eyes",
+      "type": "fun"
+    },
+    {
+      "image": "images/TeslaPoster.png",
+      "title": "How is react",
+      "description": "Lorem ipsum",
+      "date": "Never",
+      "location": "nowhere",
+      "type": "career"
+    }
+  ]
+}
