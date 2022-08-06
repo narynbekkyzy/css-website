@@ -6,6 +6,7 @@ interface cardInterface {
   description: string;
   date: string;
   location: string;
+  type: string;
 }
 
 export function Card(props: cardInterface): JSX.Element {
@@ -29,11 +30,9 @@ export function Card(props: cardInterface): JSX.Element {
             <h3 className="card-detail">{props.location}</h3>
           </div>
         </div>
-        <button className="card-btn__oulined card-btn__text">
-          Add event to Calendar
-        </button>
+        <button className="FL-white">Add event to Calendar</button>
       </div>
-      <div className="card-bottom type-two"></div>
+      <div className={"card-bottom " + props.type}></div>
     </div>
   );
 }
