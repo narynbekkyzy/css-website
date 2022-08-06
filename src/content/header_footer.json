@@ -37,5 +37,6 @@
         }
     ],
 
-    "Logo": "images/logos/Logo.png"
+    "Logo": "images/logos/Logo.png",
+    "Mentorship": "images/mentorship.svg"
 }
