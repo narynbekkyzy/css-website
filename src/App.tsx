@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import { TextContainer } from "./components/textContainer/textContainer";
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import { Title } from './components/titles/Title';
 import { MainPage } from './pages/main/Main'
 import data from './components/json/test.json'
@@ -45,9 +44,6 @@ function OldStuff(){
         <p>
           Ronan has joined the team!! 👽
         </p>
-        <TextContainer
-            buttons={[<button>Default</button>, <button>Default</button>]}
-        />
         <button>Default</button>
         <button className='default-white'>Default-White</button>
         <button className='header'>Header</button>
