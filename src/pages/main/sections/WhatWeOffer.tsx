@@ -1,3 +1,8 @@
+/*
+    This file implements WhatWeOffer section including:
+        - 'What we offer' title
+        - 6 OfferItems describing each part (contents from what_we_offer.json)
+*/
 import './WhatWeOffer.css'
 import data from "../../../content/what_we_offer.json";
 import { Title } from '../../../components/titles/Title';

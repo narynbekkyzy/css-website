@@ -1,0 +1,34 @@
+.WhatWeOffer {
+    width: 1920px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 160px 0;
+    background-color: var(--white)
+}
+
+.WhatWeOffer-Container {
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
+}
+
+.WhatWeOffer-Row {
+    width: 1400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* allow warpping onto multiple lines */
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
+}
+
+.WhatWeOffer-Row > *{
+    flex-basis: 31%; /* 3 items per row */
+    text-decoration: none;
+}
