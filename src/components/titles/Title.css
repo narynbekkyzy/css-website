@@ -22,12 +22,19 @@
     padding: 0; 
 }
 
-.Primary-RightBlack  > h2 {
+.Primary-RightBlack  > h1,
+.Primary-RightBlack  > h2{
     text-align: right;
 }
 
+
+.Primary-MiddleBlack  > h1,
 .Primary-MiddleBlack  > h2 {
     text-align: center;
+}
+
+.Primary-LeftWhite > h1 {
+    text-align: left;
 }
 
 .Primary-LeftWhite > h2 {
@@ -35,9 +42,17 @@
     color: var(--white);
 }
 
+.Primary-RightWhite > h1 {
+    text-align: right;
+}
+
 .Primary-RightWhite > h2 {
     text-align: right;
     color: var(--white);
+}
+
+.Primary-MiddleWhite > h1 {
+    text-align: center;
 }
 
 .Primary-MiddleWhite > h2 {
@@ -51,7 +66,7 @@
     font-weight: 400;
     line-height: 31px;
     letter-spacing: 0em;
-    text-align: center;
+    text-align: left;
     color: var(--red);
     padding: 0;
     margin: 0;
@@ -72,7 +87,6 @@
 
 .Footer-White > h1 {
     color: var(--white);
-    text-align: left;
 }
 
 .Footer-White > h2 {
@@ -81,7 +95,6 @@
 
 .Footer-Black > h1 {
     color: var(--black);
-    text-align: left;
 }
 
 .Footer-Black > h2 {
