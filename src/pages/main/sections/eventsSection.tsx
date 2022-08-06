@@ -9,7 +9,7 @@ export function EventSection(): JSX.Element {
       <Title
         text={"Our Upcoming events"}
         name={"Primary"}
-        style={"MiddleBlack"}
+        styling={"MiddleBlack"}
       ></Title>
       <div className="type-of-event__btn">
         <button className="btn selected">All</button>

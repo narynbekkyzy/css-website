@@ -4,7 +4,8 @@ import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import { Title } from './components/titles/Title';
 import { MainPage } from './pages/main/Main'
 import data from './components/json/test.json'
-
+import { WhatWeOffer } from './pages/main/sections/WhatWeOffer'
+import { OfferItem } from './components/offerItem/OfferItem'
 
 function App() {
   return (
@@ -31,14 +32,60 @@ function App() {
 function OldStuff(){
   return(
     <header className="App-header">
+        <Title
+          name={'Primary'}
+          styling={'LeftWhite'}
+          text={data.title}
+        />
         <Title 
           name={'Primary'} 
-          style={"RightWhite"} 
+          styling={"RightWhite"} 
           text={data.title}
         />  
+        <Title
+          name={'Primary'}
+          styling={'MiddleWhite'}
+          text={data.title}
+        />
+        <Title
+          name={'Primary'}
+          styling={'LeftBlack'}
+          text={data.title}
+        />
+        <Title 
+          name={'Primary'} 
+          styling={"RightBlack"} 
+          text={data.title}
+        />  
+        <Title
+          name={'Primary'}
+          styling={'MiddleBlack'}
+          text={data.title}
+        />
+        <Title
+          name={'Footer'}
+          styling={'Red'}
+          text={data.title}
+        />
+        <Title 
+          name={'Footer'} 
+          styling={"Black"} 
+          text={data.title}
+        />  
+        <Title
+          name={'Footer'}
+          styling={'White'}
+          text={data.title}
+        />
         <Title 
           name={'Main'} 
-          text={""}
+          styling={"Black"} 
+          text={data.title}
+        />  
+        <Title
+          name={'Main'}
+          styling={'White'}
+          text={data.title}
         />
         <img src={'images/logos/circleLogo.png'} className="App-logo" alt="logo" />
         <p>
@@ -56,6 +103,8 @@ function OldStuff(){
         <h1 className='Aurebesh'>Aurebesh Font</h1>
         <h1 className='Aurebesh-English'>Aurebesh-English Font</h1>
         <br></br>
+        <WhatWeOffer/>
+        <OfferItem image={data.Mentorship} text='abc'/>
         <a
           className="App-link"
           href="https://reactjs.org"
