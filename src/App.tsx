@@ -32,6 +32,7 @@ function App() {
 function OldStuff(){
   return(
     <header className="App-header">
+      <div>
         <Title
           name={'Primary'}
           styling={'LeftWhite'}
@@ -87,6 +88,16 @@ function OldStuff(){
           styling={'White'}
           text={data.title}
         />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem,
+            quisquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem,
+            quisquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem,
+            quisquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem,
+            quisquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem,
+            quisquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem,
+            quisquam.
+          </p>
+        </div>
         <img src={'images/logos/circleLogo.png'} className="App-logo" alt="logo" />
         <p>
           Ronan has joined the team!! 👽
