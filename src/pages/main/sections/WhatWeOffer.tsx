@@ -4,20 +4,36 @@
         - 6 OfferItems describing each part (contents from what_we_offer.json)
 */
 import './WhatWeOffer.css'
-import data from "../../../content/what_we_offer.json";
 import { Title } from '../../../components/titles/Title';
 import { OfferItem } from '../../../components/offerItem/OfferItem';
 
-export function WhatWeOffer(): JSX.Element {
+interface MyItem {
+    name: string;
+    link: string;
+    img: string;
+}
+
+interface MyTitlte {
+    name: string;
+    styling: string;
+    text: string;
+}
+
+interface WhatWeOffer{
+    title: MyTitlte;
+    items: Array<MyItem>;
+}
+
+export function WhatWeOffer(props: WhatWeOffer): JSX.Element {
     return (
         <div className='WhatWeOffer'>
             <div className='WhatWeOffer-Container'>
                 <Title 
-                name = {'Primary'}
-                styling = {'MiddleBlack'}
-                text = {'What we offer'}/>
+                name = {props.title.name}
+                styling = {props.title.styling}
+                text = {props.title.text}/>
                 <div className='WhatWeOffer-Row'>
-                    {data.items.map((item, index) => {
+                    {props.items.map((item, index) => {
                         return(
                             <a href={item.link} target="_blank" rel="noreferrer noopener">
                                 {<OfferItem 

@@ -114,7 +114,7 @@ function OldStuff(){
         <h1 className='Aurebesh'>Aurebesh Font</h1>
         <h1 className='Aurebesh-English'>Aurebesh-English Font</h1>
         <br></br>
-        <WhatWeOffer/>
+        <WhatWeOffer title={data.MyTitlte} items={data.items}/>
         <OfferItem image={data.Mentorship} text='abc'/>
         <a
           className="App-link"
