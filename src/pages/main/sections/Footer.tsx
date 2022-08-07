@@ -26,7 +26,7 @@ export function Footer(): JSX.Element {
                         <div>
                             <Title 
                                 text={'Computer Science Society'} 
-                                name={'Footer'} style={"White"}
+                                name={'Footer'} styling={"White"}
                             />
                             <p>
                                 {data.css_description}
