@@ -1,7 +1,7 @@
 /*
     This file implements WhatWeOffer section including:
-        - 'What we offer' title
-        - 6 OfferItems describing each part (contents from what_we_offer.json)
+        - 'What we offer' title (pass through 'title' param from json file)
+        - OfferItems describing each part (contents through 'items' from json file)
 */
 import './WhatWeOffer.css'
 import { Title } from '../../../components/titles/Title';
