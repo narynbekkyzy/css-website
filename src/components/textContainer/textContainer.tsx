@@ -20,7 +20,7 @@ export function TextContainer(props: TextContainer): JSX.Element {
     let btns = (props.buttons ? props.buttons.map(function (btn) { return btn }) : 0);
     let title = <Title
         name={(props.isPrimary ? 'Primary' : "Main")}
-        style={props.isPrimary ?
+        styling={props.isPrimary ?
             dir.charAt(0).toUpperCase() + dir.slice(1) + col.charAt(0).toUpperCase() + col.slice(1) :
             col.charAt(0).toUpperCase() + col.slice(1)}
         text={props.titleText ? props.titleText : ""} />

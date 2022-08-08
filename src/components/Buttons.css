@@ -1,4 +1,15 @@
-﻿button {
+﻿/*
+    Buttons.css is the core style sheet for all buttons across the site.
+    Button classes included here are.
+    Default:       The default look of buttons on the site
+    default-white: A white variant of the otherwise default button
+    header:        A button inteded specifically for the site header
+    FL-black:      (Full Length Black) A variant of the default button which has a width of 100%
+    FL-white:      (Full Length White) A variant of the FL-black button which is white
+    searchbox:     A basic search container
+*/
+
+button {
   box-sizing: border-box;
   padding: 8px 24px;
   width: fit-content;
