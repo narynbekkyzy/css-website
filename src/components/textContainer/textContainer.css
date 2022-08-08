@@ -1,3 +1,16 @@
+/*
+    textContainer.css is the basic stylesheet for the textContainer class.
+    class naming convention is a combination of direction and color which is determined
+    by textContainer Parameters. For example, the class rightblack has it's content
+    aligned to the right and the text color (not including buttons, which are individually
+    customizable) is black.
+
+    the btnsleft & btnsright classes are for aligning the buttons with the buttons div.
+
+    the textContainer class is the outermost class which aligns the image and other content
+    on screen.
+*/
+
 .rightblack {
     display: flex;
     flex-direction: column;
