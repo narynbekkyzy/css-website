@@ -32,7 +32,7 @@ export function TextContainer(props: TextContainer): JSX.Element {
         text={props.isPrimary && props.titleText ? props.titleText : ""} />
     //Returns the textContainer object
     return <div className="textContainer" style={props.imgFirst ? {flexDirection: "row-reverse", justifyContent: "flex-end"} : {} }>
-        <div style={props.img ? props.imgFirst ? { marginLeft: "45px" } : { marginRight: "45px"} : {}} className={dir + col}>
+        <div style={props.img ? props.imgFirst ? { marginLeft: "90px" } : { marginRight: "90px"} : {}} className={dir + col}>
             {title}
             {props.desc ? <p>
                 {props.desc}

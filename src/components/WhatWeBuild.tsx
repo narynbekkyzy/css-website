@@ -2,29 +2,26 @@ import React from 'react';
 
 import { TextContainer } from './textContainer/textContainer'
 
-interface WhoWeAre {
+interface WhatWeBuild {
     desc: string;
     img: React.ReactNode;
     buttons: Array<React.ReactNode>;//Array of buttons
 }
 
-export function WhoWeAre(props: WhoWeAre): JSX.Element {
-    return <div className="WhoWeAre-Container" style={{
+export function WhatWeBuild(props: WhatWeBuild): JSX.Element {
+    return <div className="WhatWeBuild-Container" style={{
         backgroundColor: "var(--black)", width: "100%",
         display: "flex", justifyContent: "center" 
     }}>
-        <div className="WhoWeAre-Content" style={{
-            marginTop: "80px", marginBottom: "80px",
-            marginLeft: "219px", marginRight: "219px", width: "fit-content"
+        <div className="WhatWeBuild-Content" style={{
+            marginLeft: "219px", width: "fit-content"
         }}>
             <TextContainer
                 isPrimary={true}
-                titleText={"Who We Are"}
+                titleText={"What We Build"}
                 desc={props.desc}
                 white={true}
-                right={true}
                 img={props.img}
-                imgFirst={true}
                 buttons={props.buttons}
             />
         </div>
