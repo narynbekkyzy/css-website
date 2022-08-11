@@ -3,12 +3,14 @@ import React from 'react';
 import { TextContainer } from './textContainer/textContainer'
 
 interface WhoWeAre {
-    desc: string;
-    img: React.ReactNode;
+    desc: string;                   //Body Text
+    img: React.ReactNode;           //Img of club members
     buttons: Array<React.ReactNode>;//Array of buttons
 }
 
 export function WhoWeAre(props: WhoWeAre): JSX.Element {
+    //Outer div is a container for center and establishing the background block
+    //Inner div is for positioning the actual TextContainer
     return <div className="WhoWeAre-Container" style={{
         backgroundColor: "var(--black)", width: "100%",
         display: "flex", justifyContent: "center" 
