@@ -1,6 +1,6 @@
 import './Footer.css'
-import data from "../../../content/header_footer.json";
-import { Title } from '../../../components/titles/Title';
+import data from "../content/header_footer.json";
+import { Title } from '../components/titles/Title';
 import { Link } from 'react-router-dom';
 
 function Divider(): JSX.Element {

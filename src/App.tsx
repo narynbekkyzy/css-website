@@ -6,23 +6,23 @@ import { MainPage } from './pages/main/Main'
 import data from './components/json/test.json'
 import { WhatWeOffer } from './pages/main/sections/WhatWeOffer'
 import { OfferItem } from './components/offerItem/OfferItem'
+import { Header } from './components/Header';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Routes>
-          {/* Go to main page by accessing http://localhost:3000/main */}
-        <Route 
-            path="/main" 
-            element={<MainPage/>}
-        />
+        <Header/>
+          <Routes>
+            {/* Go to main page by accessing http://localhost:3000/main */}
+            <Route 
+                path="/" 
+                element={<MainPage/>}
+            />
 
-        <Route 
-            path="/"
-            element={OldStuff()}
-        />
-        </Routes>
+          </Routes>
+        <Footer/>
       </Router>
     </div>
   );
