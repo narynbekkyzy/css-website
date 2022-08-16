@@ -37,6 +37,11 @@ button:hover {
   background-color: var(--black);
   border: 1px solid var(--black);
 }
+button.selected {
+  color: var(--white);
+  background-color: var(--black);
+  border: 1px solid var(--black);
+}
 
 button.default-white {
   color: var(--white);
