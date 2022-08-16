@@ -1,32 +1,29 @@
 import React from 'react';
 
-import { TextContainer } from './textContainer/textContainer'
+import { TextContainer } from '../../../components/textContainer/textContainer'
 
-interface WhoWeAre {
+interface WhatWeBuild {
     desc: string;                   //Body Text
-    img: React.ReactNode;           //Img of club members
+    img: React.ReactNode;           //Img of a project example (dVox)
     buttons: Array<React.ReactNode>;//Array of buttons
 }
 
-export function WhoWeAre(props: WhoWeAre): JSX.Element {
+export function WhatWeBuild(props: WhatWeBuild): JSX.Element {
     //Outer div is a container for center and establishing the background block
     //Inner div is for positioning the actual TextContainer
-    return <div className="WhoWeAre-Container" style={{
+    return <div className="WhatWeBuild-Container" style={{
         backgroundColor: "var(--black)", width: "100%",
         display: "flex", justifyContent: "center" 
     }}>
-        <div className="WhoWeAre-Content" style={{
-            marginTop: "80px", marginBottom: "80px",
-            marginLeft: "219px", marginRight: "219px", width: "fit-content"
+        <div className="WhatWeBuild-Content" style={{
+            marginLeft: "219px", width: "fit-content"
         }}>
             <TextContainer
                 isPrimary={true}
-                titleText={"Who We Are"}
+                titleText={"What We Build"}
                 desc={props.desc}
                 white={true}
-                right={true}
                 img={props.img}
-                imgFirst={true}
                 buttons={props.buttons}
             />
         </div>

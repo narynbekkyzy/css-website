@@ -1,0 +1,66 @@
+{
+    "top":{
+
+    },
+
+    "who_we_are":{
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in suscipit non. Non commodo volutpat, pharetra, vel.",
+        "image": "/images/main/who_we_are.jpg"
+
+    },
+
+    "what_we_offer":{
+
+        "title": "Star Wars",
+        "Mentorship": "images/mentorship.svg",
+    
+        "MyTitlte": {
+            "name": "Primary",
+            "styling": "MiddleBlack",
+            "text": "What we offer"
+        },
+    
+        "items": [
+        {
+            "name": "Mentorship",
+            "link": "/mentorship",
+            "img": "images/mentorship.svg"
+        },
+        {
+            "name": "Super",
+            "link": "/mentorship",
+            "img": "images/mentorship.svg"
+        },
+        {
+            "name": "456",
+            "link": "/mentorship",
+            "img": "images/mentorship.svg"
+        },
+        {
+            "name": "Mentorship",
+            "link": "/mentorship",
+            "img": "images/mentorship.svg"
+        },
+        {
+            "name": "Cool",
+            "link": "/mentorship",
+            "img": "images/mentorship.svg"
+        },
+        {
+            "name": "Mentorship",
+            "link": "/mentorship",
+            "img": "images/mentorship.svg"
+        }
+        ]
+
+    },
+
+    "what_we_build":{
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in suscipit non. Non commodo volutpat, pharetra, vel.",
+        "image": "/images/main/dvox.png"
+    },
+
+    "our_upcoming_events":{
+
+    }
+}

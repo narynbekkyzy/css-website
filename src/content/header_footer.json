@@ -1,8 +1,8 @@
 {
   "pages": [
     {
-      "name": "About Us",
-      "link": "/about"
+      "name": "Home",
+      "link": "/"
     },
     {
       "name": "Team",
@@ -24,7 +24,7 @@
   "css_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. ",
   "circle_logo": "images/logos/circleLogo.png",
   "k_logo": "images/logos/k_logo.png",
-  "Logo": "images/logos/Logo.svg",
+  "Logo": "images/logos/Logo.png",
 
   "social_media": [
     {

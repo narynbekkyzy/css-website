@@ -24,6 +24,9 @@
   --yellow: #ffbe0b;
   --green: #09bc8a;
   --blue: #067bc2;
+
+  --moving_left_spacing: 0px;
+  --moving_width: 66px;
 }
 
 body {
@@ -69,6 +72,13 @@ p {
   color: var(--red);
 }
 /* the end of examples */
+
+.Image3by4{
+  width: 688px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
