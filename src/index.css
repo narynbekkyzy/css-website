@@ -73,6 +73,13 @@ p {
 }
 /* the end of examples */
 
+.Image3by4{
+  width: 688px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
