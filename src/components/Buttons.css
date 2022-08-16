@@ -10,7 +10,7 @@
 
     Update Aug 15, 2022 (Aleksandr): 
       - change fit-content to max-content for button
-      - add "active" button by copying "hover" state
+      - add "active" button for header movement
 
 */
 
@@ -34,9 +34,10 @@ button {
 }
 
 button.header {
-  background-color: var(--white);
+  background-color: transparent;
   border: 1px solid transparent;
 }
+
 button:hover {
   color: var(--white);
   background-color: var(--black);
@@ -46,7 +47,8 @@ button:hover {
 button.active {
   color: var(--white);
   background-color: var(--black);
-  border: 1px solid var(--black);
+  border: 0px solid transparent;
+  transition-delay: 0ms;
 }
 
 button.default-white {

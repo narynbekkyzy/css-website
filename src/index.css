@@ -24,6 +24,9 @@
   --yellow: #ffbe0b;
   --green: #09bc8a;
   --blue: #067bc2;
+
+  --moving_left_spacing: 0px;
+  --moving_width: 66px;
 }
 
 body {
