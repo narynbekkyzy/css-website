@@ -1,0 +1,22 @@
+.Generic-Pagination-Container{
+    margin: auto;
+}
+
+.Generic-Pagination-Container > * {
+    margin-left: 2px;
+    margin-right: 2px;
+    cursor: pointer !important;
+}
+
+.Generic-Pagination-Container > a > img {
+    margin-bottom: 3px;
+    cursor: pointer !important;
+}
+
+@media screen and (max-width: 1080px) {
+    .Generic-Pagination-Container{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
+    
