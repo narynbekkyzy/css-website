@@ -34,11 +34,15 @@ button {
 }
 
 button.header {
+  mix-blend-mode: difference;
+  color: var(--white);
   background-color: transparent;
   border: 1px solid transparent;
+  transition: all 200ms ease-in-out;
 }
 
 button:hover {
+  mix-blend-mode: normal;
   color: var(--white);
   background-color: var(--black);
   border: 1px solid var(--black);
@@ -50,10 +54,14 @@ button.selected {
 }
 
 button.active {
+  mix-blend-mode: difference;
   color: var(--white);
-  background-color: var(--black);
-  border: 0px solid transparent;
+  border: 1px solid transparent;
   transition-delay: 0ms;
+}
+
+button.active:hover {
+  background-color: transparent;
 }
 
 button.default-white {

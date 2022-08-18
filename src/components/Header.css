@@ -11,7 +11,7 @@
     justify-content: space-between;
     align-items: flex-end;
     padding: 0px;
-
+    background-color: var(--white);
     /* left: -6413px;
     top: 5814px; */
 }
@@ -48,7 +48,6 @@
     position: absolute;
     left: calc(var(--moving_left_spacing) + 5px);
     width: calc(var(--moving_width) - 10px);
-    z-index: -1;
     box-sizing: border-box;
     padding: 8px 24px;
     height: 40px;
