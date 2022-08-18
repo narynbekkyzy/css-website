@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import { Title } from './components/titles/Title';
 import { MainPage } from './pages/main/Main'
 import { TeamPage } from './pages/team/Team';
+import { TempPage } from './pages/tempPage/Temp';
 import data from './components/json/test.json'
 import { WhatWeOffer } from './pages/main/components/WhatWeOffer'
 import { OfferItem } from './components/offerItem/OfferItem'
@@ -27,7 +28,10 @@ function App() {
                 element={<TeamPage/>}
             />
 
-
+<Route 
+                path="/opportunities" 
+                element={<TempPage/>}
+            />
           </Routes>
         {/* <Footer/> */}
       </Router>

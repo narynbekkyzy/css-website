@@ -7,7 +7,7 @@ export interface PaginationProps {
   pagesArray: number[]; //The number of items per page
   items: any[]; //total number of items to be pages (any means it can be any type such as number, string, object, etc)
   loadPage: (page: number, items: any[], moveUp: boolean) => void; //checks current page to be in
-  optionprop?: number;
+  
 }
 // JSX.Element : it says the type of return value of the function
 
