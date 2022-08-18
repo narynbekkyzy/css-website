@@ -9,6 +9,13 @@
 
     the textContainer class is the outermost class which aligns the image and other content
     on screen.
+
+    Update Aug 18, 2022 (Aleksandr):
+      - add max-width to textContainer
+      - add font properties to textContainer
+      - add 3 by 4 image (Image3by4)
+      - add full-width image (ImageFullWidth)
+      - add gap for buttonss
 */
 
 .rightblack {
@@ -48,6 +55,7 @@
     flex-direction: row;
     flex-flow: row wrap;
     justify-content: start;
+    gap: 24px;
 }
 
 .btnsright {
@@ -55,11 +63,41 @@
     flex-direction: row;
     flex-flow: row wrap;
     justify-content: end;
+    gap: 24px;
 }
 
 .textContainer {
-    width: 100%;
+    min-width: 1400px;
     display: flex;
     flex-direction: row;
     align-items: center;
+
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: right;    
+}
+
+.textContainer > div {
+    min-width: calc(50% - 80px);
+}
+
+.textContainer.fullsize{
+    max-width: 100%;
+}
+
+.Image3by4{
+    width: 688px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.ImageFullWidth{
+    overflow: visible;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

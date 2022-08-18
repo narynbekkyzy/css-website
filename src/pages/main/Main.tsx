@@ -24,7 +24,7 @@ export function MainPage(): JSX.Element {
       
       <WhatWeBuild 
         desc={data.who_we_are.description} 
-        img={<img src={data.what_we_build.image}/>} 
+        img={<img className="ImageFullWidth" src={data.what_we_build.image}/>} 
         buttons={[
           <button className="default-white">Button 1</button>,
           <button className="default-white">Button 2</button>
