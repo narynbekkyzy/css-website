@@ -46,7 +46,8 @@
 
 .Header-MovingBlob{
     position: absolute;
-    left: calc(var(--moving_left_spacing) + 5px);
+    left: 0px;
+    transform: translate(calc(var(--moving_left_spacing) + 5px));
     width: calc(var(--moving_width) - 10px);
     box-sizing: border-box;
     padding: 8px 24px;
