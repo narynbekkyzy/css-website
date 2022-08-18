@@ -1,7 +1,7 @@
 {
   "cards": [
     {
-      "bg": "images/tmpImgs/obiwan.jpg",
+      "bg": "images/members/ObiWan.webp",
       "title": "Jedi Knight",
       "name": "Obi-Wan Kenobi",
       "team": "Core Team",
@@ -27,7 +27,7 @@
       "tags": [ "Core Team", "Web Dev Team","Member" ]
     },
     {
-      "bg": "images/tmpImgs/luminara.jpg",
+      "bg": "images/members/luminara.webp",
       "title": "Jedi Knight",
       "name": "Luminara Unduli",
       "team": "CS Faculty",
@@ -53,7 +53,7 @@
       "tags": [ "CS Faculty", "Member" ]
     },
     {
-      "bg": "images/tmpImgs/c3po.png",
+      "bg": "images/members/c3po.webp",
       "title": "Droid",
       "name": "C3PO",
       "team": "Core Team",
@@ -78,7 +78,7 @@
       "tags": [ "Core Team", "Member" ]
     },
     {
-      "bg": "images/tmpImgs/chwie.png",
+      "bg": "images/members/chewbacca.webp",
       "title": "Wookie",
       "name": "Chewbacca",
       "team": "Voice Assistant Team",
@@ -97,7 +97,7 @@
       "tags": [ "Voice Assistant Team", "Member" ]
     },
     {
-      "bg": "images/tmpImgs/bossk.jpg",
+      "bg": "images/members/bossk.webp",
       "title": "Bounty Hunter",
       "name": "Bossk",
       "team": "Web Dev Team",
@@ -116,7 +116,7 @@
       "tags": [ "Web Dev Team", "Member" ]
     },
     {
-      "bg": "images/tmpImgs/emporer.jpg",
+      "bg": "images/members/palpatine.webp",
       "title": "The Emporer",
       "name": "Emporer Palpatine",
       "team": "Member",

@@ -1,10 +1,10 @@
 import "./Main.css";
-import { EventSection } from "./sections/eventsSection";
-import { WhatWeBuild } from "./sections/WhatWeBuild";
-import { WhoWeAre } from "./sections/WhoWeAre";
+import { EventSection } from "./components/eventsSection";
+import { WhatWeBuild } from "./components/WhatWeBuild";
+import { WhoWeAre } from "./components/WhoWeAre";
 
 import data from '../../content/main_page.json';
-import { WhatWeOffer } from "./sections/WhatWeOffer";
+import { WhatWeOffer } from "./components/WhatWeOffer";
 import { Footer } from "../../components/Footer";
 
 export function MainPage(): JSX.Element {

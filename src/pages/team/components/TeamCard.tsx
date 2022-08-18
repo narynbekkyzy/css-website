@@ -34,7 +34,7 @@ export function TeamCard(props: TeamCardInterface): JSX.Element {
         </a>
     });
 
-    return <div ref={hoverRef} className="TeamCard" style={{ backgroundImage: "url(" + props.bg + ")", backgroundSize: "100% 100%" }}>
+    return <div ref={hoverRef} className="TeamCard" style={{ backgroundImage: "url(" + props.bg + ")", backgroundSize: "auto auto", objectFit: "fill"  }}>
         {isHovered ?
             <div className="TeamCard-Details">
                 <div className="TeamCard-DetailsHeader">

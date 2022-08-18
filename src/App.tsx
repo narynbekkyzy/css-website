@@ -3,8 +3,9 @@ import './App.css';
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import { Title } from './components/titles/Title';
 import { MainPage } from './pages/main/Main'
+import { TeamPage } from './pages/team/Team';
 import data from './components/json/test.json'
-import { WhatWeOffer } from './pages/main/sections/WhatWeOffer'
+import { WhatWeOffer } from './pages/main/components/WhatWeOffer'
 import { OfferItem } from './components/offerItem/OfferItem'
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
@@ -20,6 +21,12 @@ function App() {
                 path="/" 
                 element={<MainPage/>}
             />
+
+            <Route 
+                path="/team" 
+                element={<TeamPage/>}
+            />
+
 
           </Routes>
         {/* <Footer/> */}

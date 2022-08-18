@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { TeamCard } from './TeamCard'
-import { Title } from './titles/Title'
-import membersJson from '../content/members.json';
+import { Title } from '../../../components/titles/Title';
+import membersJson from '../../../content/members.json';
 
 import './OurMembers.css'
 
