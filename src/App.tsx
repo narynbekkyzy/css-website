@@ -14,6 +14,7 @@ import { Footer } from "./components/Footer";
 import data from "./content/header_footer.json";
 
 import { AnimatePresence, motion } from "framer-motion";
+import { EventsPage } from "./pages/events/Events";
 
 function App() {
   return (
@@ -99,6 +100,10 @@ function Switcher() {
           path="/opportunities"
            element={<AnimatedTempPage {...pageVariants}/>} />
 
+        <Route 
+          path="/events"
+           element={<AnimatedEventsPage {...pageVariants}/>} />
+
       </Routes>
     </AnimatePresence>
   );
@@ -136,6 +141,21 @@ function AnimatedTeamPage(props: any) {
     </motion.div>
   );
 }
+
+function AnimatedEventsPage(props: any) {
+  return (
+    <motion.div
+      initial={"out"}
+      animate={"in"}
+      exit={"out"}
+      variants={props}
+      transition={pageTransition}
+    >
+      <EventsPage/>
+    </motion.div>
+  );
+}
+
 
 function AnimatedTempPage(props: any) {
   return (

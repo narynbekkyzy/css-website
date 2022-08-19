@@ -25,6 +25,9 @@
   --green: #09bc8a;
   --blue: #067bc2;
 
+
+  --event-card-color-career: #c00000;
+
   --moving_left_spacing: 0px;
   --moving_width: 66px;
   --cubic: cubic-bezier(.17,.67,.83,.67);
@@ -43,6 +46,17 @@ p {
   margin: 0px;
   padding: 0px;
 }
+
+.standard-padding{
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.standard-margin{
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
 /* THE FOLLOWING IS JUST SOME EXAMPLES ON HOW TO USE FONTS */
 /* feel free to change, delete it all */
 .Aurebesh {
