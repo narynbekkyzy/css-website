@@ -27,6 +27,7 @@
 
   --moving_left_spacing: 0px;
   --moving_width: 66px;
+  --cubic: cubic-bezier(.17,.67,.83,.67);
 }
 
 body {
