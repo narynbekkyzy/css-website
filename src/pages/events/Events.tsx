@@ -32,10 +32,10 @@ export function EventsPage(): JSX.Element {
         />
     
         <div className="EventsContainer-Categories">
-            <button onClick={() => setEvents("")}>all</button>
+            <button className={ "" === events ? "selected" : ""} onClick={() => setEvents("")}>all</button>
             {data.categories.map((category, index) => {
                 return(
-                    <button onClick={() => setEvents(category)}>{category}</button>
+                    <button className={category === events ? "selected" : ""} onClick={() => setEvents(category)}>{category}</button>
                 )
             })}
         </div>

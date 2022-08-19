@@ -7,6 +7,7 @@ import data from '../../content/main_page.json';
 import { WhatWeOffer } from "./components/WhatWeOffer";
 import { Footer } from "../../components/Footer";
 import { StartMain } from "./components/StartMain";
+import { UpcomingEvents } from "./components/OurUpcomingEvents";
 
 export function MainPage(): JSX.Element {
   return (
@@ -39,7 +40,9 @@ export function MainPage(): JSX.Element {
           <button className="default-white">Button 2</button>
         ]}
       />
-      <EventSection />
+      <UpcomingEvents
+        title={data.our_upcoming_events.title}
+      />
       <Footer/>
     </>
   );
