@@ -1,0 +1,58 @@
+{
+    "title": "Our Events",
+
+    "categories":[
+        "career", "fun", "coding"
+    ],
+
+    "events":[
+        {
+            "title": "Interview Experience",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate.",
+            "location": "OU312",
+            "date": "April 16",
+            "img": "TeslaPoster.png",
+            "type": "career"
+        },
+        {
+            "title": "Fun Event #1",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate.",
+            "location": "OU312",
+            "date": "April 16",
+            "img": "TeslaPoster.png",
+            "type": "fun"
+        },
+        {
+            "title": "Coding event #1",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate.",
+            "location": "OU312",
+            "date": "April 16",
+            "img": "TeslaPoster.png",
+            "type": "coding"
+        },
+        {
+            "title": "Coding event #2",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate.",
+            "location": "OU312",
+            "date": "April 16",
+            "img": "TeslaPoster.png",
+            "type": "coding"
+        },
+        {
+            "title": "Coding event #3",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate.",
+            "location": "OU312",
+            "date": "April 16",
+            "img": "TeslaPoster.png",
+            "type": "coding"
+        },
+        {
+            "title": "Career event #2",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate.",
+            "location": "OU312",
+            "date": "April 16",
+            "img": "TeslaPoster.png",
+            "type": "career"
+        }
+    ]
+}
