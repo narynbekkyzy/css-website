@@ -81,7 +81,6 @@
 }
 
 .textContainer > div {
-    min-width: calc(50% - 80px);
 }
 
 .textContainer.fullsize{
