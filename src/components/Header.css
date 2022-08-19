@@ -12,6 +12,7 @@
     align-items: flex-end;
     padding: 0px;
     background-color: var(--white);
+    padding-top: 8px;
     /* left: -6413px;
     top: 5814px; */
 }
