@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Pagination } from "../../components/pagination/Pagination";
 import data from "../../content/numbers.json";
+import "./temp.css";
 
 const ITEMS_PER_PAGE = 10;
 const pageCounter = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -42,6 +43,10 @@ export function TempPage(): JSX.Element {
   const [first, setFirst] = useState("hello");
 
   const [contentToShow, setContentToShow] = useState(data.items);
+  let numberPages = data.items.length;
+  let pages = 20 % 3;
+  
+  
 
   function filterContentToShow() {
     let temp = data.items;
@@ -55,14 +60,38 @@ export function TempPage(): JSX.Element {
     setContentToShow(temp);
   }
 
+  function filterPagesToShow() {
+    let pg = data.items;
+   pg = pg.filter((item, index) => {
+      if ( pages !== 0) {
+        
+        return item;
+      }
+    });
+
+   
+    setContentToShow(pg);
+  }
+
   console.log(data);
 
   return (
     <>
+
+       
+
       <div className="Blog-Body-Pagination">
+
+     
         {contentToShow.map((item, index) => {
           return (
-            <button onClick={() => filterContentToShow()}>{item.title}</button>
+         
+            
+             
+            
+
+            <button onClick={() => filterPagesToShow()}>{item.pageNum}</button>
+         
           );
         })}
 
