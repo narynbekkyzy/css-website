@@ -1,143 +1,174 @@
-import React from 'react';
-import './App.css';
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
-import { Title } from './components/titles/Title';
-import { MainPage } from './pages/main/Main'
-import { TeamPage } from './pages/team/Team';
-import { TempPage } from './pages/tempPage/Temp';
-import data from './components/json/test.json'
-import { WhatWeOffer } from './pages/main/components/WhatWeOffer'
-import { OfferItem } from './components/offerItem/OfferItem'
-import { Header } from './components/Header';
-import { Footer } from './components/Footer';
+import { useEffect, useState } from "react";
+import "./App.css";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
+import { MainPage } from "./pages/main/Main";
+import { TeamPage } from "./pages/team/Team";
+import { TempPage } from "./pages/tempPage/Temp";
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
+import data from "./content/header_footer.json";
+
+import { AnimatePresence, motion } from "framer-motion";
+import { EventsPage } from "./pages/events/Events";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Header/>
-          <Routes>
-            {/* Go to main page by accessing http://localhost:3000/main */}
-            <Route 
-                path="/" 
-                element={<MainPage/>}
-            />
-
-            <Route 
-                path="/team" 
-                element={<TeamPage/>}
-            />
-
-<Route 
-                path="/opportunities" 
-                element={<TempPage/>}
-            />
-          </Routes>
+        <Header />
+        <Switcher />
         {/* <Footer/> */}
       </Router>
     </div>
   );
 }
 
+function Switcher() {
 
-function OldStuff(){
-  return(
-    <header className="App-header">
-      <div>
-        <Title
-          name={'Primary'}
-          styling={'LeftWhite'}
-          text={data.title}
-        />
-        <Title 
-          name={'Primary'} 
-          styling={"RightWhite"} 
-          text={data.title}
-        />  
-        <Title
-          name={'Primary'}
-          styling={'MiddleWhite'}
-          text={data.title}
-        />
-        <Title
-          name={'Primary'}
-          styling={'LeftBlack'}
-          text={data.title}
-        />
-        <Title 
-          name={'Primary'} 
-          styling={"RightBlack"} 
-          text={data.title}
-        />  
-        <Title
-          name={'Primary'}
-          styling={'MiddleBlack'}
-          text={data.title}
-        />
-        <Title
-          name={'Footer'}
-          styling={'Red'}
-          text={data.title}
-        />
-        <Title 
-          name={'Footer'} 
-          styling={"Black"} 
-          text={data.title}
-        />  
-        <Title
-          name={'Footer'}
-          styling={'White'}
-          text={data.title}
-        />
-        <Title 
-          name={'Main'} 
-          styling={"Black"} 
-          text={data.title}
-        />  
-        <Title
-          name={'Main'}
-          styling={'White'}
-          text={data.title}
-        />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem,
-            quisquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem,
-            quisquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem,
-            quisquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem,
-            quisquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem,
-            quisquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem,
-            quisquam.
-          </p>
-        </div>
-        <img src={'images/logos/circleLogo.png'} className="App-logo" alt="logo" />
-        <p>
-          Ronan has joined the team!! 👽
-        </p>
-        <button>Default</button>
-        <button className='default-white'>Default-White</button>
-        <button className='header'>Header</button>
-        <button className='footer'>Footer</button>
-        <button className='FL-black'>FL-black</button>
-        <button className='FL-white'>FL-white</button>
-        <input placeholder='Search...' type='text' className='searchbox'></input>
-        <h1 className='Montserrat'>Montserrat Font</h1>
-        <h1 className='Inter'>Inter Font</h1>
-        <h1 className='Aurebesh'>Aurebesh Font</h1>
-        <h1 className='Aurebesh-English'>Aurebesh-English Font</h1>
-        <br></br>
-        <WhatWeOffer title={data.MyTitlte} items={data.items}/>
-        <OfferItem image={data.Mentorship} text='abc'/>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-  )
+  const location = useLocation();
+
+  const [pageVariants, setPageVariants] = useState({
+    in: {
+      opacity: 1,
+      x: 0,
+      scale: 1,
+    },
+    out: {
+      opacity: 0,
+      x: "-100vw",
+      scale: 1,
+    },
+  });
+
+  const [direction, setDirection] = useState(1);
+  const [currentPage, setCurrentPage] = useState(-1);
+
+  function calculateVariants(location: string) {
+
+    let list = Array.from(data.pages);
+    let dict = new Map();
+    for (let i = 0; i < list.length; i++) {
+        dict.set(list[i].link, i);
+    }
+
+    if (dict.get(location) > currentPage) {
+      setDirection(-1);
+
+    } else {
+      setDirection(1);
+
+    }
+    setCurrentPage(dict.get(location));
+    
+  }
+
+  useEffect(() => {
+    calculateVariants(location.pathname);
+    setPageVariants({
+        in: {
+          opacity: 1,
+          x: 0,
+          scale: 1,
+        },
+        out: {
+          opacity: 1,
+          x: `calc(${direction}*100vw)`,
+          scale: 1,
+        },
+      })
+      
+  } , [location]);
+
+  return (
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+
+        <Route 
+          path="/" 
+          element={<AnimatedHomePage {...pageVariants}/>} />
+
+        <Route 
+          path="/team" 
+          element={<AnimatedTeamPage {...pageVariants} />} />
+
+        <Route 
+          path="/opportunities"
+           element={<AnimatedTempPage {...pageVariants}/>} />
+
+        <Route 
+          path="/events"
+           element={<AnimatedEventsPage {...pageVariants}/>} />
+
+      </Routes>
+    </AnimatePresence>
+  );
 }
 
+const pageTransition = {
+  type: "var(--cubic)",
+  duration: 0.25,
+};
+
+function AnimatedHomePage(props: any) {
+  return (
+    <motion.div
+      initial={"out"}
+      animate={"in"}
+      exit={"out"}
+      variants={props}
+      transition={pageTransition}
+    >
+      <MainPage />
+    </motion.div>
+  );
+}
+
+function AnimatedTeamPage(props: any) {
+  return (
+    <motion.div
+      initial={"out"}
+      animate={"in"}
+      exit={"out"}
+      variants={props}
+      transition={pageTransition}
+    >
+      <TeamPage />
+    </motion.div>
+  );
+}
+
+function AnimatedEventsPage(props: any) {
+  return (
+    <motion.div
+      initial={"out"}
+      animate={"in"}
+      exit={"out"}
+      variants={props}
+      transition={pageTransition}
+    >
+      <EventsPage/>
+    </motion.div>
+  );
+}
+
+
+function AnimatedTempPage(props: any) {
+  return (
+    <motion.div
+      initial={"out"}
+      animate={"in"}
+      exit={"out"}
+      variants={props}
+      transition={pageTransition}
+    >
+      <TempPage />
+    </motion.div>
+  );
+}
 
 export default App;

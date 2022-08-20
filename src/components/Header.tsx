@@ -105,7 +105,7 @@ export function Header(): JSX.Element  {
                         </Link>
                         ) 
                     })}                   
-                     <input placeholder='Search...' type='text' className='searchbox'></input>
+                     {/* <input placeholder='Search...' type='text' className='searchbox'></input> */}
                 </div>
             </div>
         </div>        

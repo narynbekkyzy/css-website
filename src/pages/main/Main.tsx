@@ -6,13 +6,23 @@ import { WhoWeAre } from "./components/WhoWeAre";
 import data from '../../content/main_page.json';
 import { WhatWeOffer } from "./components/WhatWeOffer";
 import { Footer } from "../../components/Footer";
+import { StartMain } from "./components/StartMain";
+import { UpcomingEvents } from "./components/OurUpcomingEvents";
 
 export function MainPage(): JSX.Element {
   return (
     <>
+      <StartMain
+        desc={data.top.description} 
+        img={<img className="Image3by4" style={{"width": "30%"}} src={data.top.image}/>} 
+        buttons={[
+          <button className="default">Button 1</button>,
+          <button className="default">Button 2</button>
+        ]}/>
+
       <WhoWeAre 
         desc={data.who_we_are.description} 
-        img={<img className="Image3by4" src={data.who_we_are.image}/>} 
+        img={<img className="Image3by4" style={{"width": "50%"}} src={data.who_we_are.image}/>} 
         buttons={[
           <button className="default-white">Button 1</button>,
           <button className="default-white">Button 2</button>
@@ -24,13 +34,15 @@ export function MainPage(): JSX.Element {
       
       <WhatWeBuild 
         desc={data.who_we_are.description} 
-        img={<img className="ImageFullWidth" src={data.what_we_build.image}/>} 
+        img={<img className="ImageFullWidth" style={{"width": "50%"}}  src={data.what_we_build.image}/>} 
         buttons={[
           <button className="default-white">Button 1</button>,
           <button className="default-white">Button 2</button>
         ]}
       />
-      <EventSection />
+      <UpcomingEvents
+        title={data.our_upcoming_events.title}
+      />
       <Footer/>
     </>
   );

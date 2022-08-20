@@ -1,0 +1,31 @@
+.EventsContainer{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.EventsContainer-Current{
+    max-width: 1900px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    row-gap: 80px;
+}
+
+.EventsContainer-Categories{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.EventsContainer-Categories > * {
+    text-transform: capitalize;
+}
