@@ -110,7 +110,7 @@ export function TempPage(): JSX.Element {
         <br></br>
         <br></br>
         <h1>Pagination</h1>
-        <button onClick={() => {openNewPage(currentPage - 1)}}> <img alt="<" src={rightArrow}></img> </button>
+        <button className="pagination" onClick={() => {openNewPage(currentPage - 1)}}> <img alt="<" src={rightArrow}></img> </button>
         
          { pages.map((pageNumber, index) => {
             if (
@@ -130,14 +130,14 @@ export function TempPage(): JSX.Element {
             return (
               <button 
                 onClick={() => {openNewPage(pageNumber)}}
-                className={currentPage === pageNumber ? "selected" : ""}>
+                className={currentPage === pageNumber ? "selectedPagination" : "pagination"}>
                   {pageNumber}
               </button>
             
             );
           } )
         }    
-        <button onClick={() => {openNewPage(currentPage + 1)}}> <img alt=">" src={leftArrow}></img> </button>
+        <button className="pagination" onClick={() => {openNewPage(currentPage + 1)}}> <img alt=">" src={leftArrow}></img> </button>
 
        
       </div>

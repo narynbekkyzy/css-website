@@ -137,4 +137,18 @@ input.searchbox::placeholder {
   line-height: 24px;
 }
 
+.pagination {
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
 
+button.selectedPagination {
+
+  border: 1px solid ;
+}
+
+button.pagination:hover {
+  color: black;
+  background-color: white;
+}
