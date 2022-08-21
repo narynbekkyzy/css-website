@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Pagination } from "../../components/pagination/Pagination";
+
 import data from "../../content/numbers.json";
 import threeDots from "../../images/three-dots.svg";
 import rightArrow from "../../images/rightArrow.svg";
@@ -17,32 +17,7 @@ interface PostItem {
 export function TempPage(): JSX.Element {
 
   let dotsPut = false;
-  //     const [currentType, setCurrentType] = useState(0);
-
-  //   const [currentPage, setCurrentPage] = useState<number>(1);
-  //   const [RealPageCounter, setPageCounter] = useState<number[]>(pageCounter);
-
-  //   const [currentBlog, setCurrentBlog] = useState<string>("");
-  //   const [currentPost, setCurrentPost] = useState<PostItem>();
-  //     const loadPage = (page: number, items: PostItem[]) => {
-  //         const newItems = items.filter(
-  //           (item, index) =>
-  //             index >= page * ITEMS_PER_PAGE - ITEMS_PER_PAGE &&
-  //             index < page * ITEMS_PER_PAGE
-  //         );
-
-  //         newItems.sort((a, b) => b.sortID - a.sortID);
-
-  //         setCurrentPage(page);
-
-  //       };
-
-  //   let second: String = "Hello";
-
-  //   function setSecond(s: String) {
-  //     second = s;
-  //     alert (second);
-  //   }
+  
 
   //Use hooks to update UI
   const [first, setFirst] = useState("hello");
