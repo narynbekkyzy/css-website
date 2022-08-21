@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Pagination } from "../../components/pagination/Pagination";
 import data from "../../content/numbers.json";
+import threeDots from "../../images/threedot.png";
 import "./temp.css";
 
 const ITEMS_PER_PAGE = 10;
@@ -12,6 +13,8 @@ interface PostItem {
 }
 
 export function TempPage(): JSX.Element {
+
+  let dotsPut = false;
   //     const [currentType, setCurrentType] = useState(0);
 
   //   const [currentPage, setCurrentPage] = useState<number>(1);
@@ -90,8 +93,7 @@ export function TempPage(): JSX.Element {
   
   return (
     <>
-
-       
+ 
 
       <div className="Blog-Body-Pagination">
 
@@ -107,26 +109,35 @@ export function TempPage(): JSX.Element {
         <br></br>
         <h1>Pagination</h1>
         <button onClick={() => {openNewPage(currentPage - 1)}}> {"<"} </button>
-        {
-          pages.map((pageNumber, index) => {
-
+        
+         { pages.map((pageNumber, index) => {
+            if (
+              index !== 0 &&
+              index !== pages.length - 1 &&
+              !(index >= currentPage - 3 && index <= currentPage + 1)
+            ) {
+              if (!dotsPut) {
+                dotsPut = true;
+                return <img alt="..." src={threeDots}></img>;
+              } else {
+                return null;
+              }
+            } else {
+              dotsPut = false;
+            }
             return (
               <button 
                 onClick={() => {openNewPage(pageNumber)}}
                 className={currentPage === pageNumber ? "selected" : ""}>
                   {pageNumber}
               </button>
+            
             );
-          })
+          } )
         }    
         <button onClick={() => {openNewPage(currentPage + 1)}}> {">"} </button>
 
-        {/* <Pagination
-          currentPage={1}
-          pagesArray={[1, 2, 3, 4, 5, 6]}
-          items={[1, 2, 3, 4, 5, 6]}
-          loadPage={loadPage}
-        /> */}
+       
       </div>
     </>
   );
