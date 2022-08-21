@@ -8,10 +8,20 @@ import { WhatWeOffer } from "./components/WhatWeOffer";
 import { Footer } from "../../components/Footer";
 import { StartMain } from "./components/StartMain";
 import { UpcomingEvents } from "./components/OurUpcomingEvents";
+import { MeetTeam } from "../team/components/MeetTeam";
+
 
 export function MainPage(): JSX.Element {
   return (
     <>
+      <MeetTeam
+        desc={data.who_we_are.description} 
+        img={<img  src={data.who_we_are.image}/>} 
+        buttons={[
+          <button className="default-white">Button 1</button>,
+          <button className="default-white">Button 2</button>
+        ]}/>
+        
       <StartMain
         desc={data.top.description} 
         img={<img className="Image3by4" style={{"width": "30%"}} src={data.top.image}/>} 
