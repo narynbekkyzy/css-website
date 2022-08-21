@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Pagination } from "../../components/pagination/Pagination";
 import data from "../../content/numbers.json";
+import "./temp.css";
 
 const ITEMS_PER_PAGE = 10;
 const pageCounter = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -42,29 +43,83 @@ export function TempPage(): JSX.Element {
   const [first, setFirst] = useState("hello");
 
   const [contentToShow, setContentToShow] = useState(data.items);
+  const [pages, setPages] = useState<number[]>([]);
+  const [currentPage, setCurrentPage] = useState<number>(1); 
 
-  function filterContentToShow() {
-    let temp = data.items;
-   temp = temp.filter((item, index) => {
-      if (index < 5) {
-        return item;
-      }
-    });
+  let numberPages = data.items.length;
+  let ITEMS_PER_PAGE = 3;
 
-    alert(temp);
-    setContentToShow(temp);
+  
+  function calculatePages() {
+    let pages = numberPages / ITEMS_PER_PAGE; // 20 / 3 = 6
+    if (numberPages % ITEMS_PER_PAGE !== 0) { // 20 % 3 = 2 !== 0 -> 6 + 1 = 7
+      pages++;
+    }
+
+    let pagesArray = [];
+    for (let i = 1; i <= pages; i++) {
+      pagesArray.push(i);
+    }
+    // pagesArray = [1,2,3,4,5,6,7,8]
+
+    setPages(pagesArray);    
   }
 
-  console.log(data);
+  function openNewPage(page: number) {
+    if (page > 0 && page <= pages.length) {
+      setCurrentPage(page);
+      filterElements(page);
+    }
+  }
 
+  function filterElements(page: number) {
+ 
+    let start = page * ITEMS_PER_PAGE - ITEMS_PER_PAGE
+    let end =  page * ITEMS_PER_PAGE
+
+    let newContent = data.items.filter((item, index) => index >= start && index < end)
+
+    setContentToShow(newContent);
+  }
+  
+  useEffect(() => {
+    filterElements(currentPage);
+    calculatePages();
+
+  }, []);
+  
   return (
     <>
+
+       
+
       <div className="Blog-Body-Pagination">
+
+     
         {contentToShow.map((item, index) => {
           return (
-            <button onClick={() => filterContentToShow()}>{item.title}</button>
+            <button>{item.title}</button>         
           );
         })}
+
+        <br></br>
+        <br></br>
+        <br></br>
+        <h1>Pagination</h1>
+        <button onClick={() => {openNewPage(currentPage - 1)}}> {"<"} </button>
+        {
+          pages.map((pageNumber, index) => {
+
+            return (
+              <button 
+                onClick={() => {openNewPage(pageNumber)}}
+                className={currentPage === pageNumber ? "selected" : ""}>
+                  {pageNumber}
+              </button>
+            );
+          })
+        }    
+        <button onClick={() => {openNewPage(currentPage + 1)}}> {">"} </button>
 
         {/* <Pagination
           currentPage={1}
