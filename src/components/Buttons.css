@@ -144,11 +144,16 @@ input.searchbox::placeholder {
 }
 
 button.selectedPagination {
-
   border: 1px solid ;
+}
+
+button.selectedPagination:hover {
+  color: black;
+  background-color: transparent;
 }
 
 button.pagination:hover {
   color: black;
+  border: none;
   background-color: transparent;
 }
