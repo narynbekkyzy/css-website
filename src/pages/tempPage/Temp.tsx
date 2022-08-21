@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import { Pagination } from "../../components/pagination/Pagination";
 import data from "../../content/numbers.json";
-import threeDots from "../../images/threedot.png";
+import threeDots from "../../images/three-dots.svg";
+import rightArrow from "../../images/rightArrow.svg";
+import leftArrow from "../../images/leftArrow.svg";
 import "./temp.css";
 
 const ITEMS_PER_PAGE = 10;
@@ -50,7 +52,7 @@ export function TempPage(): JSX.Element {
   const [currentPage, setCurrentPage] = useState<number>(1); 
 
   let numberPages = data.items.length;
-  let ITEMS_PER_PAGE = 3;
+  let ITEMS_PER_PAGE = 1;
 
   
   function calculatePages() {
@@ -108,7 +110,7 @@ export function TempPage(): JSX.Element {
         <br></br>
         <br></br>
         <h1>Pagination</h1>
-        <button onClick={() => {openNewPage(currentPage - 1)}}> {"<"} </button>
+        <button onClick={() => {openNewPage(currentPage - 1)}}> <img alt="<" src={rightArrow}></img> </button>
         
          { pages.map((pageNumber, index) => {
             if (
@@ -135,7 +137,7 @@ export function TempPage(): JSX.Element {
             );
           } )
         }    
-        <button onClick={() => {openNewPage(currentPage + 1)}}> {">"} </button>
+        <button onClick={() => {openNewPage(currentPage + 1)}}> <img alt=">" src={leftArrow}></img> </button>
 
        
       </div>
