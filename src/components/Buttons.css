@@ -150,5 +150,5 @@ button.selectedPagination {
 
 button.pagination:hover {
   color: black;
-  background-color: white;
+  background-color: transparent;
 }
