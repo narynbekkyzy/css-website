@@ -18,13 +18,19 @@ export function MeetTeam(props: MeetTeam): JSX.Element {
 
     return <div className="MeetTeam-Container">
         <div className="MeetTeam-Content">
-            <Title text="Meet our people" name = "Primary" styling="MiddleWhite"/>
+            <div className='Title-Box'><Title text="Meet our people" name = "Primary" styling="MiddleWhite"/></div>
             <a className="bigImage">{props.img}</a>
             <div className="Frame">
-                <a className="desc">{props.desc ? 
-                    <p> {props.desc}</p> : <div style={{ height: "0px", width: "0px" }} />}</a>
-                <a className="buttons">{btns != 0 ? 
-                    <a>{btns}</a> : <div style={{ height: "0px", width: "0px" }} />}</a>
+                {props.desc ? (
+                    <p>{props.desc}</p>
+                    ) : (
+                    <div style={{ height: "0px", width: "0px" }} />
+                    )}
+                {btns != 0 ? (
+                    <div className="buttons">{btns}</div>
+                    ) : (
+                    <div style={{ height: "0px", width: "0px" }} />
+                    )}
             </div>
         </div>
     </div>

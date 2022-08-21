@@ -14,13 +14,6 @@ import { MeetTeam } from "../team/components/MeetTeam";
 export function MainPage(): JSX.Element {
   return (
     <>
-      <MeetTeam
-        desc={data.who_we_are.description} 
-        img={<img  src={data.who_we_are.image}/>} 
-        buttons={[
-          <button className="default-white">Button 1</button>,
-          <button className="default-white">Button 2</button>
-        ]}/>
         
       <StartMain
         desc={data.top.description} 

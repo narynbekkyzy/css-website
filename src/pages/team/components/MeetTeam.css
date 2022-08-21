@@ -1,47 +1,42 @@
 .MeetTeam-Container {
     width: 100%;
-    border-radius: 0px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 80px;
     background-color: var(--black);
-
 }
 
 .MeetTeam-Content {
-    border-radius: 0px;
+    justify-content: space-between;
+    margin: 80px 219px;
+    display: flex;
     flex-direction: column;
-    gap: 40px;
-    padding: 0;
+    row-gap: 80px;
 }
 
-.Title {
-    height: 96px;
-    width: 550px;
-    left: 685px;
-    top: 80px;
-    border-radius: 0px;
-    color: brown;
-
+.Title-Box {
 }
+
 .bigImage {
-    width: 1352px;
-    left: 284px;
-    top: 256px;
-    border-radius: 25px;
 
 }
 
 .Frame {
-    width: 880px;
-    height: 160px;
+    width: 880px;   
+    margin: auto;
+    font-size: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    gap: 24px;
+    row-gap: 24px;
     color: var(--white)
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: start;
+    gap: 24px;
 }
 
