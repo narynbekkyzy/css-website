@@ -4,7 +4,8 @@ import data from "../../content/numbers.json";
 import threeDots from "../../images/three-dots.svg";
 import rightArrow from "../../images/rightArrow.svg";
 import leftArrow from "../../images/leftArrow.svg";
-import "./temp.css";
+
+import "../../components/pagination/Pagination.css";
 
 const ITEMS_PER_PAGE = 10;
 const pageCounter = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -85,6 +86,8 @@ export function TempPage(): JSX.Element {
         <br></br>
         <br></br>
         <h1>Pagination</h1>
+
+        <div className="pagination-align">
         <button className="pagination" onClick={() => {openNewPage(currentPage - 1)}}> <img alt="<" src={rightArrow}></img> </button>
         
          { pages.map((pageNumber, index) => {
@@ -114,7 +117,7 @@ export function TempPage(): JSX.Element {
         }    
         <button className="pagination" onClick={() => {openNewPage(currentPage + 1)}}> <img alt=">" src={leftArrow}></img> </button>
 
-       
+       </div>
       </div>
     </>
   );

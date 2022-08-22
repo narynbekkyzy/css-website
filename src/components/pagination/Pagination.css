@@ -1,20 +1,12 @@
-.Generic-Pagination-Container{
-    margin: auto;
-}
-
-.Generic-Pagination-Container > * {
-    margin-left: 2px;
-    margin-right: 2px;
-    cursor: pointer !important;
-}
-
-.Generic-Pagination-Container > a > img {
-    margin-bottom: 3px;
-    cursor: pointer !important;
+.pagination-align {
+display: flex;
+flex-direction: row;
+justify-content: center;
+transform: scale(0.8)
 }
 
 @media screen and (max-width: 1080px) {
-    .Generic-Pagination-Container{
+    .pagination-align{
         margin-top: auto;
         margin-bottom: auto;
     }
