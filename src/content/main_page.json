@@ -25,12 +25,12 @@
         {
             "name": "Mentorship",
             "link": "/mentorship",
-            "img": "images/mentorship.svg"
+            "img": "images/mentor.svg"
         },
         {
             "name": "Networking",
             "link": "/mentorship",
-            "img": "images/mentorship.svg"
+            "img": "images/network.svg"
         },
         {
             "name": "Gaming",
@@ -40,17 +40,17 @@
         {
             "name": "Resume Help",
             "link": "/mentorship",
-            "img": "images/mentorship.svg"
+            "img": "images/resume.svg"
         },
         {
             "name": "Projects",
             "link": "/mentorship",
-            "img": "images/mentorship.svg"
+            "img": "images/projects.svg"
         },
         {
             "name": "Community",
             "link": "/mentorship",
-            "img": "images/mentorship.svg"
+            "img": "images/community.svg"
         }
         ]
 
