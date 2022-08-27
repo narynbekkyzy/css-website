@@ -1,15 +1,16 @@
 import React, { useState, useEffect, useRef, MutableRefObject } from 'react';
+import { motion } from "framer-motion";
 
-import './TeamCard.css'
+import '../../../components/event_card/Card.css';
 
 interface TeamCardInterface {
-    bg: string;
-    title: string;
-    name: string;
-    team: string;
-    desc: string;
-    askMe: Array<string>;
-    socials: Array<Array<string>>;
+    bg: string;                     //Background Image url
+    title: string;                  //Personal title
+    name: string;                   //User's Name
+    team: string;                   //Primary Team
+    desc: string;                   //Description Text
+    askMe: Array<string>;           //Ask Me bullets
+    socials: Array<Array<string>>;  //Social Media links (Array of Duples where the first is account 
     tags: Array<string>;
 }
 
@@ -25,25 +26,32 @@ export function TeamCard(props: TeamCardInterface): JSX.Element {
     let socials = props.socials.map(function (btn) {
         return <a href={btn[0]}>
             <button>
-                {btn[1] == "LinkedIn" ? "LI" :
-                    btn[1] == "Instagram" ? "IG" : 
-                        btn[1] == "Discord" ? "DC" :
+                {btn[1] === "LinkedIn" ? "LI" :
+                    btn[1] === "Instagram" ? "IG" : 
+                        btn[1] === "Discord" ? "DC" :
                             "TG"
                     }
             </button>
         </a>
     });
 
-    return <div ref={hoverRef} className="TeamCard" style={{ backgroundImage: "url(" + props.bg + ")", backgroundSize: "auto auto", objectFit: "fill"  }}>
+    return <motion.div
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        exit={{ scale: 0.8, opacity: 0 }}
+        transition={{ type: "spring" }}
+    >
+        <div ref={hoverRef} className="Card CardBorder" >
+            <img src={props.bg} className="Team-img"/>
         {isHovered ?
-            <div className="TeamCard-Details">
+            <div className="TeamCard-HoverDisplay stack-top">
                 <div className="TeamCard-DetailsHeader">
-                    <p className="TeamCard-Title">
+                    <p>
                         {props.title} 
                     </p>
-                    <p className="TeamCard-Name">
+                    <h3 className="Card-H3">
                         {props.name} 
-                    </p>
+                    </h3>
                 </div>
                 <div className="TeamCard-DetailsContent">
                     <div className="TeamCard-DetailsContentUpper">
@@ -70,7 +78,8 @@ export function TeamCard(props: TeamCardInterface): JSX.Element {
                 </div>
             </div>
             : <div/>}
-    </div>
+        </div>
+    </motion.div>
 }
 
 //Trigger function that activates card details display when hovered over
