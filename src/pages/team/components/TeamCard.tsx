@@ -35,16 +35,10 @@ export function TeamCard(props: TeamCardInterface): JSX.Element {
         </a>
     });
 
-    return <motion.div
-        initial={{ scale: 0.8, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        exit={{ scale: 0.8, opacity: 0 }}
-        transition={{ type: "spring" }}
-    >
-        <div ref={hoverRef} className="Card CardBorder" >
-            <img src={props.bg} className="Team-img"/>
+    return <div ref={hoverRef} className="Card CardBorder" >
+        <img src={props.bg} className="Team-img"/>
         {isHovered ?
-            <div className="TeamCard-HoverDisplay stack-top">
+            <div className="TeamCard-HoverDisplay stack-top ease-anim">
                 <div className="TeamCard-DetailsHeader">
                     <p>
                         {props.title} 
@@ -79,7 +73,6 @@ export function TeamCard(props: TeamCardInterface): JSX.Element {
             </div>
             : <div/>}
         </div>
-    </motion.div>
 }
 
 //Trigger function that activates card details display when hovered over

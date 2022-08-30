@@ -22,15 +22,8 @@ export function EventCard(props: EventCardProps): JSX.Element {
       }, [isPresent])
 
       
-    return(
-        <motion.div
-            key={props.title + props.key}
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 0.8, opacity: 0 }}
-            transition={{ type: "spring" }}
-        >
-            <div className="Card SpreadColumn">
+    return (
+        <div className="Card SpreadColumn">
                 <img className="Event-img" src={"/images/events/" + props.img}/>
                 <h3 className="Card-H3 standard-padding">{props.title}</h3>
                 <p className="Card-P standard-padding">{props.description}</p>
@@ -42,7 +35,6 @@ export function EventCard(props: EventCardProps): JSX.Element {
                     <button className="FL-white">Add event to the calendar</button>
                 </div>
                 <div className="Card-TYPE SpreadRow" style={{"backgroundColor" : `var(--event-card-color-${props.type}`}}></div>
-            </div>       
-        </motion.div>
+            </div>
     )
 }

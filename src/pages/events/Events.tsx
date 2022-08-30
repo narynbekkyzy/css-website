@@ -2,6 +2,7 @@ import "./Events.css";
 import { EventCard } from "../../components/event_card/EventCard";
 import data from "../../content/events.json";
 import { Title } from "../../components/titles/Title";
+import { Motion } from "../../components/Motion";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion"
 
@@ -44,17 +45,22 @@ export function EventsPage(): JSX.Element {
         <div className="EventsContainer-Current">
             {allCards.map((event, key) => {
                 return (
-                <AnimatePresence mode="wait">
-                    <EventCard
-                        key={key}
-                        title={event.title}
-                        description={event.description}
-                        location={event.location}
-                        date={event.date}
-                        img={event.img}
-                        type={event.type}
+                    <Motion
+                        component={
+                            <AnimatePresence mode="wait">
+                                <EventCard
+                                    key={key}
+                                    title={event.title}
+                                    description={event.description}
+                                    location={event.location}
+                                    date={event.date}
+                                    img={event.img}
+                                    type={event.type}
+                                />
+                            </AnimatePresence>
+                        }
+                        key={event.title + key}
                     />
-                </AnimatePresence>
                 );
             })}
         </div>
