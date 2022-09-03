@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { TeamCard } from './TeamCard'
 import { Title } from '../../../components/titles/Title';
 import { Motion } from '../../../components/Motion';
+import { PaginationApplicator } from '../../../components/pagination/PaginationApplicator';
 import membersJson from '../../../content/members.json';
 
 import './OurMembers.css'
@@ -13,6 +14,39 @@ export function OurMembers(): JSX.Element {
 
     const [cards, setCards] = useState(sortCards("Member")); //Array of Team Cards representing members
     const [tag, setTag] = useState("Member");                //Current Tag to display cards
+
+
+    /**
+     * Function that sorts through all cards in the membersJson data variable and sets
+     * cards state to an array of matching cards.
+     * @param tag - string tag used to filter cards
+     */
+    function sortCards(tag: string): JSX.Element {
+        let newCards: JSX.Element[] = [];
+        membersJson.items.map(function (card, key) {
+            card.tags.includes(tag) ? newCards.push(
+                <Motion
+                    component={<TeamCard
+                        bg={card.bg}
+                        title={card.title}
+                        name={card.name}
+                        team={card.team}
+                        desc={card.desc}
+                        askMe={card.askMe}
+                        socials={card.socials}
+                        tags={card.tags}
+                    />}
+                    key={card.name + key}
+                />
+            ) : <></>
+        });
+        return <PaginationApplicator
+            key={Math.random()}       //DON'T TOUCH. This is needed to actually re-render while sorting.
+            data={newCards}
+            class="OurMembers-Cards"
+            pageSize={6}
+        />;
+    }
 
     return <div className="OurMembers">
         <Title
@@ -28,36 +62,7 @@ export function OurMembers(): JSX.Element {
             <button className={tag === "Member" ? "selected" : ""} onClick={() => { setCards(sortCards("Member")); setTag("Member") }}>All Members</button>
         </div>
         <div className="OurMembers-CardsContainer">
-            <div className="OurMembers-Cards">
             {cards}
-            </div>
         </div>
     </div>
-}
-
-/**
- * Function that sorts through all cards in the membersJson data variable and sets
- * cards state to an array of matching cards.
- * @param tag - string tag used to filter cards
- */
-function sortCards(tag: string) : JSX.Element[] {
-    let newCards: JSX.Element[] = [];
-    membersJson.cards.map(function (card, key) {
-        card.tags.includes(tag) ? newCards.push(
-            <Motion
-                component={<TeamCard
-                    bg={card.bg}
-                    title={card.title}
-                    name={card.name}
-                    team={card.team}
-                    desc={card.desc}
-                    askMe={card.askMe}
-                    socials={card.socials}
-                    tags={card.tags}
-                />}
-                key={card.name + key}
-            />
-        ):<div/>
-    });
-    return newCards;
 }

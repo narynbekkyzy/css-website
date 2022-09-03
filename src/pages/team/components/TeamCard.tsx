@@ -25,12 +25,12 @@ export function TeamCard(props: TeamCardInterface): JSX.Element {
     });
     let socials = props.socials.map(function (btn) {
         return <a href={btn[0]}>
-            <button>
-                {btn[1] === "LinkedIn" ? "LI" :
-                    btn[1] === "Instagram" ? "IG" : 
+            <button style={{ background: 
+                btn[1] === "LinkedIn" ? 'url(https://cdn-icons-png.flaticon.com/512/3536/3536505.png)':
+                    btn[1] === "Instagram" ? "IG" :
                         btn[1] === "Discord" ? "DC" :
                             "TG"
-                    }
+                }}>
             </button>
         </a>
     });
@@ -71,7 +71,7 @@ export function TeamCard(props: TeamCardInterface): JSX.Element {
                     </div>
                 </div>
             </div>
-            : <div/>}
+            : <></>}
         </div>
 }
 

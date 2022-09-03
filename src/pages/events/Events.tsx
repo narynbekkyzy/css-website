@@ -4,6 +4,7 @@ import data from "../../content/events.json";
 import { Title } from "../../components/titles/Title";
 import { Motion } from "../../components/Motion";
 import { useEffect, useState } from "react";
+import { PaginationApplicator } from '../../components/pagination/PaginationApplicator';
 import { AnimatePresence, motion } from "framer-motion"
 
 export function EventsPage(): JSX.Element {
@@ -18,7 +19,37 @@ export function EventsPage(): JSX.Element {
             setAllCards(data.events.filter(event => event.type === events));
         }
     }
-    
+
+    function cardCollector() {
+        let collection: JSX.Element[] = []
+        allCards.map((event, key) => {
+            collection.push (
+                <Motion
+                    component={
+                        <AnimatePresence mode="wait">
+                            <EventCard
+                                key={key}
+                                title={event.title}
+                                description={event.description}
+                                location={event.location}
+                                date={event.date}
+                                img={event.img}
+                                type={event.type}
+                            />
+                        </AnimatePresence>
+                    }
+                    key={event.title + key}
+                />
+            );
+        })
+        return <PaginationApplicator
+                    key={Math.random()}
+                    data={collection}
+                    class="EventsContainer-Current"
+                    pageSize={6}
+                />
+    }
+
     useEffect(() => {
         filterAllCards();
     } , [events]);
@@ -43,26 +74,7 @@ export function EventsPage(): JSX.Element {
         
        
         <div className="EventsContainer-Current">
-            {allCards.map((event, key) => {
-                return (
-                    <Motion
-                        component={
-                            <AnimatePresence mode="wait">
-                                <EventCard
-                                    key={key}
-                                    title={event.title}
-                                    description={event.description}
-                                    location={event.location}
-                                    date={event.date}
-                                    img={event.img}
-                                    type={event.type}
-                                />
-                            </AnimatePresence>
-                        }
-                        key={event.title + key}
-                    />
-                );
-            })}
+            {cardCollector()}
         </div>
 
       </div>

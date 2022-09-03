@@ -14,7 +14,13 @@ interface PostItem {
   sortID: number;
 }
 
-export function Pagination(): JSX.Element {
+interface Pagination {
+    data: JSX.Element[];
+    class: string;
+    pageSize: number;
+}
+
+export function Pagination(props: Pagination): JSX.Element {
 
   let dotsPut = false;
   
@@ -22,12 +28,12 @@ export function Pagination(): JSX.Element {
   //Use hooks to update UI
   const [first, setFirst] = useState("hello");
 
-  const [contentToShow, setContentToShow] = useState(data.items);
+  const [contentToShow, setContentToShow] = useState(props.data);
   const [pages, setPages] = useState<number[]>([]);
-  const [currentPage, setCurrentPage] = useState<number>(1); 
+  const [currentPage, setCurrentPage] = useState<number>(1);
 
-  let numberPages = data.items.length;
-  let ITEMS_PER_PAGE = 1;
+  let numberPages = props.data.length;
+  let ITEMS_PER_PAGE = props.pageSize;
 
   
   function calculatePages() {
@@ -57,7 +63,7 @@ export function Pagination(): JSX.Element {
     let start = page * ITEMS_PER_PAGE - ITEMS_PER_PAGE
     let end =  page * ITEMS_PER_PAGE
 
-    let newContent = data.items.filter((item, index) => index >= start && index < end)
+    let newContent = props.data.filter((item, index) => index >= start && index < end)
 
     setContentToShow(newContent);
   }
@@ -72,14 +78,11 @@ export function Pagination(): JSX.Element {
     <>
  
 
-      <div className="Blog-Body-Pagination">
+        <div className="Blog-Body-Pagination">
 
-     
-        {contentToShow.map((item, index) => {
-          return (
-            <button>{item.title}</button>         
-          );
-        })}
+        <div className={props.class}>
+            {contentToShow}
+        </div>
 
         <br></br>
         <br></br>
