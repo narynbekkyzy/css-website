@@ -23,8 +23,8 @@
         - TeamCard-Team ---------------> Team Card Main Team text
 */
 .Card {
-    width: 435.2px;
-    height: 614.4px;
+    width: 462.4px;
+    height: 652.8px;
     background-color: var(--black);
     border-radius: 25px;
     position: relative;
@@ -87,6 +87,7 @@
     font-family: Montserrat;
     /**font-size: 32px; Disable because it conflicts with transition*/
     font-weight: 700;
+    font-size: 24px;
     line-height: 32px;
     letter-spacing: 0em;
     text-align: center;
@@ -120,6 +121,7 @@
     font-size: 20px;
     line-height: 24px;
     color: var(--white);
+    transition: all 0.3s ease-in-out;
     text-shadow: -2px 0 var(--black), 0 2px var(--black), 2px 0 var(--black), 0 -2px var(--black);
 }
 
@@ -146,6 +148,7 @@
     align-items: flex-start;
     text-align: left;
     font-weight: 700;
+    font-size: 20px;
     line-height: 32px;
     list-style-type: circle;
 }
@@ -172,9 +175,9 @@
 }
 
 .TeamCard-DetailsContent{
-    width: calc(435.2px - 32px);
-    padding-top: 16px;
-    padding-bottom: 16px;
+    width: calc(100% - 40px);
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .TeamCard-DetailsContentLower {
@@ -193,10 +196,10 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 10px 16px;
+    padding: 8px 8px;
     margin-left: auto;
     margin-right: auto;
-    gap: 10px;
+    gap: 8px;
     width: 100%;
     height: fit-content;
     background: #FFFFFF;
@@ -206,8 +209,8 @@
 
 .TeamCard-Desc {
     font-family: 'Inter';
-    font-size: 14px;
-    line-height: 14px; /* I know that i had ruin 8px rule :( */
+    font-size: 16px;
+    line-height: 16px;
     color: var(--black);
     text-shadow: none;
 }

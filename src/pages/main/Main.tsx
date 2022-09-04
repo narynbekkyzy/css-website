@@ -46,7 +46,6 @@ export function MainPage(): JSX.Element {
       <UpcomingEvents
         title={data.our_upcoming_events.title}
       />
-      <Footer/>
     </>
   );
 }
