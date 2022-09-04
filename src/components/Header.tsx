@@ -53,7 +53,7 @@ export function Header(): JSX.Element  {
                 break;
             }
         }
-        console.log(move);
+        
         document.documentElement.style.setProperty("--moving_left_spacing", move + "px");
         document.documentElement.style.setProperty("--moving_width", dictWithoutGaps.get(name) + "px");
     }
@@ -65,10 +65,13 @@ export function Header(): JSX.Element  {
         return '';
     }
 
+
     useEffect(() => {
 
         updateName();
-        setWidth();
+        setTimeout(function() {
+            setWidth();
+        }, 1);
 
     }, [location, name]);
 

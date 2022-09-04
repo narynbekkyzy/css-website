@@ -67,7 +67,7 @@
 }
 
 .textContainer {
-    min-width: 1400px;
+    max-width: 1400px;
     display: flex;
     flex-direction: row;
     align-items: center;
