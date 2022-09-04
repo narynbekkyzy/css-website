@@ -21,6 +21,9 @@
     padding-top: 8px;
     /* left: -6413px;
     top: 5814px; */
+    z-index: 120;
+    
+    
 }
 
 .Header-Menu {
@@ -37,8 +40,6 @@
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-
-
 }
 
 .SVGEffects{
@@ -82,4 +83,99 @@
     /* left: 0px;
     top: 0px; */
     border-radius: 0px;
+}
+
+
+.Header-Menu-Mobile{
+    width: 100vw;
+    height: 100vh;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+.Header-Menu-Mobile-MainContainer{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.Header-Menu-Mobile-Main-Container-Top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 24px;
+    padding-left: 24px;
+    width: calc(100vw - 48px);
+    padding-top: 12px;
+}
+
+.Header-Mobile-LinesImageMobile  {
+    height: 40px;
+    width: 40px;
+    margin-top: auto;
+}
+
+.Header-Mobile-LinesImageMobile > img {
+    height: 40px;
+    width: fit-content;
+    margin-top: auto;
+    margin-left: auto;
+}
+
+#LogoMobile{
+    height: 78px;
+    width: auto;
+}
+
+.Header-Menu-Mobile-MainContainer-Buttons{
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    gap: 16px;
+}
+
+.Header-Mobile-LinesImage{
+    display: none;
+    width: 0px;
+}
+
+
+@media screen and (max-width: 1500px) {
+    #Logo{
+        padding-left: 24px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .Header-Menu{
+        display: none;
+        width: 0;
+    }
+
+    .Header-Mobile-LinesImage{
+        height: 40px;
+        display: inline;
+        width: fit-content;
+        height: 40px;
+        padding-right: 24px;
+        padding-bottom: 2px;
+        cursor: pointer;
+    }
+
+    .Header-Mobile-LinesImage > img {
+        height: 40px;
+    }
 }

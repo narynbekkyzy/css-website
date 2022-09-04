@@ -60,6 +60,14 @@ button.active {
   transition-delay: 0ms;
 }
 
+button.mobile-active {
+  mix-blend-mode: normal;
+  color: var(--white);
+  background-color: var(--black);
+  border: 1px solid var(--black);
+  transition-delay: 0ms;
+}
+
 button.active:hover {
   background-color: transparent;
 }
