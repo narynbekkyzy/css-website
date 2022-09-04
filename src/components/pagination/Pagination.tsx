@@ -84,10 +84,6 @@ export function Pagination(props: Pagination): JSX.Element {
             {contentToShow}
         </div>
 
-        <br></br>
-        <br></br>
-        <br></br>
-        <h1>Pagination</h1>
 
         <div className="pagination-align">
         <button className="pagination" onClick={() => {openNewPage(currentPage - 1)}}> <img alt="<" src={rightArrow}></img> </button>

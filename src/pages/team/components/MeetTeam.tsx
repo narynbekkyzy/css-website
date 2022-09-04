@@ -49,3 +49,34 @@ export function MeetTeam(props: MeetTeam): JSX.Element {
         </div>
     </div>
 }
+
+interface WhoWeAre {
+    desc: string;                   //Body Text
+    img: React.ReactNode;           //Img of club members
+    buttons: Array<React.ReactNode>;//Array of buttons
+}
+
+export function MeetTeamV2(props: WhoWeAre): JSX.Element {
+    //Outer div is a container for center and establishing the background block
+    //Inner div is for positioning the actual TextContainer
+    return <div className="WhoWeAre-Container" style={{
+        backgroundColor: "var(--black)", width: "100%",
+        display: "flex", justifyContent: "center" 
+    }}>
+        <div className="WhoWeAre-Content" style={{
+            marginTop: "80px", marginBottom: "80px",
+            marginLeft: "219px", marginRight: "219px", width: "fit-content"
+        }}>
+            <TextContainer
+                isPrimary={true}
+                titleText={"Meet Our Team"}
+                desc={props.desc}
+                white={true}
+                right={false}
+                img={props.img}
+                imgFirst={false}
+                buttons={props.buttons}
+            />
+        </div>
+    </div>
+}

@@ -1,4 +1,4 @@
-/* card elements */
+/* card elements
 .card__title,
 .card-detail {
   font-size: 32px;
@@ -75,4 +75,4 @@
 }
 .card:hover {
   transform: scale(1.02);
-}
+} */
