@@ -170,14 +170,17 @@
 .TeamCard-Social {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
+    padding-bottom: 24px;
 }
 
-.TeamCard-Social a button {
-    width: 50%;
+.TeamCard-Social a  {
     height: 40px;
-    border: none;
-    background-color: var(--white);
+}
+
+
+.TeamCard-Social a img  {
+    height: 40px;
 }
 
 .TeamCard-DetailsContent{

@@ -10,8 +10,13 @@ interface TeamCardInterface {
     team: string;                   //Primary Team
     desc: string;                   //Description Text
     askMe: Array<string>;           //Ask Me bullets
-    socials: Array<Array<string>>;  //Social Media links (Array of Duples where the first is account 
+    socials: SocialProps[];  //Social Media links (Array of Duples where the first is account 
     tags: Array<string>;
+}
+
+interface SocialProps {
+    url: string;
+    name: string;
 }
 
 export function TeamCard(props: TeamCardInterface): JSX.Element {
@@ -24,53 +29,53 @@ export function TeamCard(props: TeamCardInterface): JSX.Element {
         </li>
     });
     let socials = props.socials.map(function (btn) {
-        return <a href={btn[0]}>
-            <button style={{ background: 
-                btn[1] === "LinkedIn" ? 'url(https://cdn-icons-png.flaticon.com/512/3536/3536505.png)':
-                    btn[1] === "Instagram" ? "IG" :
-                        btn[1] === "Discord" ? "DC" :
-                            "TG"
-                }}>
-            </button>
-        </a>
+        return  <a href={btn.url} target="_blank" rel="noreferrer noopener">
+                    <img src={ "images/socials/" + `${btn.name}` + ".svg"}/>
+                </a>
     });
 
     return <div ref={hoverRef} className="Card CardBorder" >
         <img src={props.bg} className="Team-img"/>
         {isHovered ?
-            <div className="TeamCard-HoverDisplay stack-top ease-anim">
-                <div className="TeamCard-DetailsHeader">
-                    <p>
-                        {props.title} 
-                    </p>
-                    <h3 className="Card-H3">
-                        {props.name} 
-                    </h3>
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.3 }}
+            >
+                <div className="TeamCard-HoverDisplay stack-top ease-anim">
+                    <div className="TeamCard-DetailsHeader">
+                        <p>
+                            {props.title} 
+                        </p>
+                        <h3 className="Card-H3">
+                            {props.name} 
+                        </h3>
                 </div>
-                <div className="TeamCard-DetailsContent">
-                    <div className="TeamCard-DetailsContentUpper">
-                        <div className="TeamCard-AskMe">
-                            <p>Ask Me About:</p>
-                            <ul>
-                                {askMe}
-                            </ul>
+                    <div className="TeamCard-DetailsContent">
+                        <div className="TeamCard-DetailsContentUpper">
+                            <div className="TeamCard-AskMe">
+                                <p>Ask Me About:</p>
+                                <ul>
+                                    {askMe}
+                                </ul>
+                            </div>
+                            <div className="TeamCard-Social">
+                                {socials}
+                            </div>
                         </div>
-                        <div className="TeamCard-Social">
-                            {socials}
-                        </div>
-                    </div>
-                    <div className="TeamCard-DetailsContentLower">
-                        <div className="TeamCard-DescBox">
-                            <p className="TeamCard-Desc">
-                                {props.desc}
+                        <div className="TeamCard-DetailsContentLower">
+                            <div className="TeamCard-DescBox">
+                                <p className="TeamCard-Desc">
+                                    {props.desc}
+                                </p>
+                            </div>
+                            <p className="TeamCard-Team">
+                                {props.team}
                             </p>
                         </div>
-                        <p className="TeamCard-Team">
-                            {props.team}
-                        </p>
                     </div>
                 </div>
-            </div>
+            </motion.div>
             : <></>}
         </div>
 }

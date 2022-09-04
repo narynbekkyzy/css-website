@@ -1,9 +1,9 @@
 {
   "items": [
     {
-      "bg": "images/members/ObiWan.webp",
-      "title": "Jedi Knight",
-      "name": "Obi-Wan Kenobi",
+      "bg": "images/members/Aleksandr.webp",
+      "title": "Founder & President",
+      "name": "Aleksandr Molchagin",
       "team": "Core Team",
       "desc": "Aleksandr is a senior student studying Computer Science and Business. He cares about social and environmental issues and believes in the power of technology in making the world a better place.",
       "askMe": [
@@ -14,15 +14,22 @@
         "Graduate Schools"
       ],
       "socials": [
-        [
-          "https://www.linkedin.com/in/amolchagin/",
-          "LinkedIn"
-        ],
-        [
-
-          "https://github.com/AleksandrMolchagin",
-          "GitHub"
-        ]
+        {
+          "url" : "https://www.linkedin.com/in/amolchagin/",
+          "name" : "LinkedIn"
+        },
+        {
+          "url" : "https://github.com/AleksandrMolchagin",
+          "name" : "GitHub"
+        },
+        {
+          "url" : "https://www.instagram.com/aleksandr.molchagin/",
+          "name" : "Instagram"
+        },
+        {
+          "url" : "https://t.me/AleksandrM09",
+          "name" : "Telegram"
+        }
       ],
       "tags": [ "Core Team", "Web Dev Team","Member" ]
     },
@@ -40,15 +47,14 @@
         "Meditation"
       ],
       "socials": [
-        [
-          "https://www.linkedin.com/in/amolchagin/",
-          "LinkedIn"
-        ],
-        [
-
-          "https://github.com/AleksandrMolchagin",
-          "GitHub"
-        ]
+        {
+          "url" : "https://www.linkedin.com/in/amolchagin/",
+          "name" : "LinkedIn"
+        },
+        {
+          "url" : "https://github.com/AleksandrMolchagin",
+          "name" : "GitHub"
+       }
       ],
       "tags": [ "CS Faculty", "Member" ]
     },
@@ -66,14 +72,14 @@
         "Complaining"
       ],
       "socials": [
-        [
-          "https://www.linkedin.com/in/amolchagin/",
-          "LinkedIn"
-        ],
-        [
-          "https://github.com/AleksandrMolchagin",
-          "GitHub"
-        ]
+        {
+          "url" : "https://www.linkedin.com/in/amolchagin/",
+          "name" : "LinkedIn"
+        },
+        {
+          "url" : "https://github.com/AleksandrMolchagin",
+          "name" : "GitHub"
+       }
       ],
       "tags": [ "Core Team", "Member" ]
     },
@@ -85,14 +91,14 @@
       "desc": "Scoundrel",
       "askMe": [ "Screaming", "Sniping", "Sass", "Fashion", "Hair Care" ],
       "socials": [
-        [
-          "https://www.linkedin.com/in/amolchagin/",
-          "LinkedIn"
-        ],
-        [
-          "https://github.com/AleksandrMolchagin",
-          "GitHub"
-        ]
+        {
+          "url" : "https://www.linkedin.com/in/amolchagin/",
+          "name" : "LinkedIn"
+        },
+        {
+          "url" : "https://github.com/AleksandrMolchagin",
+          "name" : "GitHub"
+       }
       ],
       "tags": [ "Voice Assistant Team", "Member" ]
     },
@@ -104,14 +110,14 @@
       "desc": "Bounty Hnter",
       "askMe": [ "Murder", "Assasinating", "Explosives", "Making Money", "War Crimes" ],
       "socials": [
-        [
-          "https://www.linkedin.com/in/amolchagin/",
-          "LinkedIn"
-        ],
-        [
-          "https://github.com/AleksandrMolchagin",
-          "GitHub"
-        ]
+        {
+          "url" : "https://www.linkedin.com/in/amolchagin/",
+          "name" : "LinkedIn"
+        },
+        {
+          "url" : "https://github.com/AleksandrMolchagin",
+          "name" : "GitHub"
+       }
       ],
       "tags": [ "Web Dev Team", "Member" ]
     },
@@ -123,14 +129,14 @@
       "desc": "MWAH HAHA",
       "askMe": [ "The Force", "Jazz Hands", "Being Ugly", "Sitting in a Chair", "Laughing Maniacally" ],
       "socials": [
-        [
-          "https://www.linkedin.com/in/amolchagin/",
-          "LinkedIn"
-        ],
-        [
-          "https://github.com/AleksandrMolchagin",
-          "GitHub"
-        ]
+        {
+          "url" : "https://www.linkedin.com/in/amolchagin/",
+          "name" : "LinkedIn"
+        },
+        {
+          "url" : "https://github.com/AleksandrMolchagin",
+          "name" : "GitHub"
+       }
       ],
       "tags": [ "Member" ]
     }
