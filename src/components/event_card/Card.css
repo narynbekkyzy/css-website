@@ -88,9 +88,10 @@
     /**font-size: 32px; Disable because it conflicts with transition*/
     font-weight: 700;
     font-size: 24px;
-    line-height: 32px;
+    line-height: 24px;
     letter-spacing: 0em;
     text-align: center;
+    
 }
 
 .Card-P {
@@ -101,6 +102,9 @@
     line-height: 32px;
     letter-spacing: 0em;
     text-align: left;
+    overflow: scroll;
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
 }
 
 .TeamCard-HoverDisplay {
