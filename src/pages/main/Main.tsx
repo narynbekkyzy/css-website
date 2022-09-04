@@ -17,7 +17,7 @@ export function MainPage(): JSX.Element {
         
       <StartMain
         desc={data.top.description} 
-        img={<img className="Image3by4" style={{"width": "30%"}} src={data.top.image}/>} 
+        img={<img className="MainLogo" src={data.top.image}/>} 
         buttons={[
           <button className="default">Button 1</button>,
           <button className="default">Button 2</button>

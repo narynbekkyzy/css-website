@@ -53,13 +53,6 @@ export function TextContainer(props: TextContainer): JSX.Element {
       }
     >
       <div
-        style={
-          props.img
-            ? props.imgFirst
-              ? { marginLeft: "90px" }
-              : { marginRight: "90px" }
-            : {}
-        }
         className={dir + col}
       >
         {title}

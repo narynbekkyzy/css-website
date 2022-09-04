@@ -142,3 +142,29 @@
 .Main-White > h2 {
     color: var(--white)
 }
+
+@media screen and (max-width: 768px) {
+    .Primary-Default > h1 {
+        font-family: Montserrat;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: var(--red);
+        margin: 0;
+        padding: 0;
+    }
+    
+    .Primary-Default > h2 {
+        font-family: Aurebesh;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: var(--black);
+        margin: 0;
+        padding: 0; 
+    }    
+}

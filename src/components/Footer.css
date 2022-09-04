@@ -111,6 +111,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    .Footer-First-Left > div > p {
+        font-size: 20px;
+    }
     .Footer-First-Left > * > img {
         width: 90%;
         height: auto;
