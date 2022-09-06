@@ -43,14 +43,9 @@ export function TextContainer(props: TextContainer): JSX.Element {
     />
   );
   //Returns the textContainer object
-  return (
-    <div
-      className="textContainer"
-      style={
-        props.imgFirst
-          ? { flexDirection: "row-reverse", justifyContent: "flex-end" }
-          : {}
-      }
+    return (
+        <div
+            className={props.imgFirst ? "textContainer imgFirst" : "textContainer" }
     >
       <div
         className={dir + col}
@@ -58,14 +53,10 @@ export function TextContainer(props: TextContainer): JSX.Element {
         {title}
         {props.desc ? (
           <p>{props.desc}</p>
-        ) : (
-          <div style={{ height: "0px", width: "0px" }} />
-        )}
+        ) : <></>}
         {btns != 0 ? (
           <div className={"btns" + dir}>{btns}</div>
-        ) : (
-          <div style={{ height: "0px", width: "0px" }} />
-        )}
+        ) : <></>}
       </div>
       {props.img ? props.img : ""}
     </div>

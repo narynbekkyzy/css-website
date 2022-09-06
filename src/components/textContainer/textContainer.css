@@ -80,7 +80,9 @@
     text-align: right;    
 }
 
-.textContainer > div {
+.imgFirst {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
 }
 
 .textContainer.fullsize{
