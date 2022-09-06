@@ -59,6 +59,7 @@ export function OurMembers(): JSX.Element {
             <button className={tag === "Core Team" ? "selected" : ""} onClick={() => { setCards(sortCards("Core Team")); setTag("Core Team") }}>Core Team</button>
             <button className={tag === "Voice Assistant Team" ? "selected" : ""} onClick={() => { setCards(sortCards("Voice Assistant Team")); setTag("Voice Assistant Team") }}>Voice Assistant Team</button>
             <button className={tag === "Web Dev Team" ? "selected" : ""} onClick={() => { setCards(sortCards("Web Dev Team")); setTag("Web Dev Team")}}>Web Dev Team</button>
+            <button className={tag === "Alumni" ? "selected" : ""} onClick={() => { setCards(sortCards("Alumni")); setTag("Alumni")}}>Alumni</button>
             <button className={tag === "Member" ? "selected" : ""} onClick={() => { setCards(sortCards("Member")); setTag("Member") }}>All Members</button>
         </div>
         <div className="OurMembers-CardsContainer">

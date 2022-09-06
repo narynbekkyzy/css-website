@@ -1,0 +1,38 @@
+{
+  "items": [
+    {
+      "bg": "/images/main/dvox.png",
+      "title": "dVox",
+      "category": "Mobile Application",
+      "desc": "A decentralized application built to share thought anonymously using one of the most secured techonology: Ethereum blockchain. Built by K students to voice your thoughts.",
+      "btns": [
+        {
+          "url": "https://www.google.com/",
+          "text": "Learn More"
+        },
+        {
+          "url": "https://www.google.com/",
+          "text": "Watch Trailer"
+        }
+      ],
+      "tags": [ "Project", "Coding" ]
+    },
+    {
+      "bg": "/images/main/dvox.png",
+      "title": "Ocean Whisper",
+      "category": "Web Development",
+      "desc": "Ocean Whisper is a Real Time Strategy Game that simulates ocean pollution from dumping and how it affects us and the economy. It was built during Cypher VII hackathon.",
+      "btns": [
+        {
+          "url": "https://www.google.com/",
+          "text": "Learn More"
+        },
+        {
+          "url": "https://www.google.com/",
+          "text": "Watch Demo"
+        }
+      ],
+      "tags": [ "Project", "Fun" ]
+    }
+  ]
+}

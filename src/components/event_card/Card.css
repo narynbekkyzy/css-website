@@ -227,3 +227,88 @@
 .TeamCard-Team {
     font-family: 'Aurebesh-English';
 }
+
+
+.project-card {
+    width: 600px;
+    height: 456px;
+    border-radius: 25px;
+    position: relative;
+    background: var(--black);
+    overflow: hidden;
+}
+
+.projectCard-hoverDisplay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(22, 22, 22, 0.5);
+    width: 100%;
+    height: 100%;
+    border-radius: 21px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--white);
+    text-shadow: -2px 0 var(--black), 0 2px var(--black), 2px 0 var(--black), 0 -2px var(--black);
+}
+
+.project-aurebesh {
+    font-family: Aurebesh;
+}
+
+.project-desc {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    width: 504px;
+    height: 252px;
+    background-color: var(--white);
+    border-radius: 16px;
+    color: var(--black);
+    text-align: left;
+    text-shadow: none;
+}
+
+.project-title {
+    padding-top: 16px;
+    display: flex;
+    align-items: start;
+    width: 90%;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.right-align {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.project-btns {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 8px;
+}
+
+.project-category {
+    padding-bottom: 16px;
+    font-family: Aurebesh-English;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+}

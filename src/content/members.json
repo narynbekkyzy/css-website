@@ -130,15 +130,44 @@
       "askMe": [ "The Force", "Jazz Hands", "Being Ugly", "Sitting in a Chair", "Laughing Maniacally" ],
       "socials": [
         {
-          "url" : "https://www.linkedin.com/in/amolchagin/",
-          "name" : "LinkedIn"
+          "url": "https://www.linkedin.com/in/amolchagin/",
+          "name": "LinkedIn"
         },
         {
-          "url" : "https://github.com/AleksandrMolchagin",
-          "name" : "GitHub"
-       }
+          "url": "https://github.com/AleksandrMolchagin",
+          "name": "GitHub"
+        }
       ],
       "tags": [ "Member" ]
+    },
+    {
+      "bg": "images/members/luminara.webp",
+      "title": "Alumni",
+      "name": "Ronan Wolfe",
+      "team": "Web Dev Team",
+      "desc": "Ronan is a K Alumi and previous leadership of the Computer Science Society. He graduated in March of 2022 with a major in Computer Science along his additional studies in Japanese and Biology.",
+      "askMe": [
+        "Web Development",
+        "Data Compression (My SIP)",
+        "Student Planning",
+        "Bioinformatics",
+        "Conservation"
+      ],
+      "socials": [
+        {
+          "url": "https://www.linkedin.com/in/ronan-wolfe/",
+          "name": "LinkedIn"
+        },
+        {
+          "url": "https://github.com/RonanGW",
+          "name": "GitHub"
+        },
+        {
+          "url": "https://t.me/IdahoPotatos",
+          "name":  "Telegram"
+        }
+      ],
+      "tags": [ "Alumni", "Web Dev Team", "Member" ]
     }
   ]
 }
