@@ -98,13 +98,26 @@
 
 .ImageFullWidth{
     overflow: visible;
-    width: 50%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+.imageScaler {
+    width: 4500px;
+    height: 100%;
+    margin-left: 128px;
+}
 
-.MainLogo{
+.WhatWeBuild-Container {
+    background-color: var(--black);
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    overflow: hidden;
+}
+
+.MainLogo {
     width: 30%;
 }
 
@@ -114,10 +127,6 @@
         height: 100%;
     }
 
-    .ImageFullWidth {
-        width: 552px;
-        height: 100%;
-    }
 }
 
 @media screen and (max-width: 1424px){
@@ -133,9 +142,10 @@
         height: 400px;
     }
 
-    .ImageFullWidth {
+    .imageScaler {
         width: 688px;
         height: 400px;
+        margin-left: 0px;
     }
 
     .MainLogo{
@@ -143,24 +153,18 @@
     }
 
     .WhatWeBuildContentChange {
-        margin-top: 80px;
-        margin-bottom: 80px;
-        margin-right: 219px;
+        margin: 80px;
     }
 
-    .rightblack {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-        text-align: right;
-        color: var(--black);
+    .WhatWeBuild-Container {
+        justify-content: center;
     }
 }
 
 @media screen and (max-width: 768px) {
 
     .textContainer {
-        width: 100%;
+        width: 344px;
         font-size: 20px;
     }
 
@@ -169,7 +173,7 @@
         height: 200px;
     }
 
-    .ImageFullWidth {
+    .imageScaler {
         width: 344px;
         height: 200px;
     }
@@ -183,13 +187,18 @@
 
 @media screen and (max-width: 400px) {
 
+    .textContainer {
+        width: 100%;
+        font-size: 20px;
+    }
+
     .Image3by4 {
         width: 344px;
         height: 200px;
         display: none;
     }
 
-    .ImageFullWidth {
+    .imageScaler {
         width: 344px;
         height: 200px;
         display: none;
