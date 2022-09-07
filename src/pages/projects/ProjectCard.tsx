@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef, MutableRefObject } from 'react';
 import { motion } from "framer-motion";
 
-import '../../../components/event_card/Card.css';
-import { Motion } from '../../../components/Motion';
+import '../../components/event_card/Card.css';
+import { Motion } from '../../components/Motion';
 
 interface ProjectCardInterface {
     bg: string;

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { ProjectCard } from './ProjectCard'
-import { Title } from '../../../components/titles/Title';
-import { Motion } from '../../../components/Motion';
-import { PaginationApplicator } from '../../../components/pagination/PaginationApplicator';
-import projectsJson from '../../../content/projects.json';
+import { Title } from '../../components/titles/Title';
+import { Motion } from '../../components/Motion';
+import { PaginationApplicator } from '../../components/pagination/PaginationApplicator';
+import projectsJson from '../../content/projects.json';
 
 import './OurProjects.css'
 

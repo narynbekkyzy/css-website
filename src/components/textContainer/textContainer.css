@@ -71,7 +71,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-
+    gap: 8px;
     font-family: Inter;
     font-size: 24px;
     font-weight: 400;
@@ -98,7 +98,7 @@
 
 .ImageFullWidth{
     overflow: visible;
-    width: 100%;
+    width: 50%;
     height: 100%;
     object-fit: cover;
 }
@@ -108,33 +108,90 @@
     width: 30%;
 }
 
-
-@media screen and (max-width: 1200px){
-
-    .textContainer{
-        flex-direction: column;
+@media screen and (max-width: 1600px) {
+    .Image3by4 {
+        width: 552px;
+        height: 100%;
     }
 
-    .Image3by4{
-        width: 100%;
+    .ImageFullWidth {
+        width: 552px;
         height: 100%;
+    }
+}
+
+@media screen and (max-width: 1424px){
+
+    .textContainer {
+        width: 688px;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .Image3by4 {
+        width: 688px;
+        height: 400px;
+    }
+
+    .ImageFullWidth {
+        width: 688px;
+        height: 400px;
     }
 
     .MainLogo{
         width: 70%;
     }
+
+    .WhatWeBuildContentChange {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        margin-right: 219px;
+    }
+
+    .rightblack {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        text-align: right;
+        color: var(--black);
+    }
 }
 
 @media screen and (max-width: 768px) {
 
-    .textContainer{
-        flex-direction: column;
+    .textContainer {
+        width: 100%;
         font-size: 20px;
     }
-    
-    .MainLogo{
+
+    .Image3by4 {
+        width: 344px;
+        height: 200px;
+    }
+
+    .ImageFullWidth {
+        width: 344px;
+        height: 200px;
+    }
+
+    .MainLogo {
         width: 100%;
         padding-left: 24px;
         padding-right: 24px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .Image3by4 {
+        width: 344px;
+        height: 200px;
+        display: none;
+    }
+
+    .ImageFullWidth {
+        width: 344px;
+        height: 200px;
+        display: none;
     }
 }

@@ -16,7 +16,7 @@ export function WhatWeBuild(props: WhatWeBuild): JSX.Element {
         display: "flex", justifyContent: "center" ,
         overflow: "hidden", // Added by Aleksandr on Aug 18, 2022
     }}>
-        <div className="WhatWeBuild-Content" style={{
+        <div className="WhatWeBuild-Content WhatWeBuildContentChange" style={{
             marginLeft: "219px", width: "fit-content"
         }}>
             <TextContainer
