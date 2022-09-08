@@ -59,6 +59,32 @@
       "tags": [ "CS Faculty", "Member" ]
     },
     {
+      "bg": "images/members/Chau.webp",
+      "title": "Vice President",
+      "name": "Chau Ta",
+      "team": "Core Team",
+      "desc": "Chau is a sophomore majoring in Computer Science. She is interested in solving real-life problems using technology. In her free time, Chau loves dancing (dance cover), eating, listening to kpop and jpop, and making miniatures.",
+      "askMe": [
+        "Resources for Beginners",
+        "Career Tips for Beginners"
+      ],
+      "socials": [
+        {
+          "url" : "https://www.instagram.com/_tamc.desu/",
+          "name" : "Instagram"
+        },
+        {
+          "url" : "https://www.linkedin.com/in/chauta-/",
+          "name" : "LinkedIn"
+        },
+        {
+          "url" : "https://github.com/tachau03",
+          "name" : "GitHub"
+       }
+      ],
+      "tags": [ "Core Team", "Web Dev Team", "Member" ]
+    },
+    {
       "bg": "images/members/c3po.webp",
       "title": "Droid",
       "name": "C3PO",
