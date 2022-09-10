@@ -59,6 +59,7 @@ export function UpcomingEvents(props: UpcomgingEventsProps): JSX.Element {
                   description={event.description}
                   location={event.location}
                   date={event.date}
+                  endDate={event.end}
                   img={event.img}
                   type={event.type}
                 />
