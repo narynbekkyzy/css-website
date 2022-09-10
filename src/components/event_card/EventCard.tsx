@@ -1,5 +1,7 @@
 import { motion, usePresence } from "framer-motion";
-import { useEffect } from "react";
+import { atcb_action, atcb_init } from 'add-to-calendar-button';
+import React, { useState } from "react";
+import { EmailPopup } from "./EmailPopup"
 import "./Card.css";
 
 interface EventCardProps{
@@ -16,12 +18,12 @@ interface EventCardProps{
 export function EventCard(props: EventCardProps): JSX.Element {
 
     const [isPresent, safeToRemove] = usePresence()
+    const [calendar, openCalendar] = useState(false)
 
-    useEffect(() => {
+    React.useEffect(() => {
         !isPresent && setTimeout(safeToRemove, 1000)
       }, [isPresent])
 
-      
     return (
         <div className="Card SpreadColumn">
                 <img className="Event-img" src={"/images/events/" + props.img}/>
@@ -32,9 +34,23 @@ export function EventCard(props: EventCardProps): JSX.Element {
                     <h3 className="Card-H3">{props.location}</h3>
                 </div>
                 <div className="SpreadRow standard-padding">
-                    <button className="FL-white">Add event to the calendar</button>
+                <button id="testbut" className="FL-white" onClick={e => {
+      e.preventDefault();
+      atcb_action({
+        name: props.title,
+        startDate: "2022-10-14",
+        endDate: "2022-10-18",
+        options: ['Apple', 'Google', 'iCal', 'Microsoft365', 'Outlook.com', 'Yahoo'],
+        timeZone: "Europe/Berlin",
+        iCalFileName: "Reminder-Event",
+        listStyle: "modal",
+      });
+    }}>Add event to the calendar</button>
                 </div>
                 <div className="Card-TYPE SpreadRow" style={{"backgroundColor" : `var(--event-card-color-${props.type}`}}></div>
-            </div>
+            {calendar ? <div className="email-popup stack-top">
+                <EmailPopup />
+            </div> : <></>}
+        </div>
     )
 }
