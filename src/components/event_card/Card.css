@@ -314,9 +314,18 @@
     line-height: 24px;
 }
 
-.email-popup {
-    background-color: rgba(22, 22, 22, 0.5);
-    width: 5000px;
-    height: 5000px;
-    position: absolute;
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #747474;
+    border-radius: 10px;
 }
