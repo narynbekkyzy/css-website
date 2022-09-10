@@ -56,7 +56,7 @@
           "name" : "GitHub"
        }
       ],
-      "tags": [ "CS Faculty", "Member" ]
+      "tags": []
     },
     {
       "bg": "images/members/Chau.webp",
@@ -107,7 +107,7 @@
           "name" : "GitHub"
        }
       ],
-      "tags": [ "Core Team", "Member" ]
+      "tags": []
     },
     {
       "bg": "images/members/chewbacca.webp",
@@ -126,7 +126,7 @@
           "name" : "GitHub"
        }
       ],
-      "tags": [ "Voice Assistant Team", "Member" ]
+      "tags": []
     },
     {
       "bg": "images/members/bossk.webp",
@@ -145,7 +145,7 @@
           "name" : "GitHub"
        }
       ],
-      "tags": [ "Web Dev Team", "Member" ]
+      "tags": []
     },
     {
       "bg": "images/members/palpatine.webp",
@@ -164,7 +164,7 @@
           "name": "GitHub"
         }
       ],
-      "tags": [ "Member" ]
+      "tags": []
     },
     {
       "bg": "images/members/luminara.webp",
