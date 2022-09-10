@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import { MainPage } from "./pages/main/Main";
 import { TeamPage } from "./pages/team/Team";
+import { OurProjects } from "./pages/projects/OurProjects";
 import { TempPage } from "./pages/tempPage/Temp";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
@@ -100,6 +101,10 @@ function Switcher() {
           path="/opportunities"
            element={<AnimatedTempPage {...pageVariants}/>} />
 
+        <Route
+            path="/projects"
+            element={<AnimatedProjectPage {...pageVariants} />} />
+
         <Route 
           path="/events"
            element={<AnimatedEventsPage {...pageVariants}/>} />
@@ -154,6 +159,20 @@ function AnimatedEventsPage(props: any) {
       <EventsPage/>
     </motion.div>
   );
+}
+
+function AnimatedProjectPage(props: any) {
+    return (
+        <motion.div
+            initial={"out"}
+            animate={"in"}
+            exit={"out"}
+            variants={props}
+            transition={pageTransition}
+        >
+            <OurProjects />
+        </motion.div>
+    );
 }
 
 
