@@ -8,7 +8,7 @@
  * Version: 1.15.1
  * Creator: Jens Kuerschner (https://jenskuerschner.de)
  * Project: https://github.com/add2cal/add-to-calendar-button
- * License: MIT with “Commons Clause” License Condition v1.0
+ * License: MIT with ï¿½Commons Clauseï¿½ License Condition v1.0
  * 
  */
 
@@ -21,7 +21,7 @@
  */
 
 :root {
-    --base-font-size: 16px;
+    --base-font-size: 120px;
     --atcb-keyboard-focus: #1e90ff;
     --atcb-background: #f5f5f5;
     --atcb-background-2: #fff;
@@ -42,8 +42,8 @@
     --atcb-shadow-button-hover: rgba(0 0 0 / 40%) 2px 5px 18px -1px, rgba(0 0 0 / 35%) 2px 2px 10px -3px;
     --atcb-shadow-button-active: rgba(0 0 0 / 50%) 2px 5px 18px -1px, rgba(0 0 0 / 45%) 2px 2px 10px -3px;
     --atcb-shadow-list: rgba(0 0 0 / 20%) 2px 5px 18px -1px, rgba(0 0 0 / 40%) 2px 2px 10px -3px;
-    --atcb-shadow-list-modal: rgba(0 0 0 / 60%) 3px 6px 40px -5px, rgba(0 0 0 / 60%) 3px 3px 15px -4px;
-    --atcb-shadow-modal: rgba(0 0 0 / 0%) 0 0 0 0, rgba(0 0 0 / 0%) 0 0 0 0, rgba(0 0 0 / 60%) 3px 6px 40px -5px, rgba(0 0 0 / 60%) 3px 3px 15px -4px;
+    --atcb-shadow-list-modal: rgba(0 0 0 / 60%) 3px 20px 40px -5px, rgba(0 0 0 / 60%) 3px 3px 15px -4px;
+    --atcb-shadow-modal: rgba(0 0 0 / 0%) 0 0 0 0, rgba(0 0 0 / 0%) 0 0 0 0, rgba(0 0 0 / 60%) 3px 20px 40px -5px, rgba(0 0 0 / 60%) 3px 3px 15px -4px;
     --atcb-shadow-modal-button: rgba(0 0 0 / 30%) 2px 3px 10px -1px, rgba(0 0 0 / 25%) 2px 2px 8px -3px;
     --atcb-shadow-modal-button-primary: rgba(0 0 0 / 40%) 2px 3px 10px -1px, rgba(0 0 0 / 35%) 2px 2px 8px -3px;
     --atcb-shadow-modal-button-hover: rgba(0 0 0 / 45%) 5px 8px 20px -1px, rgba(0 0 0 / 30%) 2px 4px 10px -3px;
@@ -72,8 +72,8 @@ body.atcb-dark .atcb-modal-box.atcb-bodyScheme {
     --atcb-shadow-button-hover: rgba(255 255 255 / 6%) -12px -5px 23px -8px, rgba(255 255 255 / 7%) -7px -5px 18px -3px, rgba(0 0 0 / 60%) 2px 5px 19px -1px, rgba(0 0 0 / 50%) 3px 3px 22px -3px;
     --atcb-shadow-button-active: rgba(255 255 255 / 7%) -12px -5px 23px -8px, rgba(255 255 255 / 8%) -7px -5px 18px -3px, rgba(0 0 0 / 70%) 2px 5px 19px -1px, rgba(0 0 0 / 60%) 3px 3px 22px -3px;
     --atcb-shadow-list: rgba(255 255 255 / 5%) -12px -5px 20px -8px, rgba(255 255 255 / 6%) -7px -5px 15px -3px, rgba(0 0 0 / 50%) 2px 5px 18px -1px, rgba(0 0 0 / 40%) 3px 3px 20px -3px;
-    --atcb-shadow-list-modal: rgba(255 255 255 / 8%) -12px -5px 30px -8px, rgba(255 255 255 / 8%) -7px -5px 15px -3px, rgba(0 0 0 / 60%) 4px 6px 50px -4px, rgba(0 0 0 / 90%) 8px 12px 40px -2px;
-    --atcb-shadow-modal: rgba(255 255 255 / 8%) -12px -5px 30px -8px, rgba(255 255 255 / 8%) -7px -5px 15px -3px, rgba(0 0 0 / 60%) 4px 6px 50px -4px, rgba(0 0 0 / 90%) 8px 12px 40px -2px;
+    --atcb-shadow-list-modal: rgba(255 255 255 / 8%) -12px -5px 30px -8px, rgba(255 255 255 / 8%) -7px -5px 15px -3px, rgba(0 0 0 / 60%) 4px 20px 50px -4px, rgba(0 0 0 / 90%) 8px 12px 40px -2px;
+    --atcb-shadow-modal: rgba(255 255 255 / 8%) -12px -5px 30px -8px, rgba(255 255 255 / 8%) -7px -5px 15px -3px, rgba(0 0 0 / 60%) 4px 20px 50px -4px, rgba(0 0 0 / 90%) 8px 12px 40px -2px;
     --icon-ms365-color: #ea3e23;
     --icon-yahoo-color: #bebebe;
     --icon-filter: grayscale(.2);
@@ -94,12 +94,13 @@ body.atcb-dark .atcb-modal-box.atcb-bodyScheme {
     align-items: center;
     background-color: var(--atcb-background);
     border: 1px solid var(--atcb-border);
-    border-radius: 6px;
+    border-radius: 20px;
     box-shadow: var(--atcb-shadow-button);
     color: var(--atcb-text);
     cursor: pointer;
     display: flex;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Monstserrat", sans-serif;
+
     font-size: 1em;
     font-weight: 600;
     justify-content: center;
@@ -196,12 +197,12 @@ body.atcb-dark .atcb-modal-box.atcb-bodyScheme {
     }
 
 .atcb-list {
-    border-radius: 0 0 6px 6px;
+    border-radius: 0 0 20px 20px;
     box-sizing: border-box;
     box-shadow: var(--atcb-shadow-list);
     color: var(--atcb-text);
     display: block;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Monstserrat", sans-serif;
     font-size: var(--base-font-size);
     max-width: 100%;
     position: relative;
@@ -244,7 +245,7 @@ body.atcb-dark .atcb-modal-box.atcb-bodyScheme {
 }
 
 .atcb-list-item:last-child {
-    border-radius: 0 0 6px 6px;
+    border-radius: 0 0 20px 20px;
 }
 
 .atcb-list .atcb-list-item:not(:first-child) {
@@ -259,12 +260,12 @@ body.atcb-dark .atcb-modal-box.atcb-bodyScheme {
 .atcb-dropup .atcb-list-item:first-child,
 .atcb-dropoverlay .atcb-list .atcb-list-item:first-child,
 .atcb-list.atcb-modal .atcb-list-item:first-child {
-    border-radius: 6px 6px 0 0;
+    border-radius: 20px 20px 0 0;
 }
 
 .atcb-dropoverlay .atcb-list .atcb-list-item:only-child,
 .atcb-list.atcb-modal .atcb-list-item:only-child {
-    border-radius: 6px;
+    border-radius: 20px;
 }
 
 .atcb-list.atcb-generated-button:not(.atcb-modal) .atcb-list-item:first-child {
@@ -278,7 +279,7 @@ body.atcb-dark .atcb-modal-box.atcb-bodyScheme {
 
 .atcb-dropoverlay .atcb-list,
 .atcb-list.atcb-modal {
-    border-radius: 6px;
+    border-radius: 20px;
 }
 
 .atcb-list.atcb-modal {
@@ -359,10 +360,10 @@ body.atcb-dark .atcb-modal-box.atcb-bodyScheme {
     box-shadow: var(--atcb-shadow-modal);
     color: var(--atcb-text-2);
     cursor: default;
-    border-radius: 6px;
+    border-radius: 20px;
     border: 1px solid var(--atcb-border);
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Monstserrat", sans-serif;
     font-size: var(--base-font-size);
     line-height: 1.5em;
     padding: 1.25em 1.5em;
@@ -452,12 +453,12 @@ button.atcb-modal-btn,
 a.atcb-modal-btn {
     background-color: var(--atcb-modal-btn-background);
     border: 1px solid var(--atcb-modal-btn-border);
-    border-radius: 6px;
+    border-radius: 20px;
     box-shadow: var(--atcb-shadow-modal-button);
     color: var(--atcb-modal-btn-sec-text);
     cursor: pointer;
     display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Monstserrat", sans-serif;
     font-size: 1em;
     font-weight: 600;
     line-height: 1.5em;
