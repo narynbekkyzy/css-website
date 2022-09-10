@@ -105,6 +105,7 @@
     letter-spacing: 0em;
     text-align: left;
     overflow: scroll;
+    overflow-x: hidden;
     scrollbar-color: rebeccapurple green;
     scrollbar-width: thin;
 }

@@ -1,5 +1,6 @@
-import { motion, usePresence } from "framer-motion";
-import { atcb_action, atcb_init } from 'add-to-calendar-button';
+import { usePresence } from "framer-motion";
+import { atcb_action } from 'add-to-calendar-button';
+import './atcb.css';
 import React, { useState } from "react";
 import { EmailPopup } from "./EmailPopup"
 import "./Card.css";
@@ -35,22 +36,19 @@ export function EventCard(props: EventCardProps): JSX.Element {
                 </div>
                 <div className="SpreadRow standard-padding">
                 <button id="testbut" className="FL-white" onClick={e => {
-      e.preventDefault();
-      atcb_action({
-        name: props.title,
-        startDate: "2022-10-14",
-        endDate: "2022-10-18",
-        options: ['Apple', 'Google', 'iCal', 'Microsoft365', 'Outlook.com', 'Yahoo'],
-        timeZone: "Europe/Berlin",
-        iCalFileName: "Reminder-Event",
-        listStyle: "modal",
-      });
-    }}>Add event to the calendar</button>
+                  e.preventDefault();
+                  atcb_action({
+                    name: props.title,
+                    startDate: "2022-10-14",
+                    endDate: "2022-10-18",
+                    options: ['Apple', 'Google', 'iCal', 'Microsoft365', 'Outlook.com', 'Yahoo'],
+                    timeZone: "Europe/Berlin",
+                    iCalFileName: "Reminder-Event",
+                    listStyle: "modal",
+                  });
+                }}>Add event to the calendar</button>
                 </div>
                 <div className="Card-TYPE SpreadRow" style={{"backgroundColor" : `var(--event-card-color-${props.type}`}}></div>
-            {calendar ? <div className="email-popup stack-top">
-                <EmailPopup />
-            </div> : <></>}
         </div>
     )
 }
