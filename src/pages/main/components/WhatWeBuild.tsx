@@ -13,7 +13,8 @@ export function WhatWeBuild(props: WhatWeBuild): JSX.Element {
     //Inner div is for positioning the actual TextContainer
     return <div className="WhatWeBuild-Container">
         <div className="WhatWeBuild-Content WhatWeBuildContentChange" style={{
-            width: "fit-content"
+        backgroundColor: "var(--black)", width: "100%",
+        display: "flex", justifyContent: "center" 
         }}>
             <TextContainer
                 isPrimary={true}

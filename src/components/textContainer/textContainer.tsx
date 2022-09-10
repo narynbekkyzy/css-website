@@ -58,9 +58,7 @@ export function TextContainer(props: TextContainer): JSX.Element {
           <div className={"btns" + dir}>{btns}</div>
         ) : <></>}
             </div>
-          <div className="imageScaler">
             {props.img ? props.img : ""}
-          </div>
       </div>
   );
 }

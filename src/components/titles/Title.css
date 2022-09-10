@@ -151,7 +151,6 @@
         line-height: 48px;
         letter-spacing: 0em;
         text-align: left;
-        color: var(--red);
         margin: 0;
         padding: 0;
     }
@@ -163,7 +162,6 @@
         line-height: 16px;
         letter-spacing: 0em;
         text-align: left;
-        color: var(--black);
         margin: 0;
         padding: 0; 
     }    

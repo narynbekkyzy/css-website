@@ -37,3 +37,9 @@
     flex-basis: 31%; /* 3 items per row */
     text-decoration: none;
 }
+
+@media screen and (max-width: 1400px) {
+    .WhatWeOffer-Row {
+        width: fit-content;
+    }
+}
