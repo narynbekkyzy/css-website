@@ -30,6 +30,7 @@
 .EventsContainerTitle{
     padding-left: 0px;
     padding-right: 0px;
+    width: fit-content;
 }
 
 .EventsContainer-Categories > * {

@@ -64,9 +64,9 @@ export function MeetTeamV2(props: WhoWeAre): JSX.Element {
         display: "flex", justifyContent: "center" 
     }}>
         <div className="WhoWeAre-Content" style={{
-            marginTop: "80px", marginBottom: "80px",
-            marginLeft: "219px", marginRight: "219px", width: "fit-content"
-        }}>
+           marginTop: "80px", marginBottom: "80px",
+           marginLeft: "24px", marginRight: "24px", width: "fit-content"
+       }}>
             <TextContainer
                 isPrimary={true}
                 titleText={"Meet Our Team"}
