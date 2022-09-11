@@ -19,16 +19,21 @@ export function MainPage(): JSX.Element {
         desc={data.top.description} 
         img={<img className="MainLogo" src={data.top.image}/>} 
         buttons={[
-          <button className="default">Button 1</button>,
-          <button className="default">Button 2</button>
+          <a href="/events">
+          <button className="default">Current Events</button>
+          </a>,
+          <a href="https://discord.gg/dC5ceA7u">
+          <button className="default">Join Us</button>
+          </a>
         ]}/>
 
       <WhoWeAre 
         desc={data.who_we_are.description} 
         img={<img className="Image3by4" src={data.who_we_are.image}/>} 
         buttons={[
-          <button className="default-white">Button 1</button>,
-          <button className="default-white">Button 2</button>
+          <a href="/team">
+          <button className="default-white">Meet The Team</button>
+          </a>
         ]}/>
 
       <WhatWeOffer 
@@ -39,8 +44,9 @@ export function MainPage(): JSX.Element {
         desc={data.who_we_are.description} 
         img={<img className="Image3by4" src={data.what_we_build.image}/>} 
         buttons={[
-          <button className="default-white">Button 1</button>,
-          <button className="default-white">Button 2</button>
+          <a href="/projects">
+          <button className="default-white">Projects</button>
+          </a>
         ]}
       />
       <UpcomingEvents
