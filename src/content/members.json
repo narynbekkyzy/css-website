@@ -167,7 +167,7 @@
       "tags": []
     },
     {
-      "bg": "images/members/luminara.webp",
+      "bg": "images/members/Ronan.webp",
       "title": "Alumni",
       "name": "Ronan Wolfe",
       "team": "Web Dev Team",
@@ -190,7 +190,7 @@
         },
         {
           "url": "https://t.me/IdahoPotatos",
-          "name":  "Telegram"
+          "name": "Telegram"
         }
       ],
       "tags": [ "Alumni", "Web Dev Team", "Member" ]
