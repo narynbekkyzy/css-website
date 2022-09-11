@@ -19,7 +19,7 @@ export function ProjectCard(props: ProjectCardInterface): JSX.Element {
 
     return <div ref={hoverRef} className="project-card CardBorder">
             <img src={props.bg} className="Team-img" />
-            {!isHovered ?
+            {isHovered ?
 
             <motion.div
                 initial={{ opacity: 0 }}
