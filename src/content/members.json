@@ -111,11 +111,11 @@
     },
     {
       "bg": "images/members/chewbacca.webp",
-      "title": "Wookie",
-      "name": "Chewbacca",
-      "team": "Voice Assistant Team",
-      "desc": "Scoundrel",
-      "askMe": [ "Screaming", "Sniping", "Sass", "Fashion", "Hair Care" ],
+      "title": "Vice President",
+      "name": "Kate Haywood",
+      "team": "Core Team",
+      "desc": "Kate is a senior student studying computer science and biology. She is interested in helping students whenever possible. In her free time she enjoys spending time with friends and family, exploring new places, and playing board games.",
+      "askMe": ["CS and bio classes", "Taking the path less traveled", "Becoming more involved in CSS"],
       "socials": [
         {
           "url" : "https://www.linkedin.com/in/amolchagin/",
@@ -126,7 +126,7 @@
           "name" : "GitHub"
        }
       ],
-      "tags": []
+      "tags": ["Core Team"]
     },
     {
       "bg": "images/members/bossk.webp",
