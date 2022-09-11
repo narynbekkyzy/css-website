@@ -1,11 +1,11 @@
 {
     "top":{
-        "description": "Computer Science Society is a community for students interested in CS beyond the classroom to meet, communicate, and try new things. There will be activities and events for all students looking to dive deeper into the understanding of CS through coding, networking, and career help. We hope to see you at one of our various events to learn more.",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in suscipit non. Non commodo volutpat, pharetra, vel.",
         "image": "/images/main/robot.svg"
     },
 
     "who_we_are":{
-        "description": "We are a club founded in Kalamazoo College whose goal is to create a path for students to more of an opportunity and resources when trying to start a career in the CS field.",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in suscipit non. Non commodo volutpat, pharetra, vel.",
         "image": "/images/main/who_we_are.jpg"
 
     },
