@@ -110,7 +110,7 @@
       "tags": ["Core Team", "Web Dev Team", "Member"]
     },
     {
-      "bg": "images/members/chewbacca.webp",
+      "bg": "images/members/Kate.webp",
       "title": "Vice President",
       "name": "Kate Haywood",
       "team": "Core Team",
@@ -126,7 +126,7 @@
           "name" : "GitHub"
        }
       ],
-      "tags": ["Core Team"]
+      "tags": ["Member", "Core Team"]
     },
     {
       "bg": "images/members/bossk.webp",
