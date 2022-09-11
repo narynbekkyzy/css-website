@@ -67,9 +67,9 @@ export function OurProjects(): JSX.Element {
         />
         <div className="OurProjects-CategoryButtons">
             <button className={tag === "Project" ? "selected" : ""} onClick={() => { setCards(sortCards("Project")); setTag("Project") }}>All</button>
-            <button className={tag === "Fun" ? "selected" : ""} onClick={() => { setCards(sortCards("Fun")); setTag("Fun") }}>Fun</button>
-            <button className={tag === "Career" ? "selected" : ""} onClick={() => { setCards(sortCards("Career")); setTag("Career") }}>Career</button>
-            <button className={tag === "Coding" ? "selected" : ""} onClick={() => { setCards(sortCards("Coding")); setTag("Coding") }}>Coding</button>
+            <button className={tag === "Mobile Development" ? "selected" : ""} onClick={() => { setCards(sortCards("Mobile Development")); setTag("Mobile Development") }}>Mobile Development</button>
+            <button className={tag === "Web Development" ? "selected" : ""} onClick={() => { setCards(sortCards("Web Development")); setTag("Web Development") }}>Web Development</button>
+            <button className={tag === "Game Development" ? "selected" : ""} onClick={() => { setCards(sortCards("Game Development")); setTag("Game Development") }}>Game Development</button>
        </div>
         <div className="OurProjects-CardsContainer">
             {cards}
