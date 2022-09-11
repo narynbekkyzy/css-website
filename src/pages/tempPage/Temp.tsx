@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import './temp.css'
 import data from "../../content/numbers.json";
 
 
@@ -8,7 +8,8 @@ export function TempPage(): JSX.Element {
     <>
  
 <div className="Opportunities_body">
-COMING SOON
+  <h1>Coming Soon</h1>
+
 </div>
       
     </>
