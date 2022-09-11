@@ -108,6 +108,7 @@
     overflow-x: hidden;
     scrollbar-color: rebeccapurple green;
     scrollbar-width: thin;
+    height: 117px;
 }
 
 .TeamCard-HoverDisplay {
@@ -334,4 +335,44 @@
 ::-webkit-scrollbar-thumb {
     background: #747474;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 568px) {
+    .Card {
+        width: 369px;
+        height: 522.2px;
+        background-color: var(--black);
+        border-radius: 25px;
+        position: relative;
+        overflow: hidden;
+        gap: 20px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .Card-H3{
+        margin: 0px;
+        color: var(--white);
+        font-family: Montserrat;
+        /**font-size: 32px; Disable because it conflicts with transition*/
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: center;
+        
+    }
+
+    .Card-P {
+        color: var(--white);
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+        overflow: scroll;
+        overflow-x: hidden;
+        scrollbar-color: rebeccapurple green;
+        scrollbar-width: thin;
+    }
 }

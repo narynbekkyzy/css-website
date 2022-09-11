@@ -1,4 +1,4 @@
-.Text {
+.OfferItemText {
     font-family: Montserrat;
     color: var(--black);
     font-family: Montserrat;
@@ -7,4 +7,22 @@
     line-height: 29px;
     letter-spacing: 0em;
     text-align: center;
+}
+.OfferItemImage{
+    width: fit-content;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .OfferItemText {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+
+    .OfferItemImage{
+        width: 75px;
+        height: fit-content;
+    }    
 }

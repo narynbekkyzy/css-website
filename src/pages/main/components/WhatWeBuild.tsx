@@ -12,9 +12,9 @@ export function WhatWeBuild(props: WhatWeBuild): JSX.Element {
     //Outer div is a container for center and establishing the background block
     //Inner div is for positioning the actual TextContainer
     return <div className="WhatWeBuild-Container">
-        <div className="WhatWeBuild-Content WhatWeBuildContentChange" style={{
-        backgroundColor: "var(--black)", width: "100%",
-        display: "flex", justifyContent: "center" 
+        <div className="WhatWeBuild-Content " style={{
+            marginTop: "80px", marginBottom: "80px",
+            marginLeft: "24px", marginRight: "24px", width: "fit-content"
         }}>
             <TextContainer
                 isPrimary={true}
