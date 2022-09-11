@@ -7,31 +7,40 @@
 
     "events":[
       {
-        "title": "Interview Experience 2",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate.",
+        "title": "It's MORE than Just Coding",
+        "description": "[FREE FOOD] Come and talk to fellow students about your interests & how Computer Science Society can provide opportunities to make your college journey more enjoyable. Our events can include networking, games, projects, resume building, and getting to know your peers! You decide what we bring to campus.",
         "location": "OU312",
-        "date": "December 17, 1995 15:09:00",
-        "end": "December 17, 1995 09:24:00",
-        "img": "TeslaPoster.png",
-        "type": "career"
-      },
-      {
-        "title": "Fun Event #1",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate.",
-        "location": "OU312",
-        "date": "December 17, 1995 03:24:00",
-        "end": "December 17, 1995 09:24:00",
+        "date": "September 10, 2022 10:00:00",
+        "end": "September 10, 2022 10:45:00",
         "img": "TeslaPoster.png",
         "type": "fun"
       },
       {
-        "title": "Coding event #1",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate.",
+        "title": "It's MORE than Just Coding",
+        "description": "[FREE FOOD] Come and talk to fellow students about your interests & how Computer Science Society can provide opportunities to make your college journey more enjoyable. Our events can include networking, games, projects, resume building, and getting to know your peers! You decide what we bring to campus.",
         "location": "OU312",
-        "date": "December 17, 1995 03:24:00",
-        "end": "December 17, 1995 09:24:00",
+        "date": "September 10, 2022 13:00:00",
+        "end": "September 10, 2022 13:45:00",
         "img": "TeslaPoster.png",
-        "type": "coding"
+        "type": "fun"
+      },
+      {
+        "title": "It's MORE than Just Coding",
+        "description": "[FREE FOOD] Come and talk to fellow students about your interests & how Computer Science Society can provide opportunities to make your college journey more enjoyable. Our events can include networking, games, projects, resume building, and getting to know your peers! You decide what we bring to campus.",
+        "location": "OU312",
+        "date": "September 10, 2022 18:00:00",
+        "end": "September 10, 2022 18:45:00",
+        "img": "TeslaPoster.png",
+        "type": "fun"
+      },
+      {
+        "title": "K Fest!!!",
+        "description": "Welcome to K Fest 2022! We're so excited to have you join us as we have over 60 departments and organizations excited to meet you!",
+        "location": "The Quad",
+        "date": "September 21, 2022",
+        "end": "September 21, 2022",
+        "img": "TeslaPoster.png",
+        "type": "fun"
       },
       {
         "title": "Coding event #2",
@@ -41,24 +50,6 @@
         "end": "December 17, 1995 09:24:00",
         "img": "TeslaPoster.png",
         "type": "coding"
-      },
-      {
-        "title": "Coding event #3",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate.",
-        "location": "OU312",
-        "date": "December 17, 1995 03:24:00",
-        "end": "December 17, 1995 09:24:00",
-        "img": "TeslaPoster.png",
-        "type": "coding"
-      },
-      {
-        "title": "Career event #2",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate.",
-        "location": "OU312",
-        "date": "December 17, 1995 03:24:00",
-        "end": "December 17, 1995 09:24:00",
-        "img": "TeslaPoster.png",
-        "type": "career"
       }
     ]
 }
