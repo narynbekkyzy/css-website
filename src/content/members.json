@@ -85,29 +85,29 @@
       "tags": [ "Core Team", "Web Dev Team", "Member" ]
     },
     {
-      "bg": "images/members/c3po.webp",
-      "title": "Droid",
-      "name": "C3PO",
+      "bg": "images/members/Fatima.jpeg",
+      "title": "Vice President",
+      "name": "Fatima R. Ortega",
       "team": "Core Team",
-      "desc": "Human Cyborg Relations",
+      "desc": "Fatima is a first generation senior majoring in Computer Science, Business, and Spanish. She is interested in helping students have an easier time in pursuing a career in CS. In her free time, Fatima loves to eat pork soup dumplings, going to the gym, and hang out with her friends.",
       "askMe": [
-        "Human Cyborg Relations",
-        "Literally Any Language",
-        "Annoying Poeple",
-        "Being Oblivious",
-        "Complaining"
+        "Anime",
+        "Chicago",
+        "Being a first generation latina",
+        "Starting in CS with no background experience"
+        
       ],
       "socials": [
         {
-          "url" : "https://www.linkedin.com/in/amolchagin/",
+          "url" : "https://www.linkedin.com/in/fatima-ortega-402015170/",
           "name" : "LinkedIn"
         },
         {
-          "url" : "https://github.com/AleksandrMolchagin",
+          "url" : "https://github.com/FatimaOrtega",
           "name" : "GitHub"
        }
       ],
-      "tags": []
+      "tags": ["Core Team", "Web Dev Team", "Member"]
     },
     {
       "bg": "images/members/chewbacca.webp",
