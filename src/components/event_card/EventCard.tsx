@@ -30,7 +30,7 @@ export function EventCard(props: EventCardProps): JSX.Element {
     function MonthCalc(month: number): string {
         const names = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
-        return names[month - 1]
+        return names[month]
     }
 
     function zeroAppender(val: number): string {
@@ -54,7 +54,7 @@ export function EventCard(props: EventCardProps): JSX.Element {
                   atcb_action({
                       name: props.title,
                       description: props.description,
-                    startDate: date.getFullYear() + "-" + date.getMonth() + "-" + date.getDate(),
+                    startDate: date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate(),
                       startTime: zeroAppender(date.getHours()) + ":" + zeroAppender(date.getMinutes()),
                       endTime: zeroAppender(endDate.getHours()) + ":" + zeroAppender(endDate.getMinutes()),
                       location: props.location,

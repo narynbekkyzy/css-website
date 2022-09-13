@@ -10,16 +10,16 @@
         "title": "Interview Experience 2",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate.",
         "location": "OU312",
-        "date": "December 17, 1995 15:09:00",
+        "date": "November 17, 1995 03:24:00",
         "end": "December 17, 1995 09:24:00",
         "img": "TeslaPoster.png",
         "type": "career"
       },
       {
-        "title": "Fun Event #1",
+        "title": "Fun Event #15",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate.",
         "location": "OU312",
-        "date": "December 17, 1995 03:24:00",
+        "date": "March 17, 1995 03:24:00",
         "end": "December 17, 1995 09:24:00",
         "img": "TeslaPoster.png",
         "type": "fun"
@@ -28,7 +28,7 @@
         "title": "Coding event #1",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate.",
         "location": "OU312",
-        "date": "December 17, 1995 03:24:00",
+        "date": "January 17, 1995 03:24:00",
         "end": "December 17, 1995 09:24:00",
         "img": "TeslaPoster.png",
         "type": "coding"
