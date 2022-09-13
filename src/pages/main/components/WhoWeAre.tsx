@@ -17,7 +17,7 @@ export function WhoWeAre(props: WhoWeAre): JSX.Element {
     }}>
         <div className="WhoWeAre-Content" style={{
             marginTop: "80px", marginBottom: "80px",
-            marginLeft: "219px", marginRight: "219px", width: "fit-content"
+            marginLeft: "24px", marginRight: "24px", width: "fit-content"
         }}>
             <TextContainer
                 isPrimary={true}

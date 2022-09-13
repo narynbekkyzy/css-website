@@ -63,7 +63,7 @@ export function EventCard(props: EventCardProps): JSX.Element {
                     iCalFileName: props.title + "-Reminder-Event",
                     listStyle: "modal",
                   });
-                }}>Add event to the calendar</button>
+                }}>Add to the calendar</button>
                 </div>
                 <div className="Card-TYPE SpreadRow" style={{"backgroundColor" : `var(--event-card-color-${props.type}`}}></div>
         </div>

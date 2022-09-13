@@ -72,6 +72,7 @@
 
 .Team-img {
     width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -108,6 +109,7 @@
     overflow-x: hidden;
     scrollbar-color: rebeccapurple green;
     scrollbar-width: thin;
+    height: 117px;
 }
 
 .TeamCard-HoverDisplay {
@@ -219,8 +221,8 @@
 
 .TeamCard-Desc {
     font-family: 'Inter';
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 15px;
+    line-height: 17px;
     color: var(--black);
     text-shadow: none;
 }
@@ -276,13 +278,14 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: start;
-    width: 504px;
-    height: 252px;
+    margin-left: 24px;
+    margin-right: 24px;
     background-color: var(--white);
     border-radius: 16px;
     color: var(--black);
     text-align: left;
     text-shadow: none;
+    height: 264px;
 }
 
 .project-title {
@@ -309,6 +312,8 @@
     justify-content: center;
     width: 100%;
     gap: 8px;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 .project-category {
@@ -334,4 +339,93 @@
 ::-webkit-scrollbar-thumb {
     background: #747474;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 568px) {
+    .Card {
+        width: 369px;
+        height: 522.2px;
+        background-color: var(--black);
+        border-radius: 25px;
+        position: relative;
+        overflow: hidden;
+        gap: 20px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .Card-H3{
+        margin: 0px;
+        color: var(--white);
+        font-family: Montserrat;
+        /**font-size: 32px; Disable because it conflicts with transition*/
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: center;
+        
+    }
+
+    .Card-P {
+        color: var(--white);
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+        overflow: scroll;
+        overflow-x: hidden;
+        scrollbar-color: rebeccapurple green;
+        scrollbar-width: thin;
+    }
+
+
+    .TeamCard-AskMe {   
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .TeamCard-Social {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding-bottom: 12px;
+    }
+
+    .TeamCard-Social a  {
+        height: 32px;
+    }
+    
+    
+    .TeamCard-Social a img  {
+        height: 32px;
+    }
+
+    .TeamCard-Desc {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .project-card {
+        width: 360px;
+        height: 273px;
+        border-radius: 25px;
+        position: relative;
+        background: var(--black);
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .project-desc {
+        width: fit-content;
+        transform: scale(0.8);
+    }
+
+    
+    .project-title {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    
 }

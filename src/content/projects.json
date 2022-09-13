@@ -1,38 +1,51 @@
 {
   "items": [
     {
-      "bg": "/images/main/dvox.png",
+      "bg": "/images/projects/dvox.png",
       "title": "dVox",
       "category": "Mobile Application",
       "desc": "A decentralized application built to share thought anonymously using one of the most secured techonology: Ethereum blockchain. Built by K students to voice your thoughts.",
       "btns": [
         {
-          "url": "https://www.google.com/",
+          "url": "https://youtu.be/X_9bzjMV16I",
           "text": "Learn More"
         },
         {
-          "url": "https://www.google.com/",
+          "url": "https://youtu.be/Eu2gW1d_whY",
           "text": "Watch Trailer"
         }
       ],
       "tags": [ "Project", "Coding" ]
     },
     {
-      "bg": "/images/main/dvox.png",
+      "bg": "/images/projects/ow.webp",
       "title": "Ocean Whisper",
-      "category": "Web Development",
+      "category": "Game Development",
       "desc": "Ocean Whisper is a Real Time Strategy Game that simulates ocean pollution from dumping and how it affects us and the economy. It was built during Cypher VII hackathon.",
       "btns": [
         {
-          "url": "https://www.google.com/",
+          "url": "https://devpost.com/software/ocean-s-whisper",
           "text": "Learn More"
         },
         {
-          "url": "https://www.google.com/",
+          "url": "https://youtu.be/6sJgxbGeKtU",
           "text": "Watch Demo"
         }
       ],
-      "tags": [ "Project", "Fun" ]
+      "tags": [ "Project", "Game Development" ]
+    },
+    {
+      "bg": "/images/projects/vbw.webp",
+      "title": "Project VBW",
+      "category": "Web Development",
+      "desc": "The internet, in its entirety, contributes strongly to the degradation of the environment. The goal of the project is to formalize information regarding the energy use and related carbon emissions.",
+      "btns": [
+        {
+          "url": "https://vbw-decentralized-people-github-io.pages.dev/",
+          "text": "Visit Website"
+        }
+      ],
+      "tags": [ "Project", "Web Development" ]
     }
   ]
 }

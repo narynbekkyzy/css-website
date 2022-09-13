@@ -14,10 +14,10 @@ interface Item {
 export function OfferItem(props: Item): JSX.Element  {
     return (
         <div className='props'>
-            <img  
+            <img className='OfferItemImage'
                 src={props.image} >
             </img>
-            <p className='Text'>{props.text}</p>
+            <p className='OfferItemText'>{props.text}</p>
         </div>
     )
 }

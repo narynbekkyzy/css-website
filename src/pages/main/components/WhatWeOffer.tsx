@@ -35,7 +35,7 @@ export function WhatWeOffer(props: WhatWeOffer): JSX.Element {
                 <div className='WhatWeOffer-Row'>
                     {props.items.map((item, index) => {
                         return(
-                            <a href={item.link} target="_blank" rel="noreferrer noopener">
+                            <a>
                                 {<OfferItem 
                                     image={item.img}
                                     text={item.name}/>
