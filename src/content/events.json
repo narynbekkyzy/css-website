@@ -7,6 +7,15 @@
 
     "events":[
       {
+        "title": "CSS Orientation",
+        "description": "Come and chat with us to share your interests and what our club can do to create a fun environment",
+        "location": "Olds Upton 316",
+        "date": "October 27, 2022 19:00:00",
+        "end": "October 27, 2022 19:55:00",
+        "img": "cssOrientation.jpg",
+        "type": "fun"
+      },
+      {
         "title": "K Fest!!!",
         "description": "Welcme to K Fest 2022! We're so excited to have you join us as we have over 60 departments and organizations excited to meet you!",
         "location": "The Quad",
