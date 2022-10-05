@@ -7,6 +7,15 @@
 
     "events":[
       {
+        "title": "Career Event #1",
+        "description": "Join us for our first career event for students looking for jobs in the tech industry! We will show you what the job/internship application process looks like and provide you with resources to help you stand out. You will discover new tech-related communities and learn more about the various CS jobs available! FULL DINNER IS PROVIDED! The event will be held on Wednesday (October 5) at 5 pm in OU316.",
+        "location": "Olds Upton 316",
+        "date": "October 5, 2022 17:00:00",
+        "end": "October 5, 2022 18:00:00",
+        "img": "careerevent1.webp",
+        "type": "career"
+      },
+      {
         "title": "Fun Game Night",
         "description": "Come and chat with us to play games and boardgames while eating pizza!",
         "location": "Olds Upton 316",
