@@ -7,6 +7,24 @@
 
     "events":[
       {
+        "title": "Leetcode Session #1",
+        "description": "Come to our first leetcode session of the term! You will have a chance to practice your coding knowledge, solve leetcode problems, and get ready for technical interviews!",
+        "location": "Olds Upton 316",
+        "date": "October 14, 2022 16:00:00",
+        "end": "October 14, 2022 16:45:00",
+        "img": "leetcode1.jpeg",
+        "type": "coding"
+      },
+      {
+        "title": "Fun Game Night",
+        "description": "Bring your favorite boardgame to play together and make new friends while enjoying pizza!",
+        "location": "Olds Upton 316",
+        "date": "October 11, 2022 19:00:00",
+        "end": "October 11, 2022 20:30:00",
+        "img": "GameNight:Oct11.jpeg",
+        "type": "fun"
+      },
+      {
         "title": "Career Event #1",
         "description": "Join us for our first career event for students looking for jobs in the tech industry! We will show you what the job/internship application process looks like and provide you with resources to help you stand out. You will discover new tech-related communities and learn more about the various CS jobs available! FULL DINNER IS PROVIDED! The event will be held on Wednesday (October 5) at 5 pm in OU316.",
         "location": "Olds Upton 316",
@@ -35,7 +53,7 @@
       },
       {
         "title": "K Fest!!!",
-        "description": "Welcme to K Fest 2022! We're so excited to have you join us as we have over 60 departments and organizations excited to meet you!",
+        "description": "Welcome to K Fest 2022! We're so excited to have you join us as we have over 60 departments and organizations excited to meet you!",
         "location": "The Quad",
         "date": "September 21, 2022 16:00:00",
         "end": "September 21, 2022 19:00:00",
