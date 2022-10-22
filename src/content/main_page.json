@@ -25,32 +25,38 @@
         {
             "name": "Mentorship",
             "link": "/mentorship",
-            "img": "images/mentor.svg"
+            "img": "images/mentor.svg",
+            "detail": "We provide mentorship"
         },
         {
             "name": "Networking",
             "link": "/mentorship",
-            "img": "images/network.svg"
+            "img": "images/network.svg",
+            "detail": "2"
         },
         {
             "name": "Gaming",
             "link": "/mentorship",
-            "img": "images/console.svg"
+            "img": "images/console.svg",
+            "detail": "3"
         },
         {
             "name": "Resume Help",
             "link": "/mentorship",
-            "img": "images/resume.svg"
+            "img": "images/resume.svg",
+            "detail": "4"
         },
         {
             "name": "Projects",
             "link": "/mentorship",
-            "img": "images/projects.svg"
+            "img": "images/projects.svg",
+            "detail": "5"
         },
         {
             "name": "Community",
             "link": "/mentorship",
-            "img": "images/community.svg"
+            "img": "images/community.svg",
+            "detail": "6"
         }
         ]
 

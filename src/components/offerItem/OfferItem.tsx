@@ -9,6 +9,7 @@ import './OfferItem.css'
 interface Item {
     image: string;
     text?: string;
+    detail?: string;
 }
 
 export function OfferItem(props: Item): JSX.Element  {
@@ -18,6 +19,7 @@ export function OfferItem(props: Item): JSX.Element  {
                 src={props.image} >
             </img>
             <p className='OfferItemText'>{props.text}</p>
+            <span className="propstext">{props.detail}</span>
         </div>
     )
 }

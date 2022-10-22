@@ -11,6 +11,7 @@ interface MyItem {
     name: string;
     link: string;
     img: string;
+    detail: string;
 }
 
 interface MyTitlte {
@@ -38,7 +39,8 @@ export function WhatWeOffer(props: WhatWeOffer): JSX.Element {
                             <a>
                                 {<OfferItem 
                                     image={item.img}
-                                    text={item.name}/>
+                                    text={item.name}
+                                    detail={item.detail}/>
                                 }
                             </a>
                         )
