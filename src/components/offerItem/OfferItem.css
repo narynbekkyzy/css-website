@@ -6,28 +6,39 @@
     line-height: 29px;
     letter-spacing: 0em;
     text-align: center;
+    margin-bottom: 15px;
 }
 .OfferItemImage{
     width: fit-content;
 }
 
+.props {
+    position: relative; 
+    display: inline-block;
+  }
+
 .props .propstext {
     font-family: Montserrat;
     visibility: hidden;
-    width: 120px;
     background-color: black;
-    top: 20px;
     color: #fff;
-    text-align: center;
     border-radius: 6px;
     padding: 10px 20px;
-  
+    width: 120px;
+    text-align: center;
+
     /* Position the tooltip */
-    position: relative;
-    align-items: center;  
+    position: absolute;
+    z-index: 1;
+    align-items: center;
 }
 
-.props .propstext::after {
+.propstext {
+    display: block;
+    min-width: 80%;
+}
+
+.propstext::after {
     content: "";
     position: absolute;
     bottom: 100%;
@@ -36,6 +47,7 @@
     border-width: 5px;
     border-style: solid;
     border-color: transparent transparent black transparent;
+    display: inline;
   }
   
 .props:hover .propstext {

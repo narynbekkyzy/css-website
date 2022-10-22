@@ -26,37 +26,37 @@
             "name": "Mentorship",
             "link": "/mentorship",
             "img": "images/mentor.svg",
-            "detail": "We provide mentorship"
+            "detail": "We offer a computer science mentorship for those who are interested in learning more about the field about the different aspects of computer science, including programming, data structures, algorithms, and more."
         },
         {
             "name": "Networking",
             "link": "/mentorship",
             "img": "images/network.svg",
-            "detail": "2"
+            "detail": "We provide support and networking opportunities, organizing events, or advocating for the field of computer science."
         },
         {
             "name": "Gaming",
             "link": "/mentorship",
             "img": "images/console.svg",
-            "detail": "3"
+            "detail": "Game night is offered throughout the term. Everyone is welcome to join and make friends :)"
         },
         {
             "name": "Resume Help",
             "link": "/mentorship",
             "img": "images/resume.svg",
-            "detail": "4"
+            "detail": "We can help you start with your first resume and give tips to improve your resume."
         },
         {
             "name": "Projects",
             "link": "/mentorship",
             "img": "images/projects.svg",
-            "detail": "5"
+            "detail": "They are a great way for students to get involved in the society, learn more to build applications, and boost your resume. "
         },
         {
             "name": "Community",
             "link": "/mentorship",
             "img": "images/community.svg",
-            "detail": "6"
+            "detail": "CSS gather people with the same interest and connect with people working in the industry."
         }
         ]
 
