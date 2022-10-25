@@ -7,8 +7,26 @@
 
     "events":[
       {
+        "title": "Leetcode Session #3",
+        "description": "Our third Leetcode session. Do you need help with technical interview preparation? Join the Computer Science Society's Session to practice with your peers! New questions and the solutions to the previous problems are posted here every Monday. We will go through all of them in person in OU312 on Thursday at 4:00pm.",
+        "location": "Olds Upton 312",
+        "date": "October 27, 2022 16:00:00",
+        "end": "October 27, 2022 17:00:00",
+        "img": "lc3.webp",
+        "type": "coding"
+      },
+      {
+        "title": "Fun Game Night #5",
+        "description": "We will have our fun game night at 7pm at Olds Upton 316. This will be our SECOND LAST fun event for this term! Bring your favorite board game to play together and make new friends!",
+        "location": "Olds Upton 316",
+        "date": "October 25, 2022 17:00:00",
+        "end": "October 25, 2022 18:00:00",
+        "img": "gn5.webp",
+        "type": "fun"
+      },
+      {
         "title": "Leetcode Session #2",
-        "description": "Our second Leetcode session. Do you need help with technical interview preparation? Join the Computer Science Society's Session to practice with your peers! New questions and the solutions to the previous problems are posted here every Monday. We will go through all of them in person in OU312 on Thursday at 4:00pm.",
+        "description": "Our second LeetCode session. Do you need help with technical interview preparation? Join the Computer Science Society's Session to practice with your peers! New questions and the solutions to the previous problems are posted here every Monday. We will go through all of them in person in OU312 on Thursday at 4:00pm.",
         "location": "Olds Upton 312",
         "date": "October 20, 2022 16:00:00",
         "end": "October 20, 2022 17:00:00",
