@@ -85,31 +85,6 @@
       "tags": [ "Core Team", "Web Dev Team", "Member" ]
     },
     {
-      "bg": "images/members/Fatima.jpeg",
-      "title": "Vice President",
-      "name": "Fatima R. Ortega",
-      "team": "Core Team",
-      "desc": "Fatima is a first generation senior majoring in Computer Science, Business, and Spanish. She is interested in helping students have an easier time in pursuing a career in CS. In her free time, Fatima loves to eat pork soup dumplings, going to the gym, and hang out with her friends.",
-      "askMe": [
-        "Anime",
-        "Chicago",
-        "Being a first generation latina",
-        "Starting in CS with no background experience"
-        
-      ],
-      "socials": [
-        {
-          "url" : "https://www.linkedin.com/in/fatima-ortega-402015170/",
-          "name" : "LinkedIn"
-        },
-        {
-          "url" : "https://github.com/FatimaOrtega",
-          "name" : "GitHub"
-       }
-      ],
-      "tags": ["Core Team", "Web Dev Team", "Member"]
-    },
-    {
       "bg": "images/members/Kate.webp",
       "title": "Vice President",
       "name": "Kate Haywood",
@@ -117,12 +92,24 @@
       "desc": "Kate is a senior student studying computer science and biology. She is interested in helping students whenever possible. In her free time she enjoys spending time with friends and family, exploring new places, and playing board games.",
       "askMe": ["CS and bio classes", "Taking the path less traveled", "Becoming more involved in CSS"],
       "socials": [
+     
+      ],
+      "tags": ["Member", "Core Team"]
+    },
+    {
+      "bg": "images/members/Duure.webp",
+      "title": "LeetCode Master",
+      "name": "Duurenbayar Ulziiduuren",
+      "team": "Core Team",
+      "desc": "I am a senior student studying Computer science and Economics. Interested in full-stack development or software development in general. I am a huge basketball fan.",
+      "askMe": ["Web Development", "Technical Interview Process", "Landing your first internship", "Side Project Ideas and planning"],
+      "socials": [
         {
-          "url" : "https://www.linkedin.com/in/amolchagin/",
+          "url" : "https://www.linkedin.com/in/duuree/",
           "name" : "LinkedIn"
         },
         {
-          "url" : "https://github.com/AleksandrMolchagin",
+          "url" : "https://github.com/DuurenbayarUlz",
           "name" : "GitHub"
        }
       ],
@@ -194,6 +181,58 @@
         }
       ],
       "tags": [ "Alumni", "Web Dev Team", "Member" ]
+    },
+    {
+      "bg": "images/members/Fatima.jpeg",
+      "title": "",
+      "name": "Fatima R. Ortega",
+      "team": "Core Team",
+      "desc": "Fatima is a first generation senior majoring in Computer Science, Business, and Spanish. She is interested in helping students have an easier time in pursuing a career in CS. In her free time, Fatima loves to eat pork soup dumplings, going to the gym, and hang out with her friends.",
+      "askMe": [
+        "Anime",
+        "Chicago",
+        "Being a first generation latina",
+        "Starting in CS with no background experience"
+        
+      ],
+      "socials": [
+        {
+          "url" : "https://www.linkedin.com/in/fatima-ortega-402015170/",
+          "name" : "LinkedIn"
+        },
+        {
+          "url" : "https://github.com/FatimaOrtega",
+          "name" : "GitHub"
+       }
+      ],
+      "tags": ["Core Team", "Web Dev Team", "Member"]
+    },
+    {
+      "bg": "images/members/Revaz.webp",
+      "title": "Alumni",
+      "name": "Revaz Bakuradze",
+      "team": "Core Team 2021-2022",
+      "desc": "I am a Software Engineer with a strong mathematical background, aiming to solve personal, business, or societal problems by creating user-friendly digital solutions.      ",
+      "askMe": [
+        "Software Development",
+        "Technical Interview",
+        "Anything"        
+      ],
+      "socials": [
+        {
+          "url" : "https://www.linkedin.com/in/revaz-bakuradze",
+          "name" : "LinkedIn"
+        },
+        {
+          "url" : "https://github.com/RevazBakuradze",
+          "name" : "GitHub"
+        },
+        {
+          "url" : "https://github.com/RevazBakuradze",
+          "name" : "Instagram"
+        }
+      ],
+      "tags": ["Alumni", "Member"]
     }
   ]
 }
