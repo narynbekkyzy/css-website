@@ -18,6 +18,19 @@ import { AnimatePresence, motion } from "framer-motion";
 import { EventsPage } from "./pages/events/Events";
 
 function App() {
+  const [data, setData]= useState([{}]) 
+  // data is an actual variable. setData is the function we can use to manipulate the state of the data variable
+  useEffect(() => {
+    fetch("/memberlist").then(
+      res => res.json()
+    ).then(
+      data => {
+        setData(data)
+        console.log(data)
+      }
+    )
+    },[])
+    
   return (
     <div className="App">
       <Router>
