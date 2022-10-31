@@ -233,6 +233,33 @@
         }
       ],
       "tags": ["Alumni", "Member"]
+    },
+    {
+      "bg": "images/members/Chaeyoun.webp",
+      "title": "",
+      "name": "Chaeyoun Myoung",
+      "team": "Web Dev Team",
+      "desc": "Chaeyoun is a junior majoring in Engineering and Computer Science with an Applied Math minor. She's interested in the hardware side of electronic devices and plays console and video games in her free time.",
+      "askMe": [
+        "Hardware/Embedded Programming",
+        "Physics and Math",
+        "Cyber Security"
+      ],
+      "socials": [
+        {
+          "url" : "https://www.instagram.com/chaeynm_/",
+          "name" : "Instagram"
+        },
+        {
+          "url" : "https://www.linkedin.com/in/chaeynm/",
+          "name" : "LinkedIn"
+        },
+        {
+          "url" : "https://github.com/chaeynm",
+          "name" : "GitHub"
+       }
+      ],
+      "tags": ["Web Dev Team", "Member" ]
     }
   ]
 }
