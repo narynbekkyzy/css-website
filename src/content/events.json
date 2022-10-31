@@ -2,10 +2,19 @@
     "title": "Our Events",
 
     "categories":[
-        "career", "fun", "coding"
+        "career", "fun", "coding", "talks"
     ],
 
     "events":[
+      {
+        "title": "Guest Talk: Mai Phuong Vu",
+        "description": "Mai is a Vietnamese-Hungarian UX Designer at a small startup called PeachPay. She graduated from a small liberal arts college, Grinnell College, in May 2021 with a B.A. in Computer Science and Psychology. In her first 3 years of college she thought she would become a software engineer, specifically a frontend engineer as she enjoyed working on the UI. However, in the end of her 3rd year she found out about UX Design and Product Management, and started to explore these new field through volunteering at Develop for Good and Bridging Tech. She found her love in solving user problems rather than algorithm and efficiency problems, and so she switched to UX Design. In the past few years she has been especially interested in the connection between design and development and in ways to improve this link.",
+        "location": "Olds Upton 316",
+        "date": "November 2, 2022 17:00:00",
+        "end": "November 2, 2022 18:00:00",
+        "img": "talk1.webp",
+        "type": ["talks", "career"]
+      },
       {
         "title": "Leetcode Session #3",
         "description": "Our third Leetcode session. Do you need help with technical interview preparation? Join the Computer Science Society's Session to practice with your peers! New questions and the solutions to the previous problems are posted here every Monday. We will go through all of them in person in OU312 on Thursday at 4:00pm.",
@@ -13,7 +22,7 @@
         "date": "October 27, 2022 16:00:00",
         "end": "October 27, 2022 17:00:00",
         "img": "lc3.webp",
-        "type": "coding"
+        "type": ["coding"]
       },
       {
         "title": "Fun Game Night #5",
@@ -22,7 +31,7 @@
         "date": "October 25, 2022 17:00:00",
         "end": "October 25, 2022 18:00:00",
         "img": "gn5.webp",
-        "type": "fun"
+        "type": ["fun"]
       },
       {
         "title": "Leetcode Session #2",
@@ -31,7 +40,7 @@
         "date": "October 20, 2022 16:00:00",
         "end": "October 20, 2022 17:00:00",
         "img": "lc2.webp",
-        "type": "coding"
+        "type": ["coding"]
       },
       {
         "title": "Career Event #2",
@@ -40,7 +49,7 @@
         "date": "October 19, 2022 17:00:00",
         "end": "October 19, 2022 18:00:00",
         "img": "ce2.webp",
-        "type": "career"
+        "type": ["career"]
       },
       {
         "title": "Game Night #4",
@@ -49,7 +58,7 @@
         "date": "October 18, 2022 19:00:00",
         "end": "October 18, 2022 20:00:00",
         "img": "gn4.webp",
-        "type": "fun"
+        "type": ["fun"]
       },
       {
         "title": "Leetcode Session #1",
@@ -58,7 +67,7 @@
         "date": "October 13, 2022 16:00:00",
         "end": "October 13, 2022 16:45:00",
         "img": "leetcode1.jpeg",
-        "type": "coding"
+        "type": ["coding"]
       },
       {
         "title": "Fun Game Night",
@@ -67,7 +76,7 @@
         "date": "October 11, 2022 19:00:00",
         "end": "October 11, 2022 20:30:00",
         "img": "GameNight:Oct11.jpeg",
-        "type": "fun"
+        "type": ["fun"]
       },
       {
         "title": "Career Event #1",
@@ -76,7 +85,7 @@
         "date": "October 5, 2022 17:00:00",
         "end": "October 5, 2022 18:00:00",
         "img": "careerevent1.webp",
-        "type": "career"
+        "type": ["career"]
       },
       {
         "title": "Fun Game Night",
@@ -85,7 +94,7 @@
         "date": "October 3, 2022 19:00:00",
         "end": "September 27, 2022 20:30:00",
         "img": "gameNight.jpg",
-        "type": "fun"
+        "type": ["fun"]
       },
       {
         "title": "CSS Orientation",
@@ -94,7 +103,7 @@
         "date": "September 27, 2022 19:00:00",
         "end": "September 27, 2022 19:55:00",
         "img": "cssOrientation.jpg",
-        "type": "fun"
+        "type": ["fun"]
       },
       {
         "title": "K Fest!!!",
@@ -103,7 +112,7 @@
         "date": "September 21, 2022 16:00:00",
         "end": "September 21, 2022 19:00:00",
         "img": "kfest1.webp",
-        "type": "fun"
+        "type": ["fun"]
       },
       {
         "title": "It's MORE than Just Coding",
@@ -112,7 +121,7 @@
         "date": "September 10, 2022 18:00:00",
         "end": "September 10, 2022 18:45:00",
         "img": "morethanjustcoding4.webp",
-        "type": "fun"
+        "type": ["fun"]
       },
       {
         "title": "It's MORE than Just Coding",
@@ -121,7 +130,7 @@
         "date": "September 10, 2022 13:00:00",
         "end": "September 10, 2022 13:45:00",
         "img": "morethanjustcoding3.webp",
-        "type": "fun"
+        "type": ["fun"]
       },
       {
         "title": "It's MORE than Just Coding",
@@ -130,7 +139,7 @@
         "date": "September 10, 2022 10:00:00",
         "end": "September 10, 2022 10:45:00",
         "img": "morethanjustcoding2.webp",
-        "type": "fun"
+        "type": ["fun"]
       }
     ]
 }

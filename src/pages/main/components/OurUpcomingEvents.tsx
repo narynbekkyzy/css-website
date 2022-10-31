@@ -16,7 +16,7 @@ export function UpcomingEvents(props: UpcomgingEventsProps): JSX.Element {
     if (events === "") {
       setAllCards(data.events.filter((event, index) => index < 3));
     } else {
-      let temp = data.events.filter((event) => event.type === events);
+      let temp = data.events.filter((event) => event.type.includes(events));
       setAllCards(temp.filter((event, index) => index < 3));
     }
   }
@@ -61,7 +61,7 @@ export function UpcomingEvents(props: UpcomgingEventsProps): JSX.Element {
                   date={event.date}
                   endDate={event.end}
                   img={event.img}
-                  type={event.type}
+                  type={event.type[0]}
                 />
               </AnimatePresence>
             );

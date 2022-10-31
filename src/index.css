@@ -24,11 +24,13 @@
   --yellow: #ffbe0b;
   --green: #09bc8a;
   --blue: #067bc2;
+  --purple: #9D75CB;
 
 
   --event-card-color-career: #c00000;
   --event-card-color-coding: #ffbe0b;
   --event-card-color-fun: #09bc8a;
+  --event-card-color-talks: #9D75CB;
 
   --moving_left_spacing: 0px;
   --moving_width: 66px;
