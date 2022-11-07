@@ -7,6 +7,24 @@
 
     "events":[
       {
+        "title": "Leetcode Session #5",
+        "description": "This is our FINAL LeetCode session of the term!  Come and join us to enhance your skills in LeetCode, share good resources, and learn from your peers! Earlier you start, the more progress you make!",
+        "location": "Olds Upton 312",
+        "date": "November 9, 2022 16:00:00",
+        "end": "November 9, 2022 17:00:00",
+        "img": "lc5.webp",
+        "type": ["coding"]
+      },
+      {
+        "title": "Fun Game Night #6",
+        "description": "Join our FINAL game night of the trimester! We will be playing a variety of cooperative and competitive board games, so come ready to have a good time! Food is provided, but please RSVP through the signup form in the email to let us know if you are coming.", 
+        "location": "Olds Upton 316",
+        "date": "November 8, 2022 17:00:00",
+        "end": "November 8, 2022 18:00:00",
+        "img": "gn6.webp",
+        "type": ["fun"]
+      },
+      {
         "title": "Leetcode Session #4",
         "description": "Our fourth Leetcode session. Yet we are not limited to Leetcode problems. Come to join us, and discuss any coding challenges you may face. And of course, practice with your peers!",
         "location": "Olds Upton 312",
