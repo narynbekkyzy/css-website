@@ -8,10 +8,10 @@
     "events":[
       {
         "title": "Leetcode Session #5",
-        "description": "This is our FINAL LeetCode session of the term!  Come and join us to enhance your skills in LeetCode, share good resources, and learn from your peers! Earlier you start, the more progress you make!",
+        "description": "This is our FINAL Leetcode session of the term!  Come and join us to enhance your skills in LeetCode, share good resources, and learn from your peers! Earlier you start, the more progress you make!",
         "location": "Olds Upton 312",
-        "date": "November 9, 2022 16:00:00",
-        "end": "November 9, 2022 17:00:00",
+        "date": "November 10, 2022 16:00:00",
+        "end": "November 10, 2022 17:00:00",
         "img": "lc5.webp",
         "type": ["coding"]
       },
