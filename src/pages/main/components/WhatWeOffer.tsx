@@ -36,12 +36,13 @@ export function WhatWeOffer(props: WhatWeOffer): JSX.Element {
                 <div className='WhatWeOffer-Row'>
                     {props.items.map((item, index) => {
                         return(
-                            <a>
+                            <a className='tooltip'>
                                 {<OfferItem 
                                     image={item.img}
                                     text={item.name}
                                     detail={item.detail}/>
                                 }
+                                <span className="tooltiptext">{item.detail}</span>
                             </a>
                         )
                     })}

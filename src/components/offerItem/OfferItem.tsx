@@ -19,7 +19,7 @@ export function OfferItem(props: Item): JSX.Element  {
                 src={props.image} >
             </img>
             <p className='OfferItemText'>{props.text}</p>
-            <span className="propstext">{props.detail}</span>
+            {/* <span className="propstext">{props.detail}</span> */}
         </div>
     )
 }

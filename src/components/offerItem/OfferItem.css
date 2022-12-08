@@ -12,48 +12,6 @@
     width: fit-content;
 }
 
-.props {
-    position: relative; 
-    display: inline-block;
-  }
-
-.props .propstext {
-    font-family: Montserrat;
-    visibility: hidden;
-    background-color: black;
-    color: #fff;
-    border-radius: 6px;
-    padding: 10px 20px;
-    width: 120px;
-    text-align: center;
-
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    align-items: center;
-}
-
-.propstext {
-    display: block;
-    min-width: 80%;
-}
-
-.propstext::after {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent black transparent;
-    display: inline;
-  }
-  
-.props:hover .propstext {
-    visibility: visible;
-  }
-
 
 @media screen and (max-width: 768px) {
 
