@@ -67,8 +67,10 @@
 }
 
 .textContainer {
-    max-width: 1400px;
-    width: 1400px;
+    /* max-width: 1400px; */
+    /* width: 100%; */
+    /* margin: 0 10%; */
+    padding: 0 10%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -91,8 +93,8 @@
 }
 
 .Image3by4{
-    width: 688px;
-    height: 516px;
+    width: 60%;
+    /* height: 516px; */
     object-fit: cover;
     border-radius: 25px;
 }
@@ -117,6 +119,7 @@
     justify-content: right;
     overflow: hidden;
 }
+
 
 .MainLogo {
     width: 445px;
