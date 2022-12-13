@@ -9,6 +9,7 @@ import {
 import { MainPage } from "./pages/main/Main";
 import { TeamPage } from "./pages/team/Team";
 import { OurProjects } from "./pages/projects/OurProjects";
+import { Opportunities } from "./pages/opportunities/Opportunities";
 import { TempPage } from "./pages/tempPage/Temp";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
@@ -99,7 +100,7 @@ function Switcher() {
 
         <Route 
           path="/opportunities"
-           element={<AnimatedTempPage {...pageVariants}/>} />
+          element={<AnimatedTempPage {...pageVariants}/>} />
 
         <Route
             path="/projects"
@@ -171,6 +172,20 @@ function AnimatedProjectPage(props: any) {
             transition={pageTransition}
         >
             <OurProjects />
+        </motion.div>
+    );
+}
+
+function AnimatedOpportunitiesPage(props: any) {
+    return (
+        <motion.div
+            initial={"out"}
+            animate={"in"}
+            exit={"out"}
+            variants={props}
+            transition={pageTransition}
+        >
+            <Opportunities />
         </motion.div>
     );
 }

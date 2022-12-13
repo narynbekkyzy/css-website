@@ -7,7 +7,7 @@ export function TempPage(): JSX.Element {
   return (
     <>
  
-<div className="Opportunities_body">
+<div className="Tmp_body">
   <h1>Coming Soon</h1>
 
 </div>

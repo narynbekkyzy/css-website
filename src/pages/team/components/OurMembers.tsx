@@ -15,7 +15,6 @@ export function OurMembers(): JSX.Element {
     const [cards, setCards] = useState(sortCards("Member")); //Array of Team Cards representing members
     const [tag, setTag] = useState("Member");                //Current Tag to display cards
 
-
     /**
      * Function that sorts through all cards in the membersJson data variable and sets
      * cards state to an array of matching cards.

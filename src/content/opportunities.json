@@ -1,0 +1,198 @@
+{
+  "items": [
+    {
+      "title": "Getting Started",
+      "intro": "Interested in computer science? Give these a try to see if it's right for you!",
+      "tasks": [
+        {
+          "text": "Attend a CSS event",
+          "link": "https://kzoocss.org/events"
+        },
+        {
+          "text": "Introduce yourself to one of the professors",
+          "link": "none"
+        },
+        {
+          "text": "Try some logic puzzles (that's the foundation of programming)",
+          "link": "none"
+        },
+        {
+          "text": "Game link",
+          "link": "none"
+        }
+      ]
+    },
+    {
+      "title": "First year",
+      "intro": "So you're a freshman interested in computer science. Maybe you've started your first courses or maybe you've started coding on your own. Below are a few suggestions to help guide you into practicing the basics.",
+      "tasks": [
+        {
+          "text": "Chat with your professors",
+          "link": "none"
+        },
+        {
+          "text": "Don't be afraid to try experimenting. See what happens.",
+          "link": "none"
+        },
+        {
+          "text": "ASK QUESTIONS. Your professors and TAs will be happy to help and your classmates are trying to figure out the same things.",
+          "link": "none"
+        },
+        {
+          "text": "Make a small project for yourself, maybe someone will want to work with you! (Start slow. Don't set your goals too high or you will likely get overwhelmed)",
+          "link": "none"
+        },
+        {
+          "text": "Attend a CSS event",
+          "link": "none"
+        }
+      ]
+    },
+    {
+      "title": "Second year",
+      "intro": "Now that you've been working on computer science a whole year, now's the perfect time to start getting involved. Below are some suggestions on how to get more involved and some tips on developing your more advanced skills.",
+      "tasks": [
+        {
+          "text": "Practice with Leetcode",
+          "link": "none"
+        },
+        {
+          "text": "Attend a CSS event",
+          "link": "none"
+        },
+        {
+          "text": "Try to get connected with some upper classmen. You mind find cool opportunites to practice your skills and get ahead.",
+          "link": "none"
+        },
+        {
+          "text": "Start researching. It is an invaluable skill to casually read up on new technologies, companies and events. You'll become familiar with the world at large and be much more ready to make the big decisions up ahead.",
+          "link": "none"
+        },
+        {
+          "text": "Come up with a couple of small projects for yourself. Since this year will likely involve some more backend style of programming. Give something more data and logic heavy a try as opposed to a fun and colorful frontend project.",
+          "link": "none"
+        }
+      ]
+    },
+    {
+      "title": "Third year",
+      "intro": "Two whole years of programming. You're probably been studying some pretty advanced topics by now. How exciting! Whether your studying abroad or still taking classes at K, now is the time to start thinking about your SIP, finding an internship and building your portfolio. Here are some suggestions on how to do that.",
+      "tasks": [
+        {
+          "text": "Now is the time to figure out what you want to do for your SIP. This is a major project, but don't worry, you will have help. First, it is important to mark down all the important due dates so that you have plenty of time. Secondly, if you're unsure of what you want to do, talk with your professors, they're quite used to the process and could give you great advice. Thirdly, if you want to do some project that relies on applications like an internship or research. START EARLY. It's best to have decided what you want to do by the start of winter quarter. The CCPD can help you through every step of the application process.",
+          "link": "none"
+        },
+        {
+          "text": "If you're not taking any CS courses this year, make sure you take the time to practice your skills. Solve leetcode problems, or plan a small projects or two for yourself. Don't forget to enjoy your trip if you're studying abroad though.",
+          "link": "none"
+        },
+        {
+          "text": "If you're staying at K this year, definitely get involved somehow. There's plenty of opportunities, you could attend a CSS event, plan a small project with friends anything you feel like to get to know people. This is because, from here on out, netwroking is of the utmost importance. In the coming year you will need to work on many group projects and once graduation, your connections are what find you that dream job.",
+          "link": "none"
+        }
+      ]
+    },
+    {
+      "title": "Fourth year",
+      "intro": "Congrats!! You've made it to your final year of study at K. Now, even though you've got tons of practice, there's still plenty more to learn. This year will be full of leadership and personal projects, which might be very new. As someone who's made it through the process, don't sweat it. Here are some tips on how to get through that final stretch.",
+      "tasks": [
+        {
+          "text": "Stay communicative on all the group projects you'll be working on.",
+          "link": "none"
+        },
+        {
+          "text": "Try getting to know the underclassmen. It'll develop your leadership skills and help them grow.",
+          "link": "none"
+        },
+        {
+          "text": "Start sending in Job applications and see if you can get to know any professionals. Try out handshake to find K alumni.",
+          "link": "none"
+        },
+        {
+          "text": "Make a LinkedIn",
+          "link": "none"
+        },
+        {
+          "text": "Attend CSS events.",
+          "link": "none"
+        },
+        {
+          "text": "If your SIP is not finished yet, keep in contact with your adivsor and ask for guidance.",
+          "link": "none"
+        }
+      ]
+    },
+    {
+      "title": "After Graduation",
+      "intro": "Woo hoo!! You've graduated! That's an amazing accomplishment, you've done a fantastic job. Now is time to head out into the big wide world. While that can feel daunting, don't worry, there are many resources to help you out and things you can do to keep growing!",
+      "tasks": [
+        {
+          "text": "Network",
+          "link": "none"
+        },
+        {
+          "text": "Talk with the CCPD to plan your job hunt.",
+          "link": "none"
+        },
+        {
+          "text": "Hone your skills with leetcode.",
+          "link": "none"
+        },
+        {
+          "text": "Make small projects for yourself",
+          "link": "none"
+        },
+        {
+          "text": "Develop a personal resume website.",
+          "link": "none"
+        },
+        {
+          "text": "Work on your portfolio",
+          "link": "none"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "name": "CSS Events",
+      "url": "https://kzoocss.org/events",
+      "img": "images/logos/Logo.png"
+    },
+    {
+      "name": "Professors",
+      "url": "https://computerscience.kzoo.edu/facultystaff/",
+      "img": "images/logos/kHornetLogo.png"
+    },
+    {
+      "name": "SIP",
+      "url": "https://registrar.kzoo.edu/academic-planning/academic-planning-2/sip-planning/",
+      "img": "images/logos/kHornetLogo.png"
+    },
+    {
+      "name": "CCPD",
+      "url": "https://career.kzoo.edu/",
+      "img": "images/logos/kHornetLogo.png"
+    },
+    {
+      "name": "Leetcode",
+      "url": "https://leetcode.com/",
+      "img": "Leetcode logo"
+    },
+    {
+      "name": "Handshake",
+      "url": "https://kzoo.joinhandshake.com/login",
+      "img": "Handshake logo"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/",
+      "img": "LinkedIn logo"
+    },
+    {
+      "name": "Logic game",
+      "url": "Some game",
+      "img": "game logo"
+    }
+  ]
+}
