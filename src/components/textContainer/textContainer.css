@@ -131,13 +131,15 @@
         width: 688px;
         height: 516px;
     }
-
+    .textContainer {
+        padding: 0 10%;
+    }
 }
 
 @media screen and (max-width: 1424px){
 
     .textContainer {
-        width: fit-content;
+        width: fit-content;                        
         flex-direction: column;
         gap: 32px;
     }
@@ -171,6 +173,7 @@
     .textContainer {
         width: fit-content;
         font-size: 20px;
+        padding: 0;
     }
 
     .Image3by4 {
@@ -195,6 +198,7 @@
     .textContainer {
         width: fit-content;
         font-size: 20px;
+        padding: 0;
     }
 
     .Image3by4 {
