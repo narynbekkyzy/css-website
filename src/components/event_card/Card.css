@@ -277,7 +277,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: start;
+    align-items: flex-start;
     margin-left: 24px;
     margin-right: 24px;
     background-color: var(--white);
@@ -291,7 +291,7 @@
 .project-title {
     padding-top: 16px;
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     width: 90%;
     font-family: Montserrat;
     font-size: 48px;
@@ -303,7 +303,7 @@
 
 .right-align {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     width: 100%;
 }
 

@@ -18,10 +18,18 @@ import data from "./content/header_footer.json";
 import { AnimatePresence, motion } from "framer-motion";
 import { EventsPage } from "./pages/events/Events";
 
+
+//test
+
+import Navbar from "./components/navbar";
+import RecordList from "./components/recordList";
+import Edit from "./components/edit";
+import Create from "./components/create";
+
 function App() {
   return (
-    <div className="App">
-      <Router>
+      <div className="App">
+          <Router><RecordList /><Edit /><Create />
         <Header />
         <Switcher />
         <Footer/>
