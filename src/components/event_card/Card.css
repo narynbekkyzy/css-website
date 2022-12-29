@@ -31,6 +31,7 @@
     overflow: hidden;
     gap: 24px;
     transition: all 0.3s ease-in-out;
+    border: #161616 1px solid;
 }
 
 
@@ -341,7 +342,30 @@
     border-radius: 10px;
 }
 
+@media screen and (max-width: 2600px) {
+    .atcb-list-item {
+        font-size: xxx-large;
+        width: 150%;
+        margin-left: -25%;
+    }
+}
+
+@media screen and (max-width: 1424px) {
+    .atcb-list-item {
+        font-size: xx-large;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .atcb-list-item {
+        font-size: large;
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
 @media screen and (max-width: 568px) {
+
     .Card {
         width: 369px;
         height: 522.2px;

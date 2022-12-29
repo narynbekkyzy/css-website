@@ -27,6 +27,19 @@ import Edit from "./components/edit";
 import Create from "./components/create";
 
 function App() {
+  const [data, setData]= useState([{}]) 
+  // data is an actual variable. setData is the function we can use to manipulate the state of the data variable
+  useEffect(() => {
+    fetch("/memberlist").then(
+      res => res.json()
+    ).then(
+      data => {
+        setData(data)
+        console.log(data)
+      }
+    )
+    },[])
+    
   return (
       <div className="App">
           <Router><RecordList /><Edit /><Create />

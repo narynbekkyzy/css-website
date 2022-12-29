@@ -16,7 +16,7 @@ export function EventsPage(): JSX.Element {
         if (events === "") {
             setAllCards(data.events);
         } else {
-            setAllCards(data.events.filter(event => event.type === events));
+            setAllCards(data.events.filter(event => event.type.includes(events)));
         }
     }
 
@@ -35,7 +35,7 @@ export function EventsPage(): JSX.Element {
                                 date={event.date}
                                 endDate={event.end}
                                 img={event.img}
-                                type={event.type}
+                                type={event.type[0]}
                             />
                         </AnimatePresence>
                     }

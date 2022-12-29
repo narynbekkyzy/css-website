@@ -67,12 +67,14 @@
 }
 
 .textContainer {
-    max-width: 1400px;
-    width: 1400px;
+    /* max-width: 1400px; */
+    /* width: 100%; */
+    /* margin: 0 10%; */
+    padding: 0 10%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 8px;
+    gap: 3%;
     font-family: Inter;
     font-size: 24px;
     font-weight: 400;
@@ -91,8 +93,8 @@
 }
 
 .Image3by4{
-    width: 688px;
-    height: 516px;
+    width: 60%;
+    /* height: 516px; */
     object-fit: cover;
     border-radius: 25px;
 }
@@ -118,6 +120,7 @@
     overflow: hidden;
 }
 
+
 .MainLogo {
     width: 445px;
     height: 100%;
@@ -128,13 +131,15 @@
         width: 688px;
         height: 516px;
     }
-
+    .textContainer {
+        padding: 0 10%;
+    }
 }
 
 @media screen and (max-width: 1424px){
 
     .textContainer {
-        width: fit-content;
+        width: fit-content;                        
         flex-direction: column;
         gap: 32px;
     }
@@ -168,6 +173,7 @@
     .textContainer {
         width: fit-content;
         font-size: 20px;
+        padding: 0;
     }
 
     .Image3by4 {
@@ -192,6 +198,7 @@
     .textContainer {
         width: fit-content;
         font-size: 20px;
+        padding: 0;
     }
 
     .Image3by4 {

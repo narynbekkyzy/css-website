@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { TextContainer } from '../../../components/textContainer/textContainer'
+import './WhatWeBuild.css';
 
 interface WhatWeBuild {
     desc: string;                   //Body Text
@@ -12,10 +13,7 @@ export function WhatWeBuild(props: WhatWeBuild): JSX.Element {
     //Outer div is a container for center and establishing the background block
     //Inner div is for positioning the actual TextContainer
     return <div className="WhatWeBuild-Container">
-        <div className="WhatWeBuild-Content " style={{
-            marginTop: "80px", marginBottom: "80px",
-            marginLeft: "24px", marginRight: "24px", width: "fit-content"
-        }}>
+        <div className="WhatWeBuild-Content ">
             <TextContainer
                 isPrimary={true}
                 titleText={"What We Build"}
