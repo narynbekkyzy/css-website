@@ -18,16 +18,15 @@ import data from "./content/header_footer.json";
 import { AnimatePresence, motion } from "framer-motion";
 import { EventsPage } from "./pages/events/Events";
 
-
-//test
-
+//MongoDB test components. Remove if MERN stack is not used
 import RecordList from "./components/recordList";
 import Edit from "./components/edit";
 import Create from "./components/create";
 
+//Primary website display component. Navigation between pages is done here
 function App() {
-  const [data, setData]= useState([{}]) 
-  // data is an actual variable. setData is the function we can use to manipulate the state of the data variable
+  const [data, setData]= useState([{}]) //This state and following function are for backend testing. Remove is unused.
+  // data is an actual variable (hook). setData is the function we can use to manipulate the state of the data variable
   useEffect(() => {
     fetch("/memberlist").then(
       res => res.json()
@@ -40,20 +39,21 @@ function App() {
     },[])
     
   return (
-      <div className="App">
-          <Router>{/**<RecordList /><Edit /><Create />**/}
-        <Header />
-        <Switcher />
-        <Footer/>
-      </Router>
+    <div className="App">
+        <Router>{/**Function**/} {/**<RecordList /><Edit /><Create />REMOVE IF UNUSED> FOR BACKEND TESTING**/}
+            <Header /> {/**Universal sticky header**/}
+            <Switcher /> {/**Actual Page router**/}
+            <Footer /> {/**Universal non-sticky footer**/}
+        </Router>
     </div>
   );
 }
 
 function Switcher() {
 
-  const location = useLocation();
+  const location = useLocation(); {/**Variable that references current location for page pathing**/ }
 
+  {/**Variable that either hides unused pages or displays it**/ }
   const [pageVariants, setPageVariants] = useState({
     in: {
       opacity: 1,
@@ -67,17 +67,20 @@ function Switcher() {
     },
   });
 
-  const [direction, setDirection] = useState(1);
-  const [currentPage, setCurrentPage] = useState(-1);
+  const [direction, setDirection] = useState(1); {/**Stores direction in which to hide page (functionally previous or next, kind of like a corousel)**/ }
+  const [currentPage, setCurrentPage] = useState(-1); {/**Stores current page in a variable that is used to orient direction of other components**/ }
 
+  {/**Sets to new page**/ }
   function calculateVariants(location: string) {
 
+    {/**Stores pages in an array, then converts it into a dictionary with numerical keys**/ }
     let list = Array.from(data.pages);
     let dict = new Map();
     for (let i = 0; i < list.length; i++) {
         dict.set(list[i].link, i);
     }
 
+      {/**If location that is being move to is ahead of current page, move the directon to the left, otherwise the right**/ }
     if (dict.get(location) > currentPage) {
       setDirection(-1);
 
@@ -85,10 +88,12 @@ function Switcher() {
       setDirection(1);
 
     }
+    {/**Sets current page state**/ }
     setCurrentPage(dict.get(location));
     
   }
 
+  {/**When set hooks are used, reorient pages to updates locations**/ }
   useEffect(() => {
     calculateVariants(location.pathname);
     setPageVariants({
@@ -107,7 +112,7 @@ function Switcher() {
   } , [location]);
 
   return (
-    <AnimatePresence mode="wait">
+    <AnimatePresence mode="wait">{/**Utilizing a sliding animation, each routh defines a possible page and is centered based on current state location**/}
       <Routes location={location} key={location.pathname}>
 
         <Route 
@@ -135,11 +140,13 @@ function Switcher() {
   );
 }
 
+{/**Animation to be used in following wrappers**/ }
 const pageTransition = {
   type: "var(--cubic)",
   duration: 0.25,
 };
 
+{/**Animated wrappers for each page**/ }
 function AnimatedHomePage(props: any) {
   return (
     <motion.div
@@ -210,7 +217,7 @@ function AnimatedOpportunitiesPage(props: any) {
     );
 }
 
-
+{/**Placeholder pages that just says "coming soon"**/ }
 function AnimatedTempPage(props: any) {
   return (
     <motion.div
