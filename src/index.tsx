@@ -1,3 +1,10 @@
+/*
+ * index.tsx is the root file and starting point of the TypeScript App
+ * -> const root - Starting point of the website. HTML root element defined and a 
+ *                 React APP function is rendered on top
+ * -> root.render() - Renders the App components, which determined which page is rendered,
+ *                    with a diagnosis wrapper
+ */
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
@@ -9,6 +16,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
   //Strict Mode does not render anything, but is rather for diagnosing problems
   <React.StrictMode>

@@ -1,3 +1,15 @@
+/*
+ * App.tsx is the primary routing component that displays the appropriate page
+ * -> function App() - Primary website display component. Navigation between pages is done here
+ * -> function Switcher() - Main function used to render correct page
+ * -> const pageTransition - Animation to be used in page wrappers
+ * -> AnimatedHomePage - Animated wrapper for Home page
+ * -> AnimatedTeamPage - Animated wrapper for Team page
+ * -> AnimatedEventsPage - Animated wrapper for Events page
+ * -> AnimatedProjectPage - Animated wrapper for Project page
+ * -> AnimatedOpportunitiesPage - Animated wrapper for Opportunities page
+ * -> AnimatedTempPage - Animated wrapper for Temp page
+ */
 import { useEffect, useState } from "react";
 import "./App.css";
 import {
@@ -49,6 +61,7 @@ function App() {
   );
 }
 
+//Main function used to render correct page
 function Switcher() {
 
   const location = useLocation(); {/**Variable that references current location for page pathing**/ }
