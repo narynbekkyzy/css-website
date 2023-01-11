@@ -4,19 +4,20 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+/* Star Wars English Font */
 @font-face {
   font-family: "Aurebesh-English";
   src: local("Aurebesh-English"),
     url("./fonts/Aurebesh-English.ttf") format("truetype");
 }
 
+/* Star Was Font */
 @font-face {
   font-family: "Aurebesh";
   src: local("Aurebesh"), url("./fonts/Aurebesh.ttf") format("truetype");
 }
 
 /* Define all variables */
-
 :root {
   --red: #c00000;
   --black: #161616;

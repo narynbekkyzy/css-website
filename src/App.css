@@ -1,12 +1,14 @@
+/* Primary App.tsx Container */
 .App {
   text-align: center;
 }
 
+/* Now defunct css for react app default logo */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+/* Animation for above css */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

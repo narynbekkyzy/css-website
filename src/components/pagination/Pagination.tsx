@@ -1,18 +1,9 @@
 import { useEffect, useState } from "react";
 
-import data from "../../content/numbers.json";
 import threeDots from "../../images/three-dots.svg";
 import rightArrow from "../../images/rightArrow.svg";
 import leftArrow from "../../images/leftArrow.svg";
 import "./Pagination.css";
-
-const ITEMS_PER_PAGE = 10;
-const pageCounter = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
-interface PostItem {
-  index: number;
-  sortID: number;
-}
 
 interface Pagination {
     data: JSX.Element[];
@@ -23,10 +14,6 @@ interface Pagination {
 export function Pagination(props: Pagination): JSX.Element {
 
   let dotsPut = false;
-  
-
-  //Use hooks to update UI
-  const [first, setFirst] = useState("hello");
 
   const [contentToShow, setContentToShow] = useState(props.data);
   const [pages, setPages] = useState<number[]>([]);

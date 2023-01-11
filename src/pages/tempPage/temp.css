@@ -1,3 +1,7 @@
+/* Styling for Temp.tsx: Placeholder component that displays a message work work in progress pages
+ * (or broken pages that need to be fixed but can't be done so immediately)
+ * -> .Tmp_Body - Main Tmp container
+ */
 .Tmp_body {
     height: 70vh;
     padding-top: 80px;
