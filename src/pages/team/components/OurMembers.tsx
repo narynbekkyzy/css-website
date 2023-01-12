@@ -1,3 +1,9 @@
+/**
+ * OurMembers.tsx is the Component that contains a page with brief informational cards of all the
+ * CSS members who volunteer to be listed on the page. This is intended to serve as a basic means
+ * of finding who you can talk to regarding the club and is a way of showing off our involvment.
+ * -> function OurMembers() - Creates a 'Our Members' Section Component
+**/
 import React, { useState, useEffect } from 'react';
 import { TeamCard } from './TeamCard'
 import { Title } from '../../../components/titles/Title';
@@ -21,7 +27,11 @@ export function OurMembers(): JSX.Element {
      * @param tag - string tag used to filter cards
      */
     function sortCards(tag: string): JSX.Element {
-        let newCards: JSX.Element[] = [];
+        let newCards: JSX.Element[] = [];   // Cards that will be in the sorted list will be added to
+                                            // this array
+        // Maps through each member to check whether or not they have the filtered tag. If so, a team card,
+        // wrapped inside an animated component, with their information is generated and added to the array
+        // with an appropriate key.
         membersJson.items.map(function (card, key) {
             card.tags.includes(tag) ? newCards.push(
                 <Motion
@@ -39,6 +49,7 @@ export function OurMembers(): JSX.Element {
                 />
             ) : <></>
         });
+        // Using newly filtered list, a paginated display is created using that dataset.
         return <PaginationApplicator
             key={Math.random()}       //DON'T TOUCH. This is needed to actually re-render while sorting.
             data={newCards}
@@ -47,12 +58,15 @@ export function OurMembers(): JSX.Element {
         />;
     }
 
+    // Primary div containing entire 'Our Members' section
     return <div className="OurMembers">
+        {/** 'Our Members' section header **/}
         <Title
             text='Our Members'
             name={'Primary'}
             styling={'MiddleBlack'}
         />
+        {/** Buttons that allow the user to filter the team cards based on the possible tags each member can have **/}
         <div className="OurMembers-CategoryButtons">
             <button className={tag === "CS Faculty" ? "selected" : ""} onClick={() => { setCards(sortCards("CS Faculty")); setTag("CS Faculty") }}>CS Faculty</button>
             <button className={tag === "Core Team" ? "selected" : ""} onClick={() => { setCards(sortCards("Core Team")); setTag("Core Team") }}>Core Team</button>
@@ -61,6 +75,7 @@ export function OurMembers(): JSX.Element {
             <button className={tag === "Alumni" ? "selected" : ""} onClick={() => { setCards(sortCards("Alumni")); setTag("Alumni")}}>Alumni</button>
             <button className={tag === "Member" ? "selected" : ""} onClick={() => { setCards(sortCards("Member")); setTag("Member") }}>All Members</button>
         </div>
+        {/** Displays the actual card array **/}
         <div className="OurMembers-CardsContainer">
             {cards}
         </div>

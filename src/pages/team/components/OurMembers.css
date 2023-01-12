@@ -1,4 +1,13 @@
-
+/**
+  * OurMembers.css is the style sheet associated with OurMembers.tsx, which is the 
+  * Component that contains a page with brief informational cards of all the
+  * CSS members who volunteer to be listed on the page. This is intended to serve as a basic means
+  * of finding who you can talk to regarding the club and is a way of showing off our involvment.
+  * -> OurMembers - Primary div containing entire 'Our Members' section
+  * -> OurMembers-CategoryButtons - div for card filtering buttons
+  * -> OurMembers-CardsContainer - div that wraps around array of cards
+  * -> OurMembers-Cards - Team cards
+ **/
 .OurMembers {
     display: flex;
     justify-content: center;

@@ -12,6 +12,7 @@ import './MeetTeam.css'
 import { TextContainer } from '../../../components/textContainer/textContainer'
 import { Title } from '../../../components/titles/Title';
 
+// Interface that passes the required variable for the original MeetTeam component
 interface MeetTeam {
     desc?: string;                   //Body Text
     img: React.ReactNode;           //Img of club members
@@ -50,6 +51,7 @@ export function MeetTeam(props: MeetTeam): JSX.Element {
     </div>
 }
 
+// Interface that passes the required variable for the new MeetTeam component
 interface WhoWeAre {
     desc: string;                   //Body Text
     img: React.ReactNode;           //Img of club members

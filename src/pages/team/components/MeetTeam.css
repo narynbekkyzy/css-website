@@ -1,3 +1,14 @@
+/**
+  * MeetTeam.css is the style sheet associated with MeetTeam.tsx, which is the component that generates
+  * the "Who We Are" section of the Team page.
+  * -> MeetTeam-Container - primary div for original MeetTeam component (for foundation alignment)
+  * -> MeetTeam-Content - secondary div that still encapsulates all content for original MeetTeam component
+  * -> Title-Box - div that houses the title
+  * -> bigImage - div that houses the image
+  * -> Frame - div that houses the 'Who We Are' text description
+  * -> buttons - div that houses this section's buttons
+ **/
+
 .MeetTeam-Container {
     width: 100%;
     display: flex;
