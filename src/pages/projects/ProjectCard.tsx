@@ -1,3 +1,11 @@
+/**
+ * ProjectCard.tsx is the components which displays informational cards for the club's projects
+ * -> interface ProjectCardInterface - Interface object that defines necessary parameters for ProjectCard components.
+ * -> function ProjectCard() - Main export component function that displays a "Project Card" which contains info about a
+ *                          a particular club project.
+ * -> function useHover<T>() - Trigger function that determines whether or not card details should be displayed based on whether or
+ *                             not it is being hovered over. 
+**/
 import React, { useState, useEffect, useRef, MutableRefObject } from 'react';
 import { motion } from "framer-motion";
 
@@ -40,12 +48,17 @@ export function ProjectCard(props: ProjectCardInterface): JSX.Element {
         </div>
 }
 
-//Trigger function that activates card details display when hovered over
+/**Trigger function that determines whether or not card details should be displayed based on whether or
+ * not it is being hovered over. 
+ **/
 function useHover<T>(): [MutableRefObject<T>, boolean] {
-    const [value, setValue] = useState<boolean>(false);
-    const ref: any = useRef<T | null>(null);
-    const handleMouseOver = (): void => setValue(true);
-    const handleMouseOut = (): void => setValue(false);
+    const [value, setValue] = useState<boolean>(false); // Value of whether or not to display content
+    const ref: any = useRef<T | null>(null);            // Reference to this particular card component
+    const handleMouseOver = (): void => setValue(true); // Value of whether or not mouse is hovered
+    const handleMouseOut = (): void => setValue(false); // Value of whether or not mouse in NOT hovered
+    /** Called to determine whether or not mouse is over the card in the reference. Should be 'used'
+      * whenever mouse is moved.
+     **/
     useEffect(
         () => {
             const node: any = ref.current;

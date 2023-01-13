@@ -1,3 +1,13 @@
+/**
+ *  Events.css is the style sheet for Events.tsx, which is the component which displays the event page.
+ *  This page allows users to find out information on events hosted by, or affiliated with, the CSS club.   
+ *  -> EventsContainer - Primary div for Events Pages
+ *  -> EventsContainer-Current - Card Display  
+ *  -> EventsContainer-Categories - Buttons to filter events cards  
+ *  -> EventsContainerTitle - (Not in use) Aligns Title
+ *  -> EventsContainer-Categories > * - Changes Text size for buttons
+ *  -> @media screen and (max-width: 768px) - Modifies Events page styling below screen width 768px
+ **/
 .EventsContainer{
     padding-top: 80px;
     padding-bottom: 80px;

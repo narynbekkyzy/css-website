@@ -3,8 +3,8 @@
  * section.
  * -> interface TeamCardInterface{} - Interface object that defines necessary parameters for TeamCard components.
  * -> interface SocialProps{} - Interface objects that defines necessary parameters for the Socials array 
- * -> function TeamCard() - Main Component function that display a "Team Card" which contains info about a
-  * a particular club member.
+ * -> function TeamCard() - Main export component function that displays a "Team Card" which contains info about a
+ *                          a particular club member.
  * -> function useHover<T>() - Trigger function that determines whether or not card details should be
  *                             displayed based on if it is being hovered over hovered over. 
 **/
@@ -108,8 +108,8 @@ export function TeamCard(props: TeamCardInterface): JSX.Element {
         </div>
 }
 
-/**Trigger function that determines whether or not card details should be displayed based on if it is
-  * being hovered over hovered over. 
+/**Trigger function that determines whether or not card details should be displayed based on whether or
+ * not it is being hovered over. 
  **/
 function useHover<T>(): [MutableRefObject<T>, boolean] {
     const [value, setValue] = useState<boolean>(false); // Value of whether or not to display content

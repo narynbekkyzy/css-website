@@ -1,4 +1,12 @@
-
+/**
+ *  OurProjects.tsx is the style sheet that goes with OurProjects.tsx, which is the 
+ *  main component which displays the Projects page. This page give users info about
+ *  kind of work the club does with links to some of our work.
+ *  -> OurProjects - Primary div for the Projects Page
+ *  -> OurProjects-CategoryButtons - Sorting buttons for the projects page to organize the projects list
+ *  -> OurProjects-CardsContainer - Actual project cards display
+ *  -> OurProjects-Cards - Used by PaginationApplicator to contain each page
+ **/
 .OurProjects {
     display: flex;
     justify-content: center;
