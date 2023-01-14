@@ -1,3 +1,8 @@
+/**
+ * WhoWeAre.tsx is a component located on the Main Page which contains a brief account of the club's identity.
+ * -> interace WhoWeAre - An interface representing all the necessary variables to be passed to this component
+ * -> function WhoWeAre() - 
+ **/
 import React from 'react';
 
 import { TextContainer } from '../../../components/textContainer/textContainer'
@@ -7,7 +12,7 @@ interface WhoWeAre {
     img: React.ReactNode;           //Img of club members
     buttons: Array<React.ReactNode>;//Array of buttons
 }
-
+// A brief account of the club's identity
 export function WhoWeAre(props: WhoWeAre): JSX.Element {
     //Outer div is a container for center and establishing the background block
     //Inner div is for positioning the actual TextContainer

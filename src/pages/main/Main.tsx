@@ -1,3 +1,8 @@
+/**
+ * Main.tsx is the website's landing page. It has lots of information describing
+ * the club, it's members and what they do.
+ * -> function MainPAge() - The primary export component that displays the MainPage
+ **/
 import "./Main.css";
 import { EventSection } from "./components/eventsSection";
 import { WhatWeBuild } from "./components/WhatWeBuild";
@@ -13,10 +18,11 @@ import { OfferItem } from "../../components/offerItem/OfferItem";
 
 import * as leftArrow from "../../images/leftArrow.svg"
 
+//The primary export component that displays the MainPage
 export function MainPage(): JSX.Element {
   return (
     <>
-        
+      {/** An Indroductory blurb with a cool looking logo (to grab attention) and some links**/}
       <StartMain
         desc={data.top.description} 
         img={<img className="MainLogo" src={data.top.image}/>} 
@@ -28,7 +34,7 @@ export function MainPage(): JSX.Element {
           <button className="default">Join Us</button>
           </a>
         ]}/>
-
+      {/** A brief account of the club's identity **/}
       <WhoWeAre 
         desc={data.who_we_are.description} 
         img={<img className="Image3by4" src={data.who_we_are.image}/>} 
@@ -37,11 +43,11 @@ export function MainPage(): JSX.Element {
           <button className="default-white">Meet The Team</button>
           </a>
         ]}/>
-
+      {/** Informational panel on the things The club can offer members **/}
       <WhatWeOffer 
         title={data.what_we_offer.MyTitlte} 
         items={data.what_we_offer.items}/>
-
+      {/** Examples of projects the club has been involved in **/}
       <WhatWeBuild 
         desc={data.who_we_are.description} 
         img={<img className="Image3by4" src={data.what_we_build.image}/>} 
@@ -51,6 +57,7 @@ export function MainPage(): JSX.Element {
           </a>
         ]}
       />
+      {/** A highlight reel of the upcoming (or most recent) events **/}
       <UpcomingEvents
         title={data.our_upcoming_events.title}
       />
