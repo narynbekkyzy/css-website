@@ -7,6 +7,33 @@
 
     "events":[
       {
+        "title": "Guest Talk: Revaz Bakuradze",
+        "description": "Revaz, K college alumni and current software engineer at Amazon, utilizes his skills developed at Kalamazoo College to create user-friendly digital solutions for a wide range of personal and business problems. Join the talk and learn insight on how to leverage your college education to succeed in the tech industry! Food is provided! RSVP: https://forms.gle/heYJRBCWMvNvy3fx7",
+        "location": "Olds Upton 316",
+        "date": "January 23, 2023 18:00:00",
+        "end": "January 23, 2023 19:00:00",
+        "img": "revaz.webp",
+        "type": ["talks"]
+      },
+      {
+        "title": "Leetcode Session #6",
+        "description": "The Computer Science Society is excited to host a Leetcode session for all members interested in sharpening their coding skills and preparing for technical interviews. Join us on Thursday!",
+        "location": "Olds Upton 312",
+        "date": "January 19, 2023 16:00:00",
+        "end": "January 19, 2023 17:00:00",
+        "img": "lc6.webp",
+        "type": ["coding"]
+      },
+      {
+        "title": "Fun Game Night #7",
+        "description": "The Computer Science Society invites you to a fun night of board games and socializing. Come join us as we play a variety of games and get to know your fellow members. Food is provided! RSVP: https://forms.gle/YMcWHFiDvNLPvcLg7",
+        "location": "Olds Upton 316",
+        "date": "January 17, 2023 19:00:00",
+        "end": "January 17, 2023 18:00:00",
+        "img": "gn7.webp",
+        "type": ["fun"]
+      },
+      {
         "title": "Leetcode Session #5",
         "description": "This is our FINAL Leetcode session of the term!  Come and join us to enhance your skills in LeetCode, share good resources, and learn from your peers! Earlier you start, the more progress you make!",
         "location": "Olds Upton 312",
