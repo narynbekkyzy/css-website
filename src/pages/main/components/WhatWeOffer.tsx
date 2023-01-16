@@ -2,8 +2,8 @@
     This file implements WhatWeOffer section including:
         -> interface MyTitle - 'What we offer' title (pass through 'title' param from json file)
         -> interface MyTitle - OfferItems describing each part (contents through 'items' from json file)
-        -> interface WhatWeOffer - Parameters for WhatWeOffer section, which is comprised of previous two params
-        -> function WhatWeOffer - export function for main component
+        -> interface WhatWeOffer - required parameters for WhatWeOffer section, which is comprised of previous two params
+        -> function WhatWeOffer() - export function for main component
 */
 import './WhatWeOffer.css'
 import { Title } from '../../../components/titles/Title';

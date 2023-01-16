@@ -1,3 +1,9 @@
+/**
+ *  WhatWeBuild.css is the the sheet associated with WhatWeBuild.tsx, which is the main component for the
+ *  "What We Build" section of the main page.
+ **/
+
+/** Poisitions inner component div content**/
 .WhatWeBuild-Content  {
     margin-top: 80px;
     margin-bottom: 80px;
@@ -6,6 +12,7 @@
     width: fit-content;
 }
 
+/** variations for differing screen sizes */
 @media screen and (min-width: 1424px) {
     .WhatWeBuild-Content  {
         margin: 0;
