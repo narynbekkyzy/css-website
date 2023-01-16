@@ -1,3 +1,9 @@
+/**
+ * WhatWeOffer.css is the style sheet for WhatWeOffer.tsx, which is the component that generates the
+ * 'What We Offer' Section on the main page
+ **/
+
+/** Outer 'Background' Component */
 .WhatWeOffer {
     /* width: 1920px; */
     max-width: 1400px; /* changed by Aleksandr on Aug 18 */
@@ -10,6 +16,7 @@
     background-color: var(--white)
 }
 
+/** Inner 'Content' Component */
 .WhatWeOffer-Container {
     border-radius: 0px;
     display: flex;
@@ -20,6 +27,7 @@
     gap: 80px;
 }
 
+/** Interactive "offer" items container */
 .WhatWeOffer-Row {
     width: 1400px;
     display: flex;
@@ -33,11 +41,13 @@
 
 }
 
-.WhatWeOffer-Row > *{
+/** Interactive "offer" items */
+.WhatWeOffer-Row > * {
     flex-basis: 31%; /* 3 items per row */
     text-decoration: none;
 }
 
+/** Variations on screen sizes for classes above */
 @media screen and (max-width: 1400px) {
     .WhatWeOffer-Row {
         width: fit-content;
@@ -48,11 +58,13 @@
     
 }
 
+/** "Offer" item tooltip containers */
 .tooltip {
     position: relative;
     display: inline-block;
   }
   
+  /** "Offer" item tooltip body */
   .tooltip .tooltiptext {
     visibility: hidden;
     width: 70%;
@@ -67,7 +79,8 @@
     margin-left: -40%;
 
   }
-  
+
+  /** "Offer" item tooltip body (hidden)*/
   .tooltip .tooltiptext::after {
     content: "";
     position: absolute;
@@ -78,12 +91,13 @@
     border-style: solid;
     border-color: transparent transparent black transparent;
   }
-  
+
+  /** "Offer" item tooltip body (active w/ cursor over)*/
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }
 
-
+  /** variation on tooltip for different screen sizes */
   @media screen and (max-width: 500px) {
 
     .tooltip .tooltiptext {
