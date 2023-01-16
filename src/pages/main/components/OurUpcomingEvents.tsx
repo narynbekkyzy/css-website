@@ -1,17 +1,26 @@
+/**
+ * OurUpcomingEvents.tsx is the component which generates a display of the closest events (chronologically)
+ * on the main page.
+ * -> interface UpcomingEventsProps - parameters required by the function
+ * -> function UpcomingEvents() - primary export function for the component
+ **/
 import { EventCard } from "../../../components/event_card/EventCard";
 import data from "../../../content/events.json";
 import { Title } from "../../../components/titles/Title";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-interface UpcomgingEventsProps {
-  title: string;
+// parameters required by the function
+interface UpcomingEventsProps {
+  title: string;    //Title for section
 }
 
-export function UpcomingEvents(props: UpcomgingEventsProps): JSX.Element {
-  const [events, setEvents] = useState("");
-  const [allCards, setAllCards] = useState(data.events);
+// primary export function for the component
+export function UpcomingEvents(props: UpcomingEventsProps): JSX.Element {
+  const [events, setEvents] = useState(""); // tag with which cards are currently being filtered
+  const [allCards, setAllCards] = useState(data.events); // card data set
 
+  // sets the card data set to be filtered by the current tag (or to include all card data if no tag is active)
   function filterAllCards() {
     if (events === "") {
       setAllCards(data.events.filter((event, index) => index < 3));
@@ -21,22 +30,28 @@ export function UpcomingEvents(props: UpcomgingEventsProps): JSX.Element {
     }
   }
 
+  // filters cards when state is changed
   useEffect(() => {
     filterAllCards();
   }, [events]);
 
   return (
-    <>
-      <div className="EventsContainer">
+      <>
+      {/** Primary container for component **/}
+        <div className="EventsContainer">
+        {/** Component Header **/}
         <Title text={props.title} name={"Primary"} styling={"MiddleBlack"} />
 
-        <div className="EventsContainer-Categories">
+          {/** Row of filtering buttons **/}
+          <div className="EventsContainer-Categories">
+          {/** Remove tag button **/}
           <button
             className={"" === events ? "selected" : ""}
             onClick={() => setEvents("")}
           >
             all
           </button>
+          {/** Button for each tag **/}
           {data.categories.map((category, index) => {
             return (
               <button
@@ -49,6 +64,7 @@ export function UpcomingEvents(props: UpcomgingEventsProps): JSX.Element {
           })}
         </div>
 
+       {/** Generates cards for current events **/}
         <div className="EventsContainer-Current">
           {allCards.map((event, key) => {
             return (

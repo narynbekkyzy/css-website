@@ -1,3 +1,10 @@
+/**
+  * StartMain.css is the style sheet associated with StartMain.tsx, which is the file
+  * to create the first part of CSS website.
+  * -> StartMain-Container - For component alignment and style
+  * -> StartMain-Content - For content alignment and style
+  **/
+
 .StartMain-Container {
     background-color: var(--white); 
     width: 100vw;

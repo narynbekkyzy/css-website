@@ -1,3 +1,13 @@
+/**
+  * EventsSection.css is the style sheet for the no longer in use eventsSection.tsx, which was a previous
+  * iteration of displaying our upcoming events.
+  * -> event-cards - event cards container
+  * -> events-section - html section element
+  * -> section-title - UNUSED
+  * -> type-of-event__btn - button list container
+  * -> selected - palette swap for selected buttons
+  * -> selected:hover - palette swap for hovered, selected buttons
+  **/
 .event-cards {
   display: flex;
   flex-direction: row;
