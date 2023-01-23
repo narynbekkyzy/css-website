@@ -16,7 +16,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  useLocation,
+  useLocation
 } from "react-router-dom";
 import { MainPage } from "./pages/main/Main";
 import { TeamPage } from "./pages/team/Team";
@@ -108,6 +108,11 @@ function Switcher() {
 
   {/**When set hooks are used, reorient pages to updates locations**/ }
   useEffect(() => {
+
+    if (location.pathname === "/revaz"){
+      window.location.href = "https://forms.gle/VnMthpZTBNRPYRGB6"
+    }
+
     calculateVariants(location.pathname);
     setPageVariants({
         in: {
