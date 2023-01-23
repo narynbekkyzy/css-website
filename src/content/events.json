@@ -7,6 +7,15 @@
 
     "events":[
       {
+        "title": "Leetcode Session #7",
+        "description": "A typical Thursday event, CSS LeetCode Session, where a group of ambitious computer science students gathered to sharpen their coding skills and prepare for upcoming job interviews. Join us in OU316! RSVP: ",
+        "location": "Olds Upton 312",
+        "date": "January 26, 2023 16:00:00",
+        "end": "January 26, 2023 17:00:00",
+        "img": "lc7.webp",
+        "type": ["coding"]
+      },
+      {
         "title": "Guest Talk: Revaz Bakuradze",
         "description": "Revaz, K college alumni and current software engineer at Amazon, utilizes his skills developed at Kalamazoo College to create user-friendly digital solutions for a wide range of personal and business problems. Join the talk and learn insight on how to leverage your college education to succeed in the tech industry! Food is provided! RSVP: https://forms.gle/heYJRBCWMvNvy3fx7",
         "location": "Olds Upton 316",
