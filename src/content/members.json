@@ -186,7 +186,7 @@
       "bg": "images/members/Fatima.jpeg",
       "title": "",
       "name": "Fatima R. Ortega",
-      "team": "Core Team",
+      "team": "Core Team 2021 - 2022",
       "desc": "Fatima is a first generation senior majoring in Computer Science, Business, and Spanish. She is interested in helping students have an easier time in pursuing a career in CS. In her free time, Fatima loves to eat pork soup dumplings, going to the gym, and hang out with her friends.",
       "askMe": [
         "Anime",
@@ -205,7 +205,7 @@
           "name" : "GitHub"
        }
       ],
-      "tags": ["Core Team", "Web Dev Team", "Member"]
+      "tags": ["Member"]
     },
     {
       "bg": "images/members/Revaz.webp",
