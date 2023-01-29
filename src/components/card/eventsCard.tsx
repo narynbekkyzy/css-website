@@ -1,3 +1,6 @@
+//THIS IS NOT USED
+//SEE event_card FOLDER
+
 import "./Card.css";
 
 interface cardInterface {

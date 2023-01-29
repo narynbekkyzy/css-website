@@ -1,3 +1,9 @@
+/**
+    This css file is used for creating Offer Item in WhatWeOffer section
+    It is imported by the OfferItem.tsx file
+        - OfferItemText ---------------> The text displayed bellow an item
+        - OfferItemImage --------------> Image above the text
+*/
 .OfferItemText {
     font-family: Montserrat;
     color: var(--black);

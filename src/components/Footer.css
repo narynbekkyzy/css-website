@@ -1,3 +1,14 @@
+/**
+  * Footer.css is the style sheet for Footer.tsx:
+  * -> Footer - Big outside footer container / Color / Padidng
+  * -> Footer-Container - footer container (flex container to center)
+  * -> Footer-First - The first part before the line 
+  * -> Footer-First-Left - Left side (logo + CSS)
+  * -> Footer-First-Right - Right side (buttons)
+  * -> Footer-Second - After the line (logo + social media)
+  * -> Footer-SocialMediaLogos - Right side footer social media logos
+  **/
+
 .Footer{
     padding-top: 80px;
     padding-bottom: 80px;

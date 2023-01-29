@@ -1,8 +1,15 @@
+/**
+ * Footer.tsx is the footer displayed in every page.
+ * -> function Divider() - make Divider responsive regarding to computer size.
+ * -> function Footer() - primary export function for the component
+ **/
+
 import './Footer.css'
 import data from "../content/header_footer.json";
 import { Title } from '../components/titles/Title';
 import { Link } from 'react-router-dom';
 
+// calculating the size of divider in footer
 function Divider(): JSX.Element {
     return(
         <svg width="auto" height="2" viewBox="0 0 auto 2" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -13,9 +20,13 @@ function Divider(): JSX.Element {
 
 export function Footer(): JSX.Element {
     return (
+        //most outer container for footer including upper and lower black padding
         <div className="Footer">
+            {/* outer container for footer excluding black padding */}
             <div className="Footer-Container">
+                {/* part upper divider */}
                 <div className="Footer-First">
+                    {/* Left part exluding clickable text */}
                     <div className='Footer-First-Left'>
                         <Link to="/">
                             <img 
@@ -33,6 +44,7 @@ export function Footer(): JSX.Element {
                             </p>
                         </div>
                     </div>
+                    {/* Clickable text linking to pages */}
                     <div className='Footer-First-Right'>
                         {data.pages.map((page, index) => {
                            return(
@@ -43,7 +55,10 @@ export function Footer(): JSX.Element {
                         })}
                     </div>
                 </div>
-                <Divider/>
+
+                <Divider/>      
+                
+                {/* Logo and Media */}
                 <div className="Footer-Second">
                     <a href='https://www.kzoo.edu/' target="_blank" rel="noreferrer noopener">
                         <img 
