@@ -1,3 +1,10 @@
+/**
+    This css file is used for creating pagination 
+    It is imported by the Pagination.tsx file
+    There are both specific and general classes here including:
+        - pagination-align ------------> Parent class. Center all pages in pagination
+*/
+
 .pagination-align {
 display: flex;
 flex-direction: row;

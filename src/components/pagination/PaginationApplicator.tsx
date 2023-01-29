@@ -1,5 +1,10 @@
+/**
+    This PaginationApplicator.tsx file is used to utilize Applicator.tsx
+    It is imported by  ...
+        - interface PaginationApplication() -------------> Main prop of the function
+        - function PaginationApplication() --------------> Function to display pagination
+*/
 import { useEffect, useState } from "react";
-
 import { Pagination } from './Pagination';
 
 interface PaginationApplicator {
