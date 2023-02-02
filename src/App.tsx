@@ -109,13 +109,8 @@ function Switcher() {
   {/**When set hooks are used, reorient pages to updates locations**/ }
   useEffect(() => {
 
-    if (location.pathname === "/lc7"){
-      window.location.href = "https://forms.gle/VnMthpZTBNRPYRGB6"
-    }
-
-
-    if (location.pathname === "/revaz"){
-      window.location.href = "https://forms.gle/px5xm1cnmZDJkibs7"
+    if (location.pathname === "/lc"){
+      window.location.href = "https://forms.gle/vML11sGB7wugQmnt5"
     }
 
     calculateVariants(location.pathname);
