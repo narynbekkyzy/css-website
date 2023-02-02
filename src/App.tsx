@@ -113,6 +113,10 @@ function Switcher() {
       window.location.href = "https://forms.gle/vML11sGB7wugQmnt5"
     }
 
+    if (location.pathname === "/LC"){
+      window.location.href = "https://forms.gle/vML11sGB7wugQmnt5"
+    }
+
     calculateVariants(location.pathname);
     setPageVariants({
         in: {
