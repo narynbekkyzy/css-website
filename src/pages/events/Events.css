@@ -9,7 +9,7 @@
  *  -> @media screen and (max-width: 768px) - Modifies Events page styling below screen width 768px
  **/
 .EventsContainer{
-    padding-top: 80px;
+    padding-top: 40px;
     padding-bottom: 80px;
 }
 
