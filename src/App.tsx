@@ -109,12 +109,12 @@ function Switcher() {
   {/**When set hooks are used, reorient pages to updates locations**/ }
   useEffect(() => {
 
-    if (location.pathname === "/fun" || location.pathname === "/FUN" ){
-      window.location.href = "https://forms.gle/uNx6pcz83Nj6ue699"
-    }
+    // if (location.pathname === "/fun" || location.pathname === "/FUN" ){
+    //   window.location.href = "https://forms.gle/uNx6pcz83Nj6ue699"
+    // }
 
     if (location.pathname === "/LC" || location.pathname === "/lc" ){
-      window.location.href = "https://forms.gle/aeryxv9Hnmv4npvv9"
+      window.location.href = "https://forms.gle/QJyoWPgWgp9k2uqN7"
     }
 
 
