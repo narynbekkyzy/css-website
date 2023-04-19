@@ -7,6 +7,15 @@
 
     "events":[
       {
+        "title": "Leetcode Session #12",
+        "description": "Prepare for your coding interviews by practicing real-world coding problems on LeetCode. Join our event and improve your problem-solving skills with a community of like-minded individuals!  RSVP: https://kzoocss.org/LC",
+        "location": "Olds Upton 312",
+        "date": "April 20, 2023 16:00:00",
+        "end": "April20 23, 2023 17:00:00",
+        "img": "lc12.webp",
+        "type": ["coding"]
+      },
+      {
         "title": "Leetcode Session #11",
         "description": "The Computer Science Society is organizing an interactive LeetCode Session that aims to help individuals improve their coding abilities and prepare for a prosperous career in the computer science field.  RSVP: https://kzoocss.org/LC",
         "location": "Olds Upton 312",
