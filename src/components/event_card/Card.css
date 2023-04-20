@@ -3,6 +3,7 @@
     It is imported by the TeamCard.tsx & EventCard.tsx files
     There are both specific and general classes here including:
         - Card ------------------------> Parent class. Defines deneral shape of the full card
+        - Expried ---------------------> Turn opacity down of past events
         - CardBorder ------------------> Adds border to card
         - SpreadColumn ----------------> Displays items in column with space between
         - SpreadRow -------------------> Displays items in row with space between

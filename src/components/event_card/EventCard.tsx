@@ -50,7 +50,6 @@ export function EventCard(props: EventCardProps): JSX.Element {
         val < 10 ? result = "0" + val.toString() : result = val.toString()
         return result
     }
-    
 
     return (
         <div className={`Card SpreadColumn ${props.isExpired ? 'Expired' : ''}`}>

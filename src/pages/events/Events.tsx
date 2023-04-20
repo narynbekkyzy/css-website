@@ -34,6 +34,7 @@ export function EventsPage(): JSX.Element {
         let collection: JSX.Element[] = [] // Array to store all cards.
         // Adds each card that is currently stored within this (possibly filtered) state variable
         // as an EventCard Component with an animated wrapper around it.
+        // Compare current date and event date to decide whether passed
         allCards.map((event, key) => {
             const isExpired = currentDate.getTime() > new Date(event.end).getTime();
 
