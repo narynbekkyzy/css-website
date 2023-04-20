@@ -17,6 +17,7 @@ export function EventsPage(): JSX.Element {
 
     const [events, setEvents] = useState("");
     const [allCards, setAllCards] = useState(data.events);
+    const currentDate = new Date();
 
     // Filters cards based on filter tag
     function filterAllCards() {
@@ -34,6 +35,8 @@ export function EventsPage(): JSX.Element {
         // Adds each card that is currently stored within this (possibly filtered) state variable
         // as an EventCard Component with an animated wrapper around it.
         allCards.map((event, key) => {
+            const isExpired = currentDate.getTime() > new Date(event.end).getTime();
+
             collection.push (
                 <Motion
                     component={
@@ -47,6 +50,7 @@ export function EventsPage(): JSX.Element {
                                 endDate={event.end}
                                 img={event.img}
                                 type={event.type[0]}
+                                isExpired={isExpired}
                             />
                         </AnimatePresence>
                     }

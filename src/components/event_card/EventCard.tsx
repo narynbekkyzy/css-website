@@ -20,6 +20,7 @@ interface EventCardProps{
     img: string;
     type: string;
     key: number;
+    isExpired?: boolean;
 }
 
 
@@ -49,9 +50,10 @@ export function EventCard(props: EventCardProps): JSX.Element {
         val < 10 ? result = "0" + val.toString() : result = val.toString()
         return result
     }
+    
 
     return (
-        <div className="Card SpreadColumn">
+        <div className={`Card SpreadColumn ${props.isExpired ? 'Expired' : ''}`}>
                 <img className="Event-img" src={"/images/events/" + props.img}/>
                 <h3 className="Card-H3 standard-padding">{props.title}</h3>
                 <p className="Card-P standard-padding">{props.description}</p>
