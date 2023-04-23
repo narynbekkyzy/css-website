@@ -7,6 +7,15 @@
 
     "events":[
       {
+        "title": "Tennis with friends",
+        "description": "Join us for an exciting day of friendly competition on the court. Whether you're a seasoned tennis pro or just looking to try something new, this event is perfect for anyone who loves the game!",
+        "location": "K College Fitness and Wellness Center",
+        "date": "April 23, 2023 13:30:00",
+        "end": "April 23, 2023 15:00:00",
+        "img": "tennis1.webp",
+        "type": ["fun"]
+      },
+      {
         "title": "Leetcode Session #12",
         "description": "Prepare for your coding interviews by practicing real-world coding problems on LeetCode. Join our event and improve your problem-solving skills with a community of like-minded individuals!  RSVP: https://kzoocss.org/LC",
         "location": "Olds Upton 312",
