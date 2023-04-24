@@ -115,6 +115,8 @@ function Switcher() {
 
     if (location.pathname === "/LC" || location.pathname === "/lc" ){
       window.location.href = "https://forms.gle/QJyoWPgWgp9k2uqN7"
+    } else if (location.pathname === "/FUN" || location.pathname === "/fun" ){
+      window.location.href = "https://forms.gle/Uq9YYt6hXi1uQMJ26"
     }
 
 
