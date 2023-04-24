@@ -11,7 +11,7 @@
         "description": "Come and join us for a fun day of playing tennis together! Whether you're a pro or a beginner, everyone is welcome to enjoy the game.",
         "location": "K College Fitness and Wellness Center",
         "date": "April 30, 2023 13:30:00",
-        "end": "April 30, 2023 15:00:00",
+        "end": "April 30, 2023 16:00:00",
         "img": "tennis2.webp",
         "type": ["fun"]
       },
@@ -29,7 +29,7 @@
         "description": "Come and spend an evening with the Computer Science Society, playing a variety of board games in a spirit of friendly competition and camaraderie. RSVP: https://kzoocss.org/fun",
         "location": "Olds Upton 316",
         "date": "April 24, 2023 19:30:00",
-        "end": "April 24, 2023 18:00:00",
+        "end": "April 24, 2023 20:30:00",
         "img": "gn1.webp",
         "type": ["fun"]
       },
