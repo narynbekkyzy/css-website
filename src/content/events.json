@@ -7,7 +7,34 @@
 
     "events":[
       {
-        "title": "Tennis with friends",
+        "title": "Tennis with friends #2",
+        "description": "Come and join us for a fun day of playing tennis together! Whether you're a pro or a beginner, everyone is welcome to enjoy the game.",
+        "location": "K College Fitness and Wellness Center",
+        "date": "April 30, 2023 13:30:00",
+        "end": "April 30, 2023 15:00:00",
+        "img": "tennis2.webp",
+        "type": ["fun"]
+      },
+      {
+        "title": "Leetcode Session #13",
+        "description": "Enhance your coding interview skills by solving actual coding challenges on LeetCode. Take part in our event and boost your ability to solve problems by collaborating with other individuals who share your passion for coding! Don't forget to RSVP at https://kzoocss.org/LC",
+        "location": "Olds Upton 312",
+        "date": "April 27, 2023 16:00:00",
+        "end": "April 27, 2023 17:00:00",
+        "img": "lc3.webp",
+        "type": ["coding"]
+      },
+      {
+        "title": "Fun Game Night #9",
+        "description": "Come and spend an evening with the Computer Science Society, playing a variety of board games in a spirit of friendly competition and camaraderie.  RSVP: https://kzoocss.org/fun",
+        "location": "Olds Upton 316",
+        "date": "April 24, 2023 19:30:00",
+        "end": "April 24, 2023 18:00:00",
+        "img": "gn1.webp",
+        "type": ["fun"]
+      },
+      {
+        "title": "Tennis with friends #1",
         "description": "Join us for an exciting day of friendly competition on the court. Whether you're a seasoned tennis pro or just looking to try something new, this event is perfect for anyone who loves the game!",
         "location": "K College Fitness and Wellness Center",
         "date": "April 23, 2023 13:30:00",
