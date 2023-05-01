@@ -7,6 +7,15 @@
 
     "events":[
       {
+        "title": "Fun Game Night #10",
+        "description": "Join the Computer Science Society for an evening of friendly competition and camaraderie while playing a variety of board games. Don't forget to RSVP at https://kzoocss.org/fun.",
+        "location": "Olds Upton 316",
+        "date": "May 1, 2023 19:30:00",
+        "end": "May 1, 2023 20:30:00",
+        "img": "gn4.webp",
+        "type": ["fun"]
+      },
+      {
         "title": "Tennis with friends #2",
         "description": "Come and join us for a fun day of playing tennis together! Whether you're a pro or a beginner, everyone is welcome to enjoy the game.",
         "location": "K College Fitness and Wellness Center",
