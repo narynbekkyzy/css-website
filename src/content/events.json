@@ -7,6 +7,15 @@
 
     "events":[
       {
+        "title": "Leetcode Session #14",
+        "description": "Improve your coding interview skills by tackling real coding challenges on LeetCode. Join us for our event, where you can hone your problem-solving abilities by collaborating with like-minded individuals who are passionate about coding! Remember to RSVP at https://kzoocss.org/LC to reserve your spot.",
+        "location": "Olds Upton 312",
+        "date": "May 4, 2023 16:10:00",
+        "end": "May 4, 2023 17:10:00",
+        "img": "lc4.webp",
+        "type": ["coding"]
+      },
+      {
         "title": "Fun Game Night #10",
         "description": "Join the Computer Science Society for an evening of friendly competition and camaraderie while playing a variety of board games. Don't forget to RSVP at https://kzoocss.org/fun.",
         "location": "Olds Upton 316",
