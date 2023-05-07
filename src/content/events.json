@@ -7,6 +7,15 @@
 
     "events":[
       {
+        "title": "Guest Talk: Charles Emogor",
+        "description": "Charles Emogor is a PhD Candidate at the University of Cambridge, the founder of Pangolin Protection Network and an esteemed ecologist and conservationist. His research interests include illegal wildlife trade, the design and evaluation of community-based conservation interventions, and science communication. During this talk, Charles will share his experience in the field, his inspiration for working in conservation, and his advice for those interested in pursuing a similar career path. He will also discuss his recent research and highlight the role of computer science in conservation efforts. The event is open to all students and will provide valuable insights into the field of conservation, making it an excellent opportunity for those seeking inspiration for their future careers. RSVP: https://kzoocss.org/charles",
+        "location": "Olds Upton 316",
+        "date": "May 8, 2023 17:00:00",
+        "end": "May 8, 2023 18:00:00",
+        "img": "charles.webp",
+        "type": ["talks", "career"]
+      },
+      {
         "title": "Leetcode Session #14",
         "description": "Improve your coding interview skills by tackling real coding challenges on LeetCode. Join us for our event, where you can hone your problem-solving abilities by collaborating with like-minded individuals who are passionate about coding! Remember to RSVP at https://kzoocss.org/LC to reserve your spot.",
         "location": "Olds Upton 312",
