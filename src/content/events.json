@@ -7,6 +7,15 @@
 
     "events":[
       {
+        "title": "Fun Game Night #11",
+        "description": "Come and join the Computer Science Society for an enjoyable evening where you have the opportunity to connect with your fellow students or engage in a variety of board games. It's a perfect occasion to foster camaraderie. Don't forget to RSVP at https://kzoocss.org/fun.",
+        "location": "Olds Upton 316",
+        "date": "May 15, 2023 19:30:00",
+        "end": "May 15, 2023 20:30:00",
+        "img": "gn7.webp",
+        "type": ["fun"]
+      },
+      {
         "title": "Guest Talk: Charles Emogor",
         "description": "Charles Emogor is a PhD Candidate at the University of Cambridge, the founder of Pangolin Protection Network and an esteemed ecologist and conservationist. His research interests include illegal wildlife trade, the design and evaluation of community-based conservation interventions, and science communication. During this talk, Charles will share his experience in the field, his inspiration for working in conservation, and his advice for those interested in pursuing a similar career path. He will also discuss his recent research and highlight the role of computer science in conservation efforts. The event is open to all students and will provide valuable insights into the field of conservation, making it an excellent opportunity for those seeking inspiration for their future careers. RSVP: https://kzoocss.org/charles",
         "location": "Olds Upton 316",
