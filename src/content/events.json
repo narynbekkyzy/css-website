@@ -7,6 +7,15 @@
 
     "events":[
       {
+        "title": "LAST MEETING 2023: LEADERBOARD ELECTIONS",
+        "description": "Our last meeting for this year. It's time to conclude what we achieved and hold elections for the upcoming 2023 - 2024 academic year! Are you interested in being a leader? Would you like to support the CSS community? Come join us this Thursday 5-6pm! RSVP: https://kzoocss.org/2023",
+        "location": "Olds Upton 312",
+        "date": "June 1, 2023 17:00:00",
+        "end": "June 1, 2023 18:00:00",
+        "img": "2023.webp",
+        "type": ["career", "fun"]
+      },
+      {
         "title": "Leetcode Session #16",
         "description": "OUR LAST LEETCODE SESSION THIS YEAR! Improve your coding interview skills by participating in real coding challenges with our help! RSVP at https://kzoocss.org/LC",
         "location": "Olds Upton 312",
