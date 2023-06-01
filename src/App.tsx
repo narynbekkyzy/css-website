@@ -120,7 +120,7 @@ function Switcher() {
     } else if (location.pathname === "/CHARLES" || location.pathname === "/charles" ){
       window.location.href = "https://forms.gle/zq9JRRSvpaYdB11aA"
     } else if (location.pathname === "/2023" || location.pathname === "/2023" ){
-      window.location.href = "https://forms.gle/n95AqGShKkhMnrfg9"
+      window.location.href = "https://forms.gle/uLZhWQEv1XjR8Eae7"
     }
 
 
