@@ -12,7 +12,8 @@ function Add(x: any,y: any) {
  * (or broken pages that need to be fixed but can't be done so immediately)
  */
 
-//this is a comment.
+//this is a comment
+//this is another comment.
 
 export function TempPage(): JSX.Element { 
   let z = Add(2,3);
