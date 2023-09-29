@@ -7,6 +7,15 @@
 
     "events":[
       {
+        "title": "Leetcode Session #17",
+        "description": "Improve your coding interview skills by participating in real coding challenges with our help! RSVP at https://kzoocss.org/LC",
+        "location": "Hicks Computer Room",
+        "date": "Sep 30, 2023 11:00:00",
+        "end": "Sep 30, 2023 13:00:00",
+        "img": "lc17.jpeg",
+        "type": ["coding"]
+      },
+      {
         "title": "LAST MEETING 2023: LEADERBOARD ELECTIONS",
         "description": "Our last meeting for this year. It's time to conclude what we achieved and hold elections for the upcoming 2023 - 2024 academic year! Are you interested in being a leader? Would you like to support the CSS community? Come join us this Thursday 5-6pm! RSVP: https://kzoocss.org/2023",
         "location": "Olds Upton 312",
