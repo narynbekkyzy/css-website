@@ -7,6 +7,15 @@
 
     "events":[
       {
+        "title": "Leetcode Session #18",
+        "description": "Improve your coding interview skills by participating in real coding challenges with our help! RSVP at https://kzoocss.org/LC",
+        "location": "OU312",
+        "date": "April 12, 2024 16:00:00",
+        "end": "April 13, 2024 17:00:00",
+        "img": "lc6.webp",
+        "type": ["coding"]
+      },
+      {
         "title": "Leetcode Session #17",
         "description": "Improve your coding interview skills by participating in real coding challenges with our help! RSVP at https://kzoocss.org/LC",
         "location": "Hicks Computer Room",
