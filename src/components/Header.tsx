@@ -39,17 +39,18 @@ export function Header(): JSX.Element {
         document.getElementById(list[i].name) ?? document.documentElement
       ).getPropertyValue("width");
       let gap = 0;
-      if (i !== 0) {
-        gap = parseInt(
-          getComputedStyle(
-            document.getElementById("Header-MenuID") ?? document.documentElement
-          ).getPropertyValue("gap")
-        );
-      }
+
+      gap = parseInt(
+        getComputedStyle(
+          document.getElementById("Header-MenuID") ?? document.documentElement
+        ).getPropertyValue("gap")
+      );
+      
       dictWithGaps.set(list[i].name, parseInt(width) + gap);
       dictWithoutGaps.set(list[i].name, parseInt(width));
       sum += parseInt(width) + gap;
     }
+    
     let move = sum;
     console.log(reversedList);
     for (let i = 0; i < reversedList.length; i++) {
