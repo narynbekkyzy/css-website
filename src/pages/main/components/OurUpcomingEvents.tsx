@@ -19,6 +19,7 @@ interface UpcomingEventsProps {
 export function UpcomingEvents(props: UpcomingEventsProps): JSX.Element {
   const [events, setEvents] = useState(""); // tag with which cards are currently being filtered
   const [allCards, setAllCards] = useState(data.events); // card data set
+  const currentDate = new Date();
 
   // sets the card data set to be filtered by the current tag (or to include all card data if no tag is active)
   function filterAllCards() {
@@ -63,10 +64,11 @@ export function UpcomingEvents(props: UpcomingEventsProps): JSX.Element {
             );
           })}
         </div>
-
+          
        {/** Generates cards for current events **/}
         <div className="EventsContainer-Current">
           {allCards.map((event, key) => {
+            const isExpired = currentDate.getTime() > new Date(event.end).getTime();
             return (
               <AnimatePresence mode="wait">
                 <EventCard
@@ -78,6 +80,7 @@ export function UpcomingEvents(props: UpcomingEventsProps): JSX.Element {
                   endDate={event.end}
                   img={event.img}
                   type={event.type[0]}
+                  isExpired={isExpired}
                 />
               </AnimatePresence>
             );
