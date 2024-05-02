@@ -7,6 +7,15 @@
 
     "events":[
       {
+        "title": "Fun Event #1",
+        "description": "Come to chat with us and relieve stress halfway through the term!",
+        "location": "Olds Upton 312",
+        "date": "May 2, 2024 17:00:00",
+        "end": "May 2, 2024 18:00:00",
+        "img": "fe1.jpeg",
+        "type": ["fun"]
+      },
+      {
         "title": "Leetcode Session #18",
         "description": "Improve your coding interview skills by participating in real coding challenges with our help! RSVP at https://kzoocss.org/LC",
         "location": "Olds Upton 312",
