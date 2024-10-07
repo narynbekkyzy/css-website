@@ -7,12 +7,12 @@
 
     "events":[
       {
-        "title": "Fun Event #1",
-        "description": "Come to chat with us and relieve stress halfway through the term!",
+        "title": "Welcome!",
+        "description": "The first meeting of the term! Come to get to know us <3",
         "location": "Olds Upton 312",
-        "date": "May 2, 2024 17:00:00",
-        "end": "May 2, 2024 18:00:00",
-        "img": "fe1.jpeg",
+        "date": "Oct 7, 2024 18:00:00",
+        "end": "Oct 7, 2024 19:00:00",
+        "img": "welcome.jpg",
         "type": ["fun"]
       },
       {
